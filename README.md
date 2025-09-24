@@ -9,44 +9,6 @@ Developer documentation site for the Mezo ecosystem. This repo contains the sour
 - **sharp** for image processing
 - **starlight-sidebar-topics** to manage sidebar topics
 
-### Getting started
-1) Prerequisites
-   - Node.js 18+ (20+ recommended) and npm
-
-2) Install dependencies
-```bash
-npm install
-```
-
-3) Start the dev server
-```bash
-npm run dev
-```
-This runs the GitBook processing step and serves the docs at `http://localhost:4321`.
-
-4) Build for production
-```bash
-npm run build
-```
-
-5) Preview a production build
-```bash
-npm run preview
-```
-
-### Project structure
-- `src/content/docs/docs/` — primary markdown content organized by topic (e.g., `users/`, `developers/`).
-- `public/docs/` — static assets (images, PDFs) served as-is.
-- `src/assets/` — project assets referenced by the site.
-- `scripts/process-gitbook.js` — parses `SUMMARY.md`, transforms GitBook-style content, and updates sidebar topics in `astro.config.mjs`.
-- `scripts/linkcheck.js` — simple crawler to check links when the site is running locally.
-- `astro.config.mjs` — Astro/Starlight configuration and custom head scripts.
-
-Tips:
-- Add or update docs under `src/content/docs/docs/…`.
-- Place large assets in `public/docs/...` and reference via site-relative paths.
-- Run `npm run dev` to auto-process and preview changes.
-
 ### Contributing
 We welcome issues and PRs that improve clarity, correctness, and coverage.
 
@@ -82,6 +44,20 @@ npm run linkcheck-local
 6) Reviews & merging
 - We require at least one approval from a maintainer.
 - Squash-merge preferred; branch names and PR titles should clearly describe the change.
+  
+### Project structure
+- `src/content/docs/docs/` — primary markdown content organized by topic (e.g., `users/`, `developers/`).
+- `public/docs/` — static assets (images, PDFs) served as-is.
+- `src/assets/` — project assets referenced by the site.
+- `scripts/process-gitbook.js` — parses `SUMMARY.md`, transforms GitBook-style content, and updates sidebar topics in `astro.config.mjs`.
+- `scripts/linkcheck.js` — simple crawler to check links when the site is running locally.
+- `astro.config.mjs` — Astro/Starlight configuration and custom head scripts.
+
+Tips:
+- Add or update docs under `src/content/docs/docs/…`.
+- Place large assets in `public/docs/...` and reference via site-relative paths.
+- Run `npm run dev` to auto-process and preview changes.
+
 
 ### Issue labels (suggested)
 - `area/users` · `area/developers` · `content` · `typo` · `fix` · `chore` · `good first issue`
