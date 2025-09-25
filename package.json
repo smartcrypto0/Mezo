@@ -26,6 +26,7 @@
     "turndown": "^7.2.1"
   },
   "devDependencies": {
+    "@astro-community/astro-embed-link-preview": "^0.2.2",
     "axios": "^1.8.4",
     "prettier": "^3.5.3",
     "puppeteer": "^24.6.0"
