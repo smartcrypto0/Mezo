@@ -41,7 +41,7 @@ export default defineConfig({
                 // Ensure Open Graph/Twitter preview image across all pages
                 {
                   tag: 'meta',
-                  attrs: { property: 'og:image', content: 'https://mezo.org/docs/images/mainnet/Mezo%20Logo%20Square.png' },
+                  attrs: { property: 'og:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
                 },
                 {
                   tag: 'meta',
@@ -53,7 +53,7 @@ export default defineConfig({
                 },
                 {
                   tag: 'meta',
-                  attrs: { name: 'twitter:image', content: 'https://mezo.org/docs/images/mainnet/Mezo%20Logo%20Square.png' },
+                  attrs: { name: 'twitter:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
                 },
                 {
                   tag: 'meta',
