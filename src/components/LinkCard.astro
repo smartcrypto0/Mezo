@@ -1,0 +1,7 @@
+---
+import { LinkPreview } from '@astro-community/astro-embed-link-preview';
+const { id, hideMedia = false } = Astro.props as { id: string; hideMedia?: boolean };
+---
+<div class="link-card">
+  <LinkPreview id={id} {...(hideMedia ? { hideMedia: true } : {})} />
+</div>
