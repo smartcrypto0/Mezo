@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run process-gitbook && astro dev",
     "start": "npm run process-gitbook && astro dev",
-    "build": "npm run process-gitbook && astro build",
+    "build": "npm run process-gitbook && astro build && node scripts/postbuild-copy-sitemaps.js",
     "preview": "astro preview",
     "astro": "astro",
     "process-gitbook": "node scripts/process-gitbook.js",
