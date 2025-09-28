@@ -25,7 +25,7 @@ Approved validators can follow the instructions for the [Validator Kit](https://
 
 RPC nodes can be used to create a local endpoint for development or as part of a blockchain infrastructure-as-a-service (IaaS) platform. The process for setting up a seed node is the same as a validator node, but you do not need to request Proof of Authority (PoA).
 
-To run a n RPC node, follow the instructions in the [Validator Kit](https://github.com/mezo-org/validator-kit?tab=readme-ov-file#validator-kit) setup guide, but apply the additional configuration steps defined in the [RPC node](https://github.com/mezo-org/validator-kit?tab=readme-ov-file#rpc-node) setup section.
+To run an RPC node, follow the instructions in the [Validator Kit](https://github.com/mezo-org/validator-kit?tab=readme-ov-file#validator-kit) setup guide, but apply the additional configuration steps defined in the [RPC node](https://github.com/mezo-org/validator-kit?tab=readme-ov-file#rpc-node) setup section.
 
 ## Seed nodes
 
