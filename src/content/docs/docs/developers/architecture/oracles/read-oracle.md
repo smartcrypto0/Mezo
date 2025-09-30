@@ -1,59 +1,125 @@
 ---
 title: Reading Market Data with Oracles
-description: How to access and interpret market data using Mezo’s Oracle infrastructure.
+description: How to access and interpret market data using Mezo's oracle infrastructure.
 topic: developers
 ---
 
-Mezo makes market data available through different interfaces. 
+Mezo provides market data through two oracle systems: [Skip Connect](https://docs.skip.build/connect/introduction) for BTC/USD and [Pyth Network](https://docs.pyth.network/home) for additional price feeds.
 
-## Best practices
+## Overview
 
-When reading market data and building dApps that rely on this information, consider the following best practices:
+### Skip Oracle
 
-- **Data freshness:** In the unlikely event of an oracle failure, your application must identify if the oracle provides stale data. Before executing functions that rely on accurate market data, verify that oracle answers have valid timestamps and block numbers. Also check oracle answers against reasonable limits.
-- **Monitoring:** Monitor market conditions for volatility, liquidity, and manipulation. During these events, the oracle continues to provide accurate data but it might not be suitable for your application to continue operating.
-- **Application risks:** Ensure your applications and dependencies meet the security standards required for your use case. Audit your code and dependencies to ensure they are secure from attacks or market manipulation events. 
+The Skip oracle provides native BTC/USD price feeds on Mezo through a Chainlink-compatible aggregator interface.
 
-## Read from an onchain contract
+- **Contract address:** `0x7b7c000000000000000000000000000000000015` (mainnet and testnet)
+- **Supported pair:** BTC/USD only
+- **Interface:** [Chainlink Aggregator](https://github.com/smartcontractkit/libocr/blob/9e4afd8896f365b964bdf769ca28f373a3fb0300/contract/AccessControlledOffchainAggregator.sol)
 
-Mezo provides onchain contracts so your dApps can access market data. The contract is a modified version of the [Chainlink Aggregator](https://github.com/smartcontractkit/libocr/blob/9e4afd8896f365b964bdf769ca28f373a3fb0300/contract/AccessControlledOffchainAggregator.sol) contract.
+### Pyth Oracle
 
-The `latestRoundData()` function returns the following values:
+The Pyth oracle provides multiple price feeds beyond BTC/USD.
 
-- **`roundId`**: The round in which the answer was updated
-- **`answer`**: The data provided by the oracle for this specific asset pair. Usually this is the price of the asset pair. Use the `decimals()` function to get the number of decimals present in the answer value.
-- **`startedAt`**: The unix timestamp when the round started
-- **`updatedAt`**: The unix timestamp when the round was updated
+- **Contract address:** `0x2880aB155794e7179c9eE2e38200202908C17B43` (mainnet and testnet)
+- **Interface:** Pyth EVM contract
+- **Update frequency:** Every 1 hour or 1% price deviation
+- **Recommended method:** `getPriceNoOlderThan()`
 
-See [Available Markets](#available-markets) to find what assets have their data provided onchain. 
+## Best Practices
 
-## Read from a Mezo node
+When building dApps that consume oracle data, follow these guidelines:
 
-You can read market data directly from a Mezo node. For example, you can get BTC/USD answers from [mezo-node-0.test.mezo.org](http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=BTC/USD).
+- **Validate freshness:** Always check timestamps and block numbers to detect stale data. Set appropriate staleness thresholds for your use case.
+- **Set price bounds:** Implement sanity checks on price values to detect anomalies or manipulation attempts.
+- **Monitor market conditions:** Be aware of volatility, liquidity, and potential manipulation events that may require pausing your application.
+- **Security audits:** Ensure your contracts and dependencies meet security standards. Audit code that handles oracle data to prevent exploits.
 
-The API returns the following JSON structure similar to the following example:
+## Reading Price Feeds
 
+### Using Skip Oracle (BTC/USD)
+
+The Skip oracle implements a Chainlink-compatible interface. Call `latestRoundData()` to retrieve the latest price:
+
+**Contract:** [0x7b7c000000000000000000000000000000000015](https://explorer.mezo.org/address/0x7b7c000000000000000000000000000000000015)
+
+**Return values:**
+
+- `roundId`: The round ID when the price was updated
+- `answer`: The BTC/USD price (use `decimals()` to get the decimal precision)
+- `startedAt`: Unix timestamp when the round started
+- `updatedAt`: Unix timestamp when the round was last updated
+
+### Using Pyth Oracle (Multiple Feeds)
+
+Pyth provides multiple price feeds through its EVM contract. Use `getPriceNoOlderThan()` to fetch prices with built-in staleness checks.
+
+**Contract Mezo Mainnet:** [0x2880aB155794e7179c9eE2e38200202908C17B43](https://explorer.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43)
+
+**Contract Mezo Testnet:** [0x2880aB155794e7179c9eE2e38200202908C17B43](https://explorer.test.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43)
+
+**Example (Solidity):**
+
+```solidity
+import "@pythnetwork/pyth-sdk-solidity/IPyth.sol";
+import "@pythnetwork/pyth-sdk-solidity/PythStructs.sol";
+
+contract ReadPythPrice {
+    IPyth public immutable pyth;
+
+    constructor(address pythContract) {
+        pyth = IPyth(pythContract); // 0x2880aB155794e7179c9eE2e38200202908C17B43 on Mezo
+    }
+
+    function getPrice(bytes32 priceId, uint256 maxAgeSeconds)
+        external
+        view
+        returns (int64 price, uint64 conf, int32 expo, uint256 publishTime)
+    {
+        PythStructs.Price memory priceData = pyth.getPriceNoOlderThan(priceId, maxAgeSeconds);
+        return (priceData.price, priceData.conf, priceData.expo, priceData.publishTime);
+    }
+
+    // Example: Get MUSD/USD price
+    function getMUSDPrice() external view returns (int64, uint256) {
+        bytes32 musdPriceId = 0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de;
+        PythStructs.Price memory price = pyth.getPriceNoOlderThan(musdPriceId, 3600); // Max 1 hour old
+        return (price.price, price.publishTime);
+    }
+}
 ```
-{"price":{"price":"8146719580","block_timestamp":"2025-03-12T15:57:11.148843Z","block_height":"3078793"},"nonce":"1984245","decimals":"5","id":"0"}
-```
 
-Note that the `price` answer has a different `decimals` value when compared to the values stored in the onchain contract.
+**Reference:** getPriceNoOlderThan API [documentation](https://api-reference.pyth.network/price-feeds/evm/getPriceNoOlderThan)
 
-To find answers for different asset pairs, specify a different `currency_pair` value in the URL. See [Available Markets](#available-markets) to find what assets are provided by Mezo's implementation of Skip Connect.
+## Offchain Price Data
 
+You can query price feeds and metadata directly from the Pyth Network without interacting with the blockchain:
 
-## Available markets
+- **Hermes API:** [https://hermes.pyth.network/docs/#/rest/price_feeds_metadata](https://hermes.pyth.network/docs/#/rest/price_feeds_metadata)
+- **Price feed IDs:** [https://docs.pyth.network/price-feeds/price-feeds#feed-ids](https://docs.pyth.network/price-feeds/price-feeds#feed-ids)
 
-Mezo's implementation of the Skip Connect module tracks specific asset pairs. This is the full list of currently-available data on Mezo matsnet.
+## Available Price Feeds
 
-### Testnet
+### Skip Oracle Feeds
 
-- BTC/USD
-    - Onchain: [0x7b7c000000000000000000000000000000000015](https://explorer.test.mezo.org/address/0x7b7c000000000000000000000000000000000015)
-    - Node: http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=BTC/USD
-- ETH/USD:
-    - Onchain: Not Available
-    - Node: http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=ETH/USD
-- USDT/USD: 
-    - Onchain: Not Available
-    - Node: http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=USDT/USD
+Available on both mainnet and testnet:
+
+| Pair | Contract Address | Network |
+|------|-----------------|---------|
+| BTC/USD | [0x7b7c000000000000000000000000000000000015](https://explorer.mezo.org/address/0x7b7c000000000000000000000000000000000015) | Mainnet |
+| BTC/USD | [0x7b7c000000000000000000000000000000000015](https://explorer.test.mezo.org/address/0x7b7c000000000000000000000000000000000015) | Testnet |
+
+**Node API (Testnet only):** [http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=BTC/USD](http://mezo-node-0.test.mezo.org:1317/connect/oracle/v2/get_price?currency_pair=BTC/USD)
+
+### Pyth Oracle Feeds
+
+Available on both [mainnet](https://explorer.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) and [testnet](https://explorer.test.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) at `0x2880aB155794e7179c9eE2e38200202908C17B43`.
+
+**Currently supported price feed IDs:**
+
+| Pair | Price Feed ID |
+|------|---------------|
+| SolvBTC/USD | `0xf253cf87dc7d5ed5aa14cba5a6e79aee8bcfaef885a0e1b807035a0bbecc36fa` |
+| MUSD/USD | `0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de` |
+| BTC/USD | `0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43` |
+
+**Need more price feeds?** Browse all available Pyth [price feed IDs](https://docs.pyth.network/price-feeds/price-feeds#feed-ids) and contact the Mezo team to request additional feeds be enabled onchain.
