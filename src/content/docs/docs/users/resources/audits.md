@@ -25,3 +25,4 @@ topic: users
 
 ## Bridge
 - [Thesis Defense Bridge Audit](/docs/audits/2025-09-10%20-%20Thesis%20Defense%20-%20MezoBridge%20contract.pdf)
+- [Halborn Bridge Audit](/docs/audits/2025-09-18%20-%20Halborn%20-%20Mezo%20Native%20Bridge.pdf)
