@@ -2,7 +2,6 @@
 title: Validator Information
 description: Information about Mezo Validators and how to participate in network security.
 topic: users
-hidden: true
 ---
 
 <table>
@@ -40,15 +39,6 @@ hidden: true
       <td>Beemeeupnow</td>
       <td><span data-option="kho2A8rahGbq">Running</span></td>
       <td><a href="https://x.com/beemeeupnow">https://x.com/beemeeupnow</a></td>
-    </tr>
-    <tr>
-      <td>Bitcoin Layers</td>
-      <td><span data-option="kho2A8rahGbq">Running</span></td>
-      <td>
-        <a href="https://www.bitcoinlayers.org/"
-          >https://www.bitcoinlayers.org/</a
-        >
-      </td>
     </tr>
     <tr>
       <td>Boar</td>
