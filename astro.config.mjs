@@ -143,13 +143,21 @@ export default defineConfig({
                         ]
                   },
                   {
+                        label: 'Mats',
+                        collapsed: true,
+                        items: [
+                              'docs/users/mats/mats-overview',
+                              'docs/users/mats/rewards-hub'
+                        ]
+                  },
+                  {
                         label: 'MUSD',
                         collapsed: true,
                         items: [
-                              'docs/users/musd',
+                              'docs/users/musd/architecture-and-terminology',
                               'docs/users/musd/concepts',
-							  'docs/users/musd/architecture-and-terminology',
                               'docs/users/musd/fees',
+                              'docs/users/musd',
                               'docs/users/musd/mint-musd',
                               'docs/users/musd/liquidation-mechanics',
                               'docs/users/musd/musd-bridge',
@@ -181,7 +189,8 @@ export default defineConfig({
                               'docs/users/resources/contracts-reference',
                               'docs/users/resources/faqs',
                               'docs/users/resources/release-notes',
-                              'docs/users/resources/support'
+                              'docs/users/resources/support',
+                              'docs/users/resources/validators'
                         ]
                   }
             ]
@@ -331,23 +340,23 @@ export default defineConfig({
 		},
 		'/docs/users/user-guides/mats': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/mats-for-btc': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/mats-for-stablecoins': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/leaderboard-and-my-mats': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/rewards-hub'
 		},
 		'/docs/users/user-guides/mats/invite-bonus': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/official-links/mezo-community': {
 			status: 302,
@@ -367,23 +376,23 @@ export default defineConfig({
 		},
 		'/docs/users/concepts/mats': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/mats-for-btc': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/mats-for-stablecoins': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/leaderboard-and-my-mats': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/rewards-hub'
 		},
 		'/docs/users/concepts/mats/invite-bonus': {
 			status: 302,
-			destination: '/docs/users/mainnet/mats'
+			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/stablecoins-and-erc-20': {
 			status: 302,
