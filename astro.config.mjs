@@ -154,11 +154,11 @@ export default defineConfig({
                         label: 'MUSD',
                         collapsed: true,
                         items: [
-                              'docs/users/musd/architecture-and-terminology',
-                              'docs/users/musd/concepts',
-                              'docs/users/musd/fees',
                               'docs/users/musd',
+                              'docs/users/musd/concepts',
                               'docs/users/musd/mint-musd',
+                              'docs/users/musd/fees',
+                              'docs/users/musd/architecture-and-terminology',
                               'docs/users/musd/liquidation-mechanics',
                               'docs/users/musd/musd-bridge',
                               'docs/users/musd/risks'
