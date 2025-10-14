@@ -17,7 +17,7 @@ Before you start, verify:
 1. **System is accepting redemptions**: Go to TroveManager → "Read as Proxy" → call `getTCR()` with current BTC price. Must show ≥ `1100000000000000000` (110%)
 2. **You have MUSD**: Check your balance on the MUSD token contract
 3. **Get current BTC price**: Go to PriceFeed → "Read as Proxy" → call `fetchPrice()`
-4. **Get correct contract addresses**: See contract addresses at the bottom.
+4. **Get correct contract addresses**: See contract addresses at the bottom for both Mainnet and Testnet.
 
 ---
 
@@ -137,14 +137,14 @@ Go back to TroveManager → "Write as Proxy" → `redeemCollateral`
 
 ## Contract Addresses
 
-| Contract | Address |
-|----------|---------|
-| TroveManager | `0x94AfB503dBca74aC3E4929BACEeDfCe19B93c193` |
-| HintHelpers | `0xD267b3bE2514375A075fd03C3D9CBa6b95317DC3` |
-| SortedTroves | `0x8C5DB4C62BF29c1C4564390d10c20a47E0b2749f` |
-| BorrowerOperations | `0x44b1bac67dDA612a41a58AAf779143B181dEe031` |
-| PriceFeed | `0xc5aC5A8892230E0A3e1c473881A2de7353fFcA88` |
-| MUSD Token | `0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186` |
+| Contract | Mainnet | Testnet |
+|----------|---------|---------|
+| TroveManager | `0x94AfB503dBca74aC3E4929BACEeDfCe19B93c193` | `0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0` |
+| HintHelpers | `0xD267b3bE2514375A075fd03C3D9CBa6b95317DC3` | `0x4e4cBA3779d56386ED43631b4dCD6d8EacEcBCF6` |
+| SortedTroves | `0x8C5DB4C62BF29c1C4564390d10c20a47E0b2749f` | `0x722E4D24FD6Ff8b0AC679450F3D91294607268fA` |
+| BorrowerOperations | `0x44b1bac67dDA612a41a58AAf779143B181dEe031` | `0xCdF7028ceAB81fA0C6971208e83fa7872994beE5` |
+| PriceFeed | `0xc5aC5A8892230E0A3e1c473881A2de7353fFcA88` | `0x86bCF0841622a5dAC14A313a15f96A95421b9366` |
+| MUSD Token | `0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186` | `0x118917a40FAF1CD7a13dB0Ef56C86De7973Ac503` |
 
 All addresses are proxy contracts. Always use "Read as Proxy" or "Write as Proxy" tabs.
 
