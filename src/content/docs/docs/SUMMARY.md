@@ -63,3 +63,5 @@ topic: users
   * [bridge](developers/bridge/README.md)
     * [Mezo Bridge](developers/bridge/mezo-bridge.md)
     * [Wormhole MUSD Bridge](developers/bridge/wormhole-musd-bridge.md)
+  * [musd](developers/musd/README.md)
+    * [MUSD Redemptions](developers/musd/musd-redemptions/index.md)
