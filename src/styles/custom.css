@@ -49,6 +49,17 @@ code {
   box-shadow: 0 4px 10px rgba(0,0,0,.25);
 }
 .link-preview a {
-  color: var(--sl-color-text-accent);
+  color: var(--sl-color-text-accent); 
   text-decoration: none;
+}
+/* Make the Mezo logo smaller */
+:root {
+  --sl-nav-height: 3.5rem;
+}
+
+.site-title svg,
+.site-title img {
+  max-height: 2.5rem;
+  height: 1.25rem;
+  width: auto;
 }
