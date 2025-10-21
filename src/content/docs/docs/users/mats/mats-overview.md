@@ -1,6 +1,6 @@
 ---
 title: mats Overview
-description: Learn about mats (Magic Satoshis) and how they work on Mezo
+description: Learn about mats (Mezo rewards) and how they work on Mezo
 topic: users
 ---
 
@@ -8,7 +8,7 @@ topic: users
 
 mats are Mezo's native rewards points. Every verified incentivized action on Mezo — bridging assets, minting MUSD, swapping, providing liquidity, depositing in vaults — earns you mats.
 
-mats align incentives across the entire Mezo ecosystem and beyond, rewarding real on-chain activity while ensuring transparent tracking of user contributions. As Mezo evolves into a feature-complete DeFi ecosystem, mats will be a core driver of protocol incentives and governance power.
+mats align incentives across the entire Mezo ecosystem and beyond, rewarding real on-chain activity while ensuring transparent tracking of user contributions. You earn them like you earn loyalty points. Think of mats as Bitcoin-friendly rewards points. 
 
 ## How to Earn mats
 
