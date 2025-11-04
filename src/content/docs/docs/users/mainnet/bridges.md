@@ -92,27 +92,47 @@ Fees will be accurately displayed in the app depending on the bridge route used 
 
 When bridging out, you pay fees for the bridging service and network operations. All fees are clearly displayed before you confirm any transaction.
 
-### Fee Structure (v1)
+### Fee Structure (v2)
 
-This is the initial version of the fee structure. **In the coming weeks, bridge fees will be reduced by approximately 3x and will move to a flat fee model instead of a percentage.**
+Withdrawals from Mezo include two fees:
+
+- Percentage fee — a small percent of the withdrawal amount.
+- Flat fee — a fixed amount equal to about $3 USD in that token’s value.
+
+Both apply together.
 
 #### Bridging to Ethereum
-* **Minimum Withdrawal Amounts:**
-    * `0.01` for BTC-based tokens (e.g., receiving tBTC)
-    * `1,000` for USD-based tokens (e.g., mUSDC, mUSDT)
-    * `75,000` for mT tokens
-* **Fees:**
-    * **Mezo Fee:** $0.25\%$ of the requested withdrawal amount.
-    * **Mezo Gas Fee:** A gas fee paid in BTC for the transaction, based on Mezo network conditions.
-* **Note:** The bridge system pays the final gas fee on the Ethereum network to deliver your assets.
+
+Minimum Withdrawal Amounts
+
+- BTC-based tokens (tBTC): 0.01
+- USD-based tokens (mUSDC, mUSDT): 1,000
+- mT tokens: 75,000
+
+Fees
+
+- Percentage Fee: 0.10%
+- Flat Fee: ≈ $3 USD (per token equivalent)
+- Gas Fee: Paid in BTC, varies with network conditions
+
+Example:
+
+Withdrawing 1,000 USDC → 0.10% = 1 USDC + $3 flat ≈ 4 USDC total → receive ~996 USDC.
 
 #### Bridging to Bitcoin
-* **Minimum Withdrawal Amount:** `0.01 BTC`
-* **Fees:** You will see the following fees itemized in your wallet:
-    * **Mezo Gas Fee:** A gas fee paid in BTC for the transaction, based on Mezo network conditions.
-    * **Mezo Withdrawal Fee:** $0.25\%$ of the requested withdrawal amount.
-    * **tBTC Bridge Redemption Treasury Fee:** $0.2\%$ of the withdrawal amount *after* the Mezo fee has been deducted.
-    * **tBTC Bridge Redemption Transaction Fee:** An additional fee for tBTC redemption is charged based on Bitcoin network fees. Current network activity prices this portion at less than $1 USD equivalent. However, the maximum amount charged can be up to `0.001 BTC`, though it is almost always significantly less.
+
+Minimum Withdrawal Amount: 0.01 BTC
+
+Fees
+
+- Gas Fee: Paid in BTC, varies
+- Withdrawal Fee: 0.10% + ≈ $3 flat
+- tBTC Treasury Fee: 0.2%
+- tBTC Redemption Fee: up to 0.001 BTC (usually < $1)
+
+Example:
+
+Withdrawing 1 BTC → 0.001 BTC (0.10%) + 0.000025 BTC (~$3) + 0.001998 BTC (Treasury) → receive ~0.997 BTC.
 
 ## What Happens After You Submit
 
