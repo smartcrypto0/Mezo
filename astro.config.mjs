@@ -220,7 +220,7 @@ export default defineConfig({
                               'docs/users/resources/faqs',
                               'docs/users/resources/release-notes',
                               'docs/users/resources/support',
-                              'docs/users/resources/validators'
+                              
                         ]
                   }
             ]
@@ -249,7 +249,8 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/mezo-nodes',
-                              'docs/developers/mezo-nodes/fireblocks-connect'
+                              'docs/developers/mezo-nodes/fireblocks-connect',
+                              'docs/developers/mezo-nodes/validators'
                         ]
                   },
                   {

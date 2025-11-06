@@ -1,6 +1,8 @@
 ---
 title: Lolli Integration
-description: Learn about withdrawing your sats from Lolli to Mezo for self-custody Bitcoin banking
+description: >-
+  Learn about withdrawing your sats from Lolli to Mezo for self-custody Bitcoin
+  banking
 topic: users
 ---
 

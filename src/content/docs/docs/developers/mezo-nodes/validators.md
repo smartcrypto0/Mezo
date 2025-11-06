@@ -1,7 +1,7 @@
 ---
 title: Validator Information
 description: Information about Mezo Validators and how to participate in network security.
-topic: users
+topic: developers
 ---
 
 <table>
@@ -72,6 +72,11 @@ topic: users
       <td><a href="https://everstake.one/">https://everstake.one/</a></td>
     </tr>
     <tr>
+      <td>Flowdesk</td>
+      <td><span data-option="kho2A8rahGbq">Running</span></td>
+      <td><a href="https://flowdesk.co/">https://flowdesk.co/</a></td>
+    </tr>
+    <tr>
       <td>GlobalStake</td>
       <td><span data-option="kho2A8rahGbq">Running</span></td>
       <td><a href="https://globalstake.io/">https://globalstake.io/</a></td>
@@ -91,15 +96,6 @@ topic: users
       </td>
     </tr>
     <tr>
-      <td>Kiln</td>
-      <td><span data-option="kho2A8rahGbq">Running</span></td>
-      <td>
-        <a href="https://www.kiln.fi/"
-          >https://www.kiln.fi/</a
-        >
-      </td>
-    </tr>
-    <tr>
       <td>Lavender.Five</td>
       <td><span data-option="kho2A8rahGbq">Running</span></td>
       <td>
@@ -114,6 +110,15 @@ topic: users
       <td>
         <a href="https://www.liquidlambda.com/"
           >https://www.liquidlambda.com/</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Maestro</td>
+      <td><span data-option="kho2A8rahGbq">Running</span></td>
+      <td>
+        <a href="https://www.gomaestro.org/"
+          >https://www.gomaestro.org/</a
         >
       </td>
     </tr>
@@ -161,3 +166,5 @@ topic: users
     </tr>
   </tbody>
 </table>
+
+
