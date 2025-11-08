@@ -185,6 +185,6 @@ For production deployments, use the following Mainnet details. It is recommended
 
 | Provider | HTTPS Endpoint | WSS Endpoint | Notes |
 | --- | --- | --- | --- |
-| Boar | `https://rpc-http.mezo.boar.network` | `wss://rpc-ws.mezo.boar.network` | Excellent for local development and testing. API key required for higher rate limits. |
-| Imperator | `https://rpc_evm-mezo.imperator.co` | `wss://ws_evm-mezo.imperator.co` | Publicly available endpoint. |
-| Validation Cloud | `https://mainnet.mezo.public.validationcloud.io` | `wss://mainnet.mezo.public.validationcloud.io` | Recommended for production dApps due to high availability. API key required for higher rate limits. |
+| Boar | `https://rpc-http.mezo.boar.network` | `wss://rpc-ws.mezo.boar.network` |
+| Imperator | `https://rpc_evm-mezo.imperator.co` | `wss://ws_evm-mezo.imperator.co` |
+| Validation Cloud | `https://mainnet.mezo.public.validationcloud.io` | `wss://mainnet.mezo.public.validationcloud.io` |
