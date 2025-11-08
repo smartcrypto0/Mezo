@@ -21,68 +21,7 @@ To configure Hardhat to work with Mezo Testnet, set the following items in your 
 * Add an entry under `networks` for Mezo Testnet with `url: "https://rpc.test.mezo.org"` and `chainId: 31611`.
 * In the `solidity` settings, add `evmVersion: "london"`.
 
-As an example, see these basic Hardhat config files:
-
-### Typescript
-
-```typescript
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-
-const config: HardhatUserConfig = {
-  defaultNetwork: "mezotestnet",
-  networks: {
-    hardhat: {
-    },
-    mezotestnet: {
-      url: "https://rpc.test.mezo.org",
-      chainId: 31611,
-      accounts: ["YOUR_PRIVATE_WALLET_KEY"]
-    }
-  },
-  solidity: {
-    version: "0.8.28",
-    settings: {
-      evmVersion: "london",
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
-    }
-  },
-};
-
-export default config;
-```
-
-### Javascript
-
-```javascript
-require("@nomiclabs/hardhat-waffle");
-
-module.exports = {
-  defaultNetwork: "mezotestnet",
-  networks: {
-    hardhat: {
-    },
-    mezotestnet: {
-      url: "https://rpc.test.mezo.org",
-      chainId: 31611,
-      accounts: ["YOUR_PRIVATE_WALLET_KEY"]
-    }
-  },
-  solidity: {
-    version: "0.8.28",
-    settings: {
-      evmVersion: "london",
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
-    }
-  },
-};
-```
+See the [Getting Started Guide](index.md) for the canonical Hardhat example.
 
 ### Foundry
 
@@ -94,14 +33,4 @@ To configure a Foundry project to work with Mezo Testnet, set the following item
 * RPC: `eth_rpc_url = "https://rpc.test.mezo.org"`
 * EVM Version: `evm_version = 'london'`
 
-As an example, see the example Foundry TOML:
-
-```toml
-[profile.default]
-src = "src"
-out = "out"
-libs = ["lib"]
-chain_id = 31611
-eth_rpc_url = "https://rpc.test.mezo.org"
-evm_version = 'london'
-```
+See the [Getting Started Guide](index.md) for canonical Foundry settings.

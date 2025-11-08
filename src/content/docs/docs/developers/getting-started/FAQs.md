@@ -86,13 +86,4 @@ Developers may leave feedback [here](https://2d0lnha7ee6.typeform.com/to/bP810Y2
 
 #### Who Are Your Partners and How Do I Integrate Them? <a href="#who-are-your-partners-and-how-do-i-integrate-them" id="who-are-your-partners-and-how-do-i-integrate-them"></a>
 
-The following table details key partners within the Mezo ecosystem, categorized by their function. It provides a one-stop-shop for developers to assess the maturity of the available tooling and find direct links to the integration documentation needed to get started.
-
-| **Pyth Network**  | ​[https://docs.pyth.network/](https://docs.pyth.network/)​                                               |
-| ----------------- | -------------------------------------------------------------------------------------------------------- |
-| **Supra**         | ​[https://supra.com/docs/](https://www.google.com/search?q=https://supra.com/docs/)​                     |
-| **Stork**         | ​[https://docs.stork.network/](https://docs.stork.network/)​                                             |
-| **Goldsky**       | ​[https://docs.goldsky.com/](https://docs.goldsky.com/)​                                                 |
-| **Onchain Den**   | ​[https://docs.onchainden.com/](https://docs.onchainden.com/)​                                           |
-| **Lavender Five** | ​[https://www.lavenderfive.com/tools/mezo/statesync](https://www.lavenderfive.com/tools/mezo/statesync)​ |
-| **tBTC**          | See [tbtc.scan](https://www.google.com/search?q=https://tbtc.scan) for reserve verification.             |
+See the up-to-date list in [Integrations & Partners](integrations-and-partners.md).
