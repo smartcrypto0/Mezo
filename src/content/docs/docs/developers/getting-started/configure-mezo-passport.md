@@ -20,12 +20,12 @@ If you cannot use Mezo Passport for your dApp, the configuration steps in the [C
 ### Install
 
 
-See the [Getting Started Guide](index.md) for canonical installation instructions.
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for canonical installation instructions.
 
 ### Configure your application
 
 
-See the [Getting Started Guide](index.md) for canonical configuration examples.
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for canonical configuration examples.
 
 ### Connecting wallets
 

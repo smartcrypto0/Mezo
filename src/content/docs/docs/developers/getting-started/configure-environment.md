@@ -21,7 +21,7 @@ To configure Hardhat to work with Mezo Testnet, set the following items in your 
 * Add an entry under `networks` for Mezo Testnet with `url: "https://rpc.test.mezo.org"` and `chainId: 31611`.
 * In the `solidity` settings, add `evmVersion: "london"`.
 
-See the [Getting Started Guide](index.md) for the canonical Hardhat example.
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for the canonical Hardhat example.
 
 ### Foundry
 
@@ -33,4 +33,4 @@ To configure a Foundry project to work with Mezo Testnet, set the following item
 * RPC: `eth_rpc_url = "https://rpc.test.mezo.org"`
 * EVM Version: `evm_version = 'london'`
 
-See the [Getting Started Guide](index.md) for canonical Foundry settings.
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for canonical Foundry settings.
