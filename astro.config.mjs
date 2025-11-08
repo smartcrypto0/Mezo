@@ -237,7 +237,6 @@ export default defineConfig({
                         items: [
                               'docs/developers/getting-started',
                               'docs/developers/getting-started/dapp-requirements',
-                              'docs/developers/getting-started/deploy-your-dapp-to-mezo',
                               'docs/developers/getting-started/configure-environment',
                               'docs/developers/getting-started/configure-mezo-passport',
                               'docs/developers/getting-started/integrations-and-partners',
