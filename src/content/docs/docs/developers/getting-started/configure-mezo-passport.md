@@ -1,6 +1,6 @@
 ---
 title: Mezo Passport Setup Guide
-description: Instructions to set up Mezo Passport for seamless developer and user access.
+description: Instructions to set up Mezo Passport
 topic: developers
 ---
 
