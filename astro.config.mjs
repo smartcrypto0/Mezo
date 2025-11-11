@@ -279,7 +279,14 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/features/mezo-pools',
-                              'docs/developers/features/tigris'
+                              'docs/developers/features/Tigris/tigris'
+                        ]
+                  },
+                  {
+                        label: 'Subgraphs',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/subgraphs'
                         ]
                   },
                   {
@@ -294,8 +301,8 @@ export default defineConfig({
                         label: 'MUSD',
                         collapsed: true,
                         items: [
-                              'docs/developers/musd/index.md',
-                              'docs/developers/musd/musd-redemptions/'
+                              'docs/developers/musd',
+                              'docs/developers/musd/musd-redemptions'
                         ]
                   }
             ]
