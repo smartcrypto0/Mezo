@@ -24,7 +24,7 @@ Liquidated positions are either paid for by the `StabilityPool`, in which case t
 
 ### Maintaining the Peg
 
-We maintain the **price floor of $1** through arbitrage, an external USD ↔ BTC price oracle, and the ability to redeem MUSD for BTC at a 1:1 rate (via `TroveManager.redeemCollateral`). Imagine that MUSD was trading for `$0.80` on an exchange and that bitcoin is selling for `1 BTC = $100k`. An arbitrageur with `$800` could:
+We maintain the **price floor of \$1** through arbitrage, an external USD ↔ BTC price oracle, and the ability to redeem MUSD for BTC at a 1:1 rate (via `TroveManager.redeemCollateral`). Imagine that MUSD was trading for `$0.80` on an exchange and that bitcoin is selling for `1 BTC = $100k`. An arbitrageur with `$800` could:
 
 1. Trade `$800` for `1000 MUSD`.
 2. Redeem `1000 MUSD` for `0.01 BTC` (`$1000` worth of BTC).
@@ -207,61 +207,6 @@ async function batchLiquidate(
 
 ## Redemptions
 
-Any MUSD holder can redeem their tokens for an equivalent value of BTC, which helps maintain the $1 peg. The system redeems against the trove with the lowest collateral ratio.
+Any MUSD holder can redeem their tokens for an equivalent value of BTC, which helps maintain the `$1` peg. The system redeems against the trove with the lowest collateral ratio.
 
-```typescript
-async function redeemCollateral(
-  contracts: { /* ... */ },
-  wallet: Wallet,
-  redemptionAmount: bigint
-) {
-  const price = await contracts.priceFeed.fetchPrice();
-  // ... hint calculation logic ...
-
-  await contracts.troveManager.connect(wallet).redeemCollateral(
-    redemptionAmount,
-    firstRedemptionHint,
-    upperPartialRedemptionHint,
-    // ... other params
-  );
-}
 ```
-
-## Borrower Risks
-
--   **Liquidation Risk**: Your collateral can be liquidated if its value falls below 110% of your debt.
--   **Redemption Risk**: Your collateral can be redeemed to maintain the peg, causing a taxable event and loss of upside exposure.
--   **Bad Debt**: In extreme cases, bad debt could be socialized across other borrowers.
-
-## Testing
-
-```bash
-# Run all tests
-pnpm test
-
-# Run with gas reporting
-pnpm test:gas
-
-# Run with coverage
-pnpm coverage
-```
-
-## Key Changes from THUSD
-
--   **Fixed-Interest Borrowing**: Interest rates are fixed when a trove is opened and can be refinanced.
--   **Protocol Controlled Value (PCV)**: Manages fees for loan repayment and other system needs.
--   **EIP-712 Signature Verification**: Allows for gasless transaction authorizations.
--   **No Special Recovery Mode Liquidations**: Liquidations follow a single process.
-
-## Definitions
-
--   **Trove**: A collateralized debt position (CDP).
--   **ICR**: Individual Collateralization Ratio of a single trove.
--   **TCR**: Total Collateralization Ratio of the entire system.
--   **Recovery Mode**: Activated if TCR falls below 150%, enforcing stricter borrowing rules.
-
-## Additional Resources
-
--   **[MUSD Main README](https://github.com/mezo-org/musd/blob/main/README.md)** - Comprehensive architectural overview.
--   **[Demo Test Suite](https://github.com/mezo-org/musd/blob/main/test/integration/Demo.test.ts)** - Working code examples.
--   **[MUSD User Guide](/docs/users/musd/)** - End-user documentation.
