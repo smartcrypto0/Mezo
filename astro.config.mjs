@@ -219,8 +219,7 @@ export default defineConfig({
                               'docs/users/resources/contracts-reference',
                               'docs/users/resources/faqs',
                               'docs/users/resources/release-notes',
-                              'docs/users/resources/support',
-                              
+                              'docs/users/resources/support'
                         ]
                   }
             ]
@@ -250,14 +249,8 @@ export default defineConfig({
                         items: [
                               'docs/developers/mezo-nodes',
                               'docs/developers/mezo-nodes/validator-kit',
-                              'docs/developers/mezo-nodes/fireblocks-connect'
-                        ]
-                  },
-                  {
-                        label: 'Chains',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/chains'
+                              'docs/developers/mezo-nodes/fireblocks-connect',
+                              'docs/developers/mezo-nodes/validators'
                         ]
                   },
                   {
@@ -303,6 +296,13 @@ export default defineConfig({
                         items: [
                               'docs/developers/musd',
                               'docs/developers/musd/musd-redemptions'
+                        ]
+                  },
+                  {
+                        label: 'Chains',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/chains'
                         ]
                   }
             ]
