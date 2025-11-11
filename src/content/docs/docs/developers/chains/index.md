@@ -5,9 +5,6 @@ description: >-
   network parameters.
 topic: developers
 ---
-
-# Chains Configuration Guide
-
 The [Chains repository](https://github.com/mezo-org/chains.git) contains configuration files, network parameters, and chain specifications for the Mezo ecosystem. This guide covers how to configure, deploy, and manage Mezo chains.
 
 ## Overview

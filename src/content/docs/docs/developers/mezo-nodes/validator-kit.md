@@ -5,9 +5,6 @@ description: >-
   validator kit.
 topic: developers
 ---
-
-# Validator Kit Development Guide
-
 The Mezo Validator Kit provides a comprehensive solution for running Mezo nodes, including validators, RPC nodes, and seed nodes. This guide covers setup, configuration, and maintenance of Mezo infrastructure.
 
 ## Overview

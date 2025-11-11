@@ -5,9 +5,6 @@ description: >-
   for Mezo chain.
 topic: developers
 ---
-
-# Mezod Chain Client Development Guide
-
 Mezod is the reference client implementation for the Mezo chain, a Bitcoin-first blockchain designed for user ownership, reliable bridging with tBTC, BTC for gas, dual staking model, and EVM compatibility.
 
 ## Overview

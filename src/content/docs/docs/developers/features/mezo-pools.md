@@ -5,9 +5,6 @@ description: >-
   pools
 topic: developers
 ---
-
-## Overview
-
 Tigris is Mezo's native decentralized exchange (DEX) infrastructure, purpose-built for BitcoinFi. It enables users to swap tokens and provide liquidity using optimized pool mechanics. Tigris currently supports selected liquidity pools and curated integrations, with plans to open up permissionless access in the future.
 
 > **Note:** This documentation is a rough overview. More technical details will be added over the coming days.

@@ -5,9 +5,6 @@ description: >-
   infrastructure.
 topic: developers
 ---
-
-# Subgraph Deployment with Goldsky
-
 This guide covers how to deploy and manage subgraphs for Mezo protocols using Goldsky's infrastructure. Subgraphs enable efficient querying of blockchain data through GraphQL APIs.
 
 ## Overview

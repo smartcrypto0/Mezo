@@ -5,9 +5,6 @@ description: >-
   inspired by Solidly.
 topic: developers
 ---
-
-# Tigris DEX Development Guide
-
 Tigris is the smart contract system powering the Mezo gauge system and decentralized exchange (DEX), inspired by Solidly. This guide will help you understand how to build and interact with Tigris contracts.
 
 ## Overview

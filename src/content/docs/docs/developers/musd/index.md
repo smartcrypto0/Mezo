@@ -5,10 +5,7 @@ description: >-
   Mezo, covering architecture, core concepts, and contract integration.
 topic: developers
 ---
-
-# MUSD Development Guide
-
-MUSD (Mezo USD) is a Bitcoin-backed stablecoin that provides a stable value store while maintaining Bitcoin's security and decentralization. This guide covers the core architecture of MUSD and how to integrate with its smart contracts. MUSD is a collateralized debt position (CDP) based on [Threshold USD](https://github.com/Threshold-USD/dev), which is a fork of [Liquity](https://github.com/liquity/dev).
+MUSD is a Bitcoin-backed stablecoin that provides a stable value store while maintaining Bitcoin's security and decentralization. This guide covers the core architecture of MUSD and how to integrate with its smart contracts. MUSD is a collateralized debt position (CDP) based on [Threshold USD](https://github.com/Threshold-USD/dev), which is a fork of [Liquity](https://github.com/liquity/dev).
 
 ## Architectural Overview
 
