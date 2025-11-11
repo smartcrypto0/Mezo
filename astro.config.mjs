@@ -236,6 +236,7 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/getting-started',
+                              'docs/developers/getting-started/mezod',
                               'docs/developers/getting-started/dapp-requirements',
                               'docs/developers/getting-started/deploy-your-dapp-to-mezo',
                               'docs/developers/getting-started/configure-environment',
@@ -249,6 +250,7 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/mezo-nodes',
+                              'docs/developers/mezo-nodes/validator-kit',
                               'docs/developers/mezo-nodes/fireblocks-connect'
                         ]
                   },
@@ -270,7 +272,8 @@ export default defineConfig({
                         label: 'Features',
                         collapsed: true,
                         items: [
-                              'docs/developers/features/mezo-pools'
+                              'docs/developers/features/mezo-pools',
+                              'docs/developers/features/tigris'
                         ]
                   },
                   {
@@ -285,6 +288,7 @@ export default defineConfig({
                         label: 'MUSD',
                         collapsed: true,
                         items: [
+                              'docs/developers/musd',
                               'docs/developers/musd/musd-redemptions'
                         ]
                   }
