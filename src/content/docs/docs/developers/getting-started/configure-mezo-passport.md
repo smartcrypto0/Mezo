@@ -1,6 +1,6 @@
 ---
 title: Mezo Passport Setup Guide
-description: Instructions to set up Mezo Passport for seamless developer and user access.
+description: Instructions to set up Mezo Passport
 topic: developers
 ---
 
@@ -20,39 +20,12 @@ If you cannot use Mezo Passport for your dApp, the configuration steps in the [C
 ### Install
 
 
-
-Install the Mezo Passport library, RainbowKit, and dependencies:
-
-```
-npm install @mezo-org/passport @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query
-```
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for canonical installation instructions.
 
 ### Configure your application
 
 
-
-The configuration process is similar to RainbowKit but uses the `getConfig` method from passport, which returns a default configuration for Mezo Testnet. Pass `getConfig` to `WagmiProvider`.
-
-```
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { WagmiProvider } from "wagmi";
-import { getConfig, mezoTestnet } from "@mezo-org/passport";
-
-const queryClient = new QueryClient();
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <WagmiProvider config={getConfig({ appName: "Your app name" })}>
-      <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider initialChain={mezoTestnet}>
-          {/* Your App component */}
-        </RainbowKitProvider>
-      </QueryClientProvider>
-    </WagmiProvider>
-  </React.StrictMode>,
-);
-```
+See the [Getting Started Guide](https://mezo.org/docs/developers/getting-started) for canonical configuration examples.
 
 ### Connecting wallets
 

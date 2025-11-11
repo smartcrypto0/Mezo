@@ -1,5 +1,5 @@
 ---
-title: 'Using Mezo'
+title: Using Mezo
 description: 'Learn how to use your Bitcoin on Mezo for earning, spending, and saving'
 topic: users
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'FAQs'
+title: FAQs
 description: Frequently asked questions about the Lolli and Mezo integration
 topic: users
 ---

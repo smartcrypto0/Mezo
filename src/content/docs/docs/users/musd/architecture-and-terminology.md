@@ -17,10 +17,10 @@ MUSD positions can be tracked onchain, and the underlying Bitcoin collateral is 
 
 You can see all BTC backing MUSD in real time on the Mezo block explorer:
 
-- [ActivePool](https://explorer.mezo.org/address/0x964d45256c73dF0239a26216CEc155d7E12Ec157)
-- [DefaultPool](https://explorer.mezo.org/address/0x24C0Fbd3Ff8e742080c60881f8527cA3baf07647)
-- [CollSurplusPool](https://explorer.mezo.org/address/0x8fec9CF78087064F1f32269F68F94ae343FFbfFf)
-- [GasPool](https://explorer.mezo.org/address/0x7d61512Edc44dBA19EA9758e9F383547cEc38366)
+- [ActivePool](https://explorer.mezo.org/address/0x3012C2fE1240e3754E5C200A0946bb0E07474876)
+- [DefaultPool](https://explorer.mezo.org/address/0xE4B5913C0c82dB2eFC553b95c0173efb90a07c8B)
+- [CollSurplusPool](https://explorer.mezo.org/address/0xBF51807ACb3394B8550f0554FB9098856Ef5F491)
+- [GasPool](https://explorer.mezo.org/address/0x3EB418BdBE95b4b9cf465ecfBD8424685ACD1Bc1)
 
 tBTC, which is built by the same team behind Mezo, [Thesis*](https://thesis.co/?ref=blog.mezo.org), is powered by the [Threshold Network](https://threshold.network/?ref=blog.mezo.org). Threshold is a decentralized signer set that has operated the Threshold Bitcoin bridge since early 2020 and successfully bridged over 18k Bitcoin. Proof of reserves for tBTC have been live for the entire life of the bridge and are viewable at [tbtcscan](https://tbtcscan.com/wallets?ref=blog.mezo.org).
 
