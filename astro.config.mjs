@@ -236,6 +236,7 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/getting-started',
+                              'docs/developers/getting-started/mezod',
                               'docs/developers/getting-started/dapp-requirements',
                               'docs/developers/getting-started/configure-environment',
                               'docs/developers/getting-started/configure-mezo-passport',
@@ -248,8 +249,8 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/mezo-nodes',
-                              'docs/developers/mezo-nodes/fireblocks-connect',
-                              'docs/developers/mezo-nodes/validators'
+                              'docs/developers/mezo-nodes/validator-kit',
+                              'docs/developers/mezo-nodes/fireblocks-connect'
                         ]
                   },
                   {
@@ -285,6 +286,8 @@ export default defineConfig({
                         label: 'MUSD',
                         collapsed: true,
                         items: [
+                              'docs/developers/musd',
+                              'docs/developers/musd-development',
                               'docs/developers/musd/musd-redemptions'
                         ]
                   }

@@ -13,7 +13,3 @@ Connect your favorite Bitcoin services and platforms with Mezo's self-custodial 
 <LinkButton href="/docs/users/integrations/lolli" icon="right-arrow">
   Lolli Integration
 </LinkButton>
-
-<LinkButton href="/docs/users/integrations/mercurial" variant="secondary" icon="right-arrow">
-  Mercurial Integration
-</LinkButton>
