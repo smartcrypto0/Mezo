@@ -13,6 +13,8 @@ You can deposit and withdraw assets to and from Mezo using the Mezo Native Bridg
 
 The Mezo app includes a native bridge where you can deposit several assets to Mezo Mainnet. See the [Deposit Assets](/docs/users/getting-started/deposit-assets) guide to learn how the process works, or go directly to [mezo.org/overview](https://mezo.org/overview), sign in, and click **Deposit Bitcoin** to get started.
 
+**Note:** All transactions on Mezo Mainnet are paid using native BTC or tBTC deposits. Before using the network, it's recommended to fund your account with BTC or tBTC to ensure you have gas to pay for transactions.
+
 ## Native BTC Deposits
 
 You can deposit BTC directly from a Bitcoin wallet to the Mezo App. Assets are automatically bridged to tBTC and to Mezo Mainnet.

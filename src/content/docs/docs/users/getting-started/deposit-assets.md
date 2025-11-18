@@ -6,11 +6,10 @@ topic: users
 
 You can deposit native Bitcoin or supported ERC-20 tokens (Bitcoin wrappers) to Mezo Mainnet. 
 
-Note that bridging funds is currently a one-way operation.
-
 ## Before you begin
 
 - Check which assets are supported. You can confirm the token addresses for these addresses on the [Contracts Reference](/docs/users/resources/contracts-reference#mainnet-asset-token-contracts) page.
+- All transactions on Mezo Mainnet are paid using native BTC or tBTC deposits. Before using the network, it's recommended to fund your account with BTC or tBTC to ensure you have gas to pay for transactions.
 
 ## Deposit your assets
 
