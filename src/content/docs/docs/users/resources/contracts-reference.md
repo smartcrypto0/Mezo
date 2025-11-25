@@ -49,6 +49,16 @@ For more information about NTT, see the [official Wormhole documentation](https:
 - Ntt manager: [0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E](https://etherscan.io/address/0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E)
 - Wormhole Transceiver: [0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E](https://etherscan.io/address/0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E)
 
+
+### Keep Tabs on your Loan with MUSD Monitor
+For advanced monitoring, you can use [mezotools.cc](https://mezotools.cc).
+
+This tool allows you to:
+- Check real-time Trove health and Collateral Ratios.
+- View recent system-wide redemptions and liquidations.
+- Track BTC and MUSD prices directly from Mezo's on-chain oracles.
+
+
 ## Pool Contracts
 
 | Name | Address |
