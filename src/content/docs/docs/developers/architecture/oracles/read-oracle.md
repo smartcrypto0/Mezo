@@ -124,5 +124,6 @@ Available on both [mainnet](https://explorer.mezo.org/address/0x2880aB155794e717
 | cbBTC/USD | `0x2817d7bfe5c64b8ea956e9a26f573ef64e72e4d7891f2d6af9bcc93f7aff9a97` |
 | USDC/USD | `0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a` |
 | USDT/USD | `0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b` |
+| T/USD | `0x7a072b799215196b0ecb6a58636ec312bce8461dcc33c28c3a046b1e636d121d` |
 
 **Need more price feeds?** Browse all available Pyth [price feed IDs](https://docs.pyth.network/price-feeds/price-feeds#feed-ids) and contact the Mezo team to request additional feeds be enabled onchain.
