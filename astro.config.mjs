@@ -186,6 +186,7 @@ export default defineConfig({
                                     label: 'Overview',
                                     collapsed: true,
                                     items: [
+                                          'docs/users/mezo-earn/overview',
                                           'docs/users/mezo-earn/overview/glossary'
                                     ]
                               },
@@ -193,6 +194,7 @@ export default defineConfig({
                                     label: 'Lock',
                                     collapsed: true,
                                     items: [
+                                          'docs/users/mezo-earn/lock/vebtc',
                                           'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
                                           'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
                                           'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
@@ -202,6 +204,7 @@ export default defineConfig({
                                     label: 'Vote',
                                     collapsed: true,
                                     items: [
+                                          'docs/users/mezo-earn/vote',
                                           'docs/users/mezo-earn/vote/how-to-vote',
                                           'docs/users/mezo-earn/vote/earning-and-managing-your-position',
                                           'docs/users/mezo-earn/vote/claiming-fees-emissions'
@@ -211,6 +214,7 @@ export default defineConfig({
                                     label: 'Pools',
                                     collapsed: true,
                                     items: [
+                                          'docs/users/mezo-earn/pools',
                                           'docs/users/mezo-earn/pools/using-mezo-pools-guide',
                                           'docs/users/mezo-earn/pools/pools-fees',
                                           'docs/users/mezo-earn/pools/pools-links-and-resources',
