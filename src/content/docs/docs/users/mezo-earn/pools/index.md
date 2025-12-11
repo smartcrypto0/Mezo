@@ -19,7 +19,7 @@ Mezo offers two distinct types of pools, optimized for different use cases:
 
 ## Understanding LP Tokens
 
-When you deposit assets into a [Mezo Pool](https://mezo.org/explore/pools), the contract mints and sends you LP (Liquidity Provider) tokens. These are standard ERC20 tokens that quantify your proportional ownership of the pool's total reserves.
+When you deposit assets into a [Mezo Pool](https://mezo.org/explore/pools), the contract mints and sends you LP tokens. These are standard ERC20 tokens that quantify your proportional ownership of the pool's total reserves.
 
 The number of LP tokens you receive is based on your share of the pool. For the very first deposit in a new pool, this amount is calculated as sqrt(x * y), where x and y are the quantities of the two tokens deposited.
 
@@ -36,7 +36,7 @@ The Mezo protocol was designed without relying on traditional financial structur
 * **Autonomous and Permissionless**: Each pool is an open-access smart contract. Any user or application can permissionlessly interact with it by calling functions like swap() to trade or mint() to provide liquidity.
 * **Advanced Capabilities**: Mezo Pool functions as an on-chain TWAP (Time-Weighted Average Price) oracle, providing manipulation-resistant price data for other protocols. They also support flash loans, enabling complex, single-transaction DeFi strategies.
 
-These architectural advantages are the foundation of Mezo's primary mission: to build a robust, circular economy for Bitcoin. By enabling users to take their BTC, use it as collateral (e.g., through Mezo Borrow to mint MUSD), and then deploy both assets into highly efficient liquidity pools, the protocol transforms Bitcoin from a passive store of value into an active, yield-generating instrument. This creates a self-sustaining loop where providing liquidity not only generates returns for the user but also deepens the market for Bitcoin-backed assets, making the entire ecosystem more liquid and useful.
+These architectural advantages are the foundation of Mezo's primary mission: to build a robust, circular economy for Bitcoin. By enabling users to take their BTC, use it as collateral (e.g., through Mezo Borrow to mint MUSD), and then deploy both assets into liquidity pools, the protocol transforms Bitcoin from a passive store of value into an active, yield-generating instrument. This creates a self-sustaining loop where providing liquidity not only generates returns for the user but also deepens the market for Bitcoin-backed assets, making the entire ecosystem more liquid and useful.
 
 ## Getting Started
 

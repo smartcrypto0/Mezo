@@ -4,35 +4,98 @@ description: Overview of Mezo Earn, yield sources, and key concepts
 topic: users
 ---
 
-# What is Mezo Earn?
+Mezo Earn is the economic engine powering the Mezo network. It enables bitcoin holders to earn yield on their BTC while participating in governance decisions that shape how the network allocates resources and rewards.
 
-Mezo Earn is the yield-generating ecosystem within Mezo that enables users to earn passive income through multiple mechanisms.
+By locking BTC into the system, users gain voting power, earn passive income from network activity, and help direct liquidity across the Mezo ecosystem.
 
 [Link to whitepaper]
 
-# Where does yield come from?
+---
 
-Mezo Earn generates yield from three primary sources:
+## Where does yield come from?
 
-1. **Source 1** - [Description]
-2. **Source 2** - [Description]
-3. **Source 3** - [Description]
+Mezo Earn generates yield from real economic activity on the network. There are three primary sources:
 
-# Key Concepts
+### 1. Swap Fees
 
-## veBTC
+When users trade assets on Mezo's DEX, each swap incurs a fee. These fees accumulate in liquidity pools and are distributed to participants who vote for those pools.
 
-[Description of veBTC]
+### 2. MUSD Lending Revenue
 
-## veMEZO
+Mezo allows users to borrow MUSD (a bitcoin-backed stablecoin) against their BTC collateral. The interest, origination fees, and refinancing fees generated from these loans flow back into the system and are distributed to active participants.
 
-[Description of veMEZO]
+### 3. Bridging & Transaction Fees
 
-## Epochs
+Moving assets onto Mezo, executing transactions, and other on-chain activity all generate fees. These fees are distributed directly to veBTC holders as passive yield—**no voting required**.
 
-[Description of epochs]
+---
 
-## Gauges
+## Key Concepts
 
-[Description of gauges]
+### veBTC
 
+veBTC (vote-escrowed BTC) is the foundation of Mezo Earn. When you lock your BTC, you receive a veBTC NFT that represents your position.
+
+**How it works:**
+
+- Lock BTC for up to 28 days to receive veBTC
+- Your voting weight starts at maximum and decays linearly over the lock period
+- Longer locks = more voting power
+- veBTC NFTs can be merged (to combine positions) or split (to divide them)
+- You can extend your lock at any time to maintain voting power
+
+**Example:** If you lock 1 BTC for 28 days, you start with a voting weight of 1. After 14 days, your weight has decayed to 0.5. Extending the lock resets your weight to the maximum.
+
+### Epochs
+
+Mezo Earn operates on a 7-day cycle called an **epoch**. Each epoch begins on Thursday at 00:00 UTC.
+
+**What happens each epoch:**
+
+- Votes cast in epoch N determine reward distribution (mats) for epoch N+1
+- Fees generated in epoch N are distributed based on votes cast in epoch N
+- Lock durations align to epoch boundaries (always rounded down to full weeks)
+
+This structure lets voters observe fee generation before deciding where to allocate their votes for the following period.
+
+### Gauges
+
+Gauges are smart contracts that receive and distribute economic value based on votes. Think of them as destinations for your voting power—the more votes a gauge receives, the larger its share of rewards distributions (mats).
+
+**Types of gauges:**
+
+| Gauge Type | What It Does |
+|------------|--------------|
+| **Staking Gauges** | Associated with DEX liquidity pools or the MUSD savings vault. Stakers earn rewards; voters earn fees. |
+| **Validator Gauges** | Direct rewards to network validators who secure the chain. |
+| **Ecosystem Gauges** | Support partner protocols and ecosystem development. |
+
+When you vote for a gauge, you're signaling that you want that pool, validator, or initiative to receive a larger share of the network's rewards.
+
+---
+
+## How Rewards Flow
+
+**Passive yield:** All veBTC holders receive a share of bridging and chain fees proportional to their voting weight—no action required beyond locking.
+
+**Active yield:** By voting for specific gauges, you can earn additional fees and incentives from the pools and protocols you support.
+
+---
+
+## Getting Started
+
+1. **Lock BTC** → Receive a veBTC NFT
+2. **Vote for gauges** → Direct where rewards flow
+3. **Claim rewards** → Collect fees and incentives each epoch
+4. **Extend or manage locks** → Maintain your voting power over time
+
+---
+
+## Quick Reference
+
+| Parameter | Value |
+|-----------|-------|
+| Epoch duration | 7 days |
+| Max BTC lock | 28 days |
+| Min BTC lock | 1 day |
+| Epoch start | Thursday 00:00 UTC |

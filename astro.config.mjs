@@ -199,10 +199,9 @@ export default defineConfig({
                                                 collapsed: true,
                                                 items: [
                                                       'docs/users/mezo-earn/lock/vebtc',
-                                                      'docs/users/mezo-earn/lock/vebtc/what-is-vebtc',
                                                       'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
-                                                      'docs/users/mezo-earn/lock/vebtc/lock-duration-weight-decay',
-                                                      'docs/users/mezo-earn/lock/vebtc/earning-passive-yield'
+                                                      'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
+                                                      'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
                                                 ]
                                           }
                                     ]
@@ -212,9 +211,8 @@ export default defineConfig({
                                     collapsed: true,
                                     items: [
                                           'docs/users/mezo-earn/vote',
-                                          'docs/users/mezo-earn/vote/how-voting-works',
-                                          'docs/users/mezo-earn/vote/epoch-timing',
-                                          'docs/users/mezo-earn/vote/gauge-types',
+                                          'docs/users/mezo-earn/vote/how-to-vote',
+                                          'docs/users/mezo-earn/vote/earning-and-managing-your-position',
                                           'docs/users/mezo-earn/vote/claiming-fees-emissions'
                                     ]
                               },
@@ -223,10 +221,9 @@ export default defineConfig({
                                     collapsed: true,
                                     items: [
                                           'docs/users/mezo-earn/pools',
-                                          'docs/users/mezo-earn/pools/liquidity-provision-overview',
-                                          'docs/users/mezo-earn/pools/available-pools',
-                                          'docs/users/mezo-earn/pools/staking-lp-tokens',
-                                          'docs/users/mezo-earn/pools/earning-from-pools',
+                                          'docs/users/mezo-earn/pools/using-mezo-pools-guide',
+                                          'docs/users/mezo-earn/pools/pools-fees',
+                                          'docs/users/mezo-earn/pools/pools-links-and-resources',
                                           'docs/users/features/mezo-swap'
                                     ]
                               },
@@ -234,9 +231,7 @@ export default defineConfig({
                                     label: 'Vaults',
                                     collapsed: true,
                                     items: [
-                                          'docs/users/mezo-earn/vaults',
-                                          'docs/users/mezo-earn/vaults/musd-savings-rate',
-                                          'docs/users/mezo-earn/vaults/other-vault-strategies'
+                                          'docs/users/mezo-earn/vaults'
                                     ]
                               }
                         ]
