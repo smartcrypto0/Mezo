@@ -179,19 +179,66 @@ export default defineConfig({
                         ]
                   },
                   {
-                        label: 'Features',
+                        label: 'Mezo Earn',
                         collapsed: true,
                         items: [
                               {
-                                    label: 'Mezo Pools',
+                                    label: 'Overview',
                                     collapsed: true,
                                     items: [
-                                          'docs/users/features/mezo-pools/mezo-pools',
-                                          'docs/users/features/mezo-pools/fees',
-                                          'docs/users/features/mezo-pools/pools-links-and-resources'
+                                          'docs/users/mezo-earn/overview',
+                                          'docs/users/mezo-earn/overview/glossary'
                                     ]
                               },
-                              'docs/users/features/mezo-swap'
+                              {
+                                    label: 'Lock',
+                                    collapsed: true,
+                                    items: [
+                                          {
+                                                label: 'veBTC',
+                                                collapsed: true,
+                                                items: [
+                                                      'docs/users/mezo-earn/lock/vebtc',
+                                                      'docs/users/mezo-earn/lock/vebtc/what-is-vebtc',
+                                                      'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
+                                                      'docs/users/mezo-earn/lock/vebtc/lock-duration-weight-decay',
+                                                      'docs/users/mezo-earn/lock/vebtc/earning-passive-yield'
+                                                ]
+                                          }
+                                    ]
+                              },
+                              {
+                                    label: 'Vote',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/vote',
+                                          'docs/users/mezo-earn/vote/how-voting-works',
+                                          'docs/users/mezo-earn/vote/epoch-timing',
+                                          'docs/users/mezo-earn/vote/gauge-types',
+                                          'docs/users/mezo-earn/vote/claiming-fees-emissions'
+                                    ]
+                              },
+                              {
+                                    label: 'Pools',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/pools',
+                                          'docs/users/mezo-earn/pools/liquidity-provision-overview',
+                                          'docs/users/mezo-earn/pools/available-pools',
+                                          'docs/users/mezo-earn/pools/staking-lp-tokens',
+                                          'docs/users/mezo-earn/pools/earning-from-pools',
+                                          'docs/users/features/mezo-swap'
+                                    ]
+                              },
+                              {
+                                    label: 'Vaults',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/vaults',
+                                          'docs/users/mezo-earn/vaults/musd-savings-rate',
+                                          'docs/users/mezo-earn/vaults/other-vault-strategies'
+                                    ]
+                              }
                         ]
                   },
                   {
