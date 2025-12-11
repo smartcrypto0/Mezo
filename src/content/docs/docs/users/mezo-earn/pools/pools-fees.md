@@ -1,13 +1,12 @@
 ---
-title: Mezo Pool Fees
-description: Fee model for swaps and liquidity providers in Mezo Pools
+title: Pools Fees
+description: Mezo Pools Fee Model
 topic: users
 ---
 
-
 ## Fees
-[Mezo Pools](https://mezo.org/explore/pools) employs a dynamic fee model optimized for different trading pairs:
 
+[Mezo Pools](https://mezo.org/explore/pools) employs a dynamic fee model optimized for different trading pairs:
 
 ### Standard Fee Rates
 
@@ -16,7 +15,7 @@ topic: users
 
 ### Custom Pool Fees
 
-Some pools may have custom fee rates set by governance, ranging from 0% to 3%. These special rates are typically applied to:
+Some pools may have custom fee rates set by governance. These special rates are typically applied to:
 
 - **Strategic partnership pools**
 - **Promotional pools during launch periods**
@@ -30,7 +29,6 @@ When a trader executes a swap through a Mezo Pool:
    - Example: Swapping 1,000 MUSD in a stable pool deducts 0.5 MUSD as a fee.
 2. **Immediate Segregation**: Collected fees are instantly transferred to a dedicated PoolFees contract.
    - Fees never mix with the pool's core liquidity reserves
-   - This protects LPs from any risk to their principal
 
 ### What tokens are fees paid in?
 
@@ -42,9 +40,9 @@ Fees are always collected in the token being sold (input token) during each swap
 
 Example: In a MUSD/tBTC pool:
 
-- Trader swaps MUSD → tBTC: MUSD collected as fees (for all LPs)
-- Trader swaps tBTC → MUSD: BTC collected as fees (for all LPs)
-- As an LP, you earn a share of both the MUSD and tBTC fees
+- Trader swaps MUSD → BTC: MUSD collected as fees (for all LPs)
+- Trader swaps BTC → MUSD: BTC collected as fees (for all LPs)
+- As an LP, you earn a share of both the MUSD and BTC fees
 
 ### Claiming Your Fees
 
@@ -71,24 +69,13 @@ Example: In a MUSD/tBTC pool:
 - **Your share**: 2% of the pool
 - **Your daily fees**: ~$50
 
----
+### FAQ
 
-## FAQ
-
-### What currency/token are fees paid in?
-
+#### What currency/token are fees paid in?
 Fees are paid in the input token of each swap (the token being sold). In a USDC/MEZO pool, swaps from USDC → MEZO generate USDC fees, while swaps from MEZO → USDC generate MEZO fees. As an LP, you accumulate and claim fees in both tokens.
 
-### Can I lose my accumulated fees?
-
+#### Can I lose my accumulated fees?
 No. Fees are stored separately in PoolFees contracts and can only be claimed by LP token holders.
 
-### Do fees compound automatically?
-
+#### Do fees compound automatically?
 No. You must claim and redeposit fees manually to achieve compounding.
-
-### How often should I claim fees?
-
-Many LPs claim weekly or monthly.
-
-

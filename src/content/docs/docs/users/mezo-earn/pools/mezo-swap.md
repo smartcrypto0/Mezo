@@ -5,7 +5,7 @@ topic: users
 ---
 # Overview
 
-[Mezo Swap](https://mezo.org/overview?modal=swap) is the integrated decentralized exchange (DEX) of the Mezo ecosystem. It allows users to seamlessly trade between assets like BTC, MUSD, and USDC, without intermediaries, order books, or leaving the BitcoinFi economy. The feature is powered by [Mezo Pools](https://mezo.org/docs/users/features/mezo-pools), enabling instant, decentralized token swaps using smart contract-based liquidity reserves.
+[Mezo Swap](https://mezo.org/overview?modal=swap) is the integrated decentralized exchange (DEX) of the Mezo ecosystem. It allows users to seamlessly trade between assets like BTC, MUSD, and USDC, without intermediaries, order books, or leaving the BitcoinFi economy. The feature is powered by [Mezo Pools](/docs/users/mezo-earn/pools), enabling instant, decentralized token swaps using smart contract-based liquidity reserves.
 
 ## Key Features
 
@@ -48,7 +48,7 @@ When using Mezo Swap, you can set a maximum slippage tolerance (default: 0.5% fo
 
 If market conditions change beyond your tolerance, the transaction will revert to protect you from unfavorable trades. Large trades will experience more slippage due to their price impact on the pool.
 
-To view the total available liquidity, head to [Mezo Pools](https://mezo.org/explore/pools) where you’ll find all pools with associated stats, including total liquidity (TVL).
+To view the total available liquidity, head to [Mezo Pools](https://mezo.org/explore/pools) where you'll find all pools with associated stats, including total liquidity (TVL).
 
 ## Fees
 
@@ -58,3 +58,4 @@ To view the total available liquidity, head to [Mezo Pools](https://mezo.org/exp
 When you preview a swap in the Mezo app, you will see the associated fees, slippage, network costs, and swap rate.
 
 ![Swap Example](/docs/images/mainnet/Swap-MUSD-to-BTC.png)
+

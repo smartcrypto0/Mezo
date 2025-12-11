@@ -1,0 +1,69 @@
+---
+title: How to lock BTC
+description: Step-by-step guide to locking BTC
+topic: users
+---
+
+Locking BTC gives you a veBTC NFT, which grants voting power, protocol fees, and governance rights. See the [veBTC Overview](/docs/users/mezo-earn/lock/vebtc) for details on what you earn.
+
+## Prerequisites
+
+Before locking BTC, ensure you have:
+
+- BTC deposited on Mezo
+- A connected wallet
+- Sufficient BTC for gas fees
+
+See the [Getting Started](/docs/users/getting-started/deposit-assets) section for guidance.
+
+---
+
+## Navigate to Lock
+
+1. Open the Mezo app
+2. Click **Lock** in the left sidebar (under "Earn")
+3. You'll see your eligible assets
+
+---
+
+## Initiate Lock
+
+Find the BTC asset card showing your available balance and click **Lock**. A lock configuration modal appears where you'll configure your position.
+
+**Amount:** Enter the amount of BTC you want to lock. You can lock any amount up to your available balance.
+
+**Duration:** Select your lock duration from 1 to 28 days. Longer locks maintain higher voting power for longer periods. The interface shows your estimated initial veBTC voting power, which represents your weight at the start of the lock.
+
+> **Note:** Lock durations are aligned to epoch boundaries and rounded down to the nearest full week. A max lock created mid-epoch will result in an effective duration of 21–28 days. See [Epochs](/docs/users/mezo-earn/lock/vebtc#epochs) for details.
+
+---
+
+## Confirm Transaction
+
+Review your lock details:
+
+- BTC amount
+- Lock duration
+- Initial veBTC weight
+- Lock expiration date
+
+Click **Confirm Lock**, approve the transaction in your wallet, and wait for blockchain confirmation.
+
+---
+
+## View Your Position
+
+After confirmation, view your lock details under the Lock page, including:
+
+- Current voting power (decays over time)
+- Lock expiration date
+- Options to extend your lock
+
+---
+
+## Next Steps
+
+Once you have veBTC, you can:
+
+- [Vote on gauges](/docs/users/mezo-earn/vote) to earn fees and direct mats emissions
+- [Extend your lock](/docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards) to maintain voting power
