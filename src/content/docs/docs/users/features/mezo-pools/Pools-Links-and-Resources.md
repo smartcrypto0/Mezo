@@ -4,7 +4,7 @@ description: See all active and old Mezo pools across Mezo Network and Ethereum
 topic: users
 ---
 
-## Active Pools on Mezo Tigris
+## Active Pools on Mezo Earn
 
 | Asset Pair                      | Address                                      |
 | ------------------------------- | -------------------------------------------- |
