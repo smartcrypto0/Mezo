@@ -13,6 +13,8 @@ You can deposit and withdraw assets to and from Mezo using the Mezo Native Bridg
 
 The Mezo app includes a native bridge where you can deposit several assets to Mezo Mainnet. See the [Deposit Assets](/docs/users/getting-started/deposit-assets) guide to learn how the process works, or go directly to [mezo.org/overview](https://mezo.org/overview), sign in, and click **Deposit Bitcoin** to get started.
 
+**Note:** All transactions on Mezo Mainnet are paid using native BTC or tBTC deposits. Before using the network, it's recommended to fund your account with BTC or tBTC to ensure you have gas to pay for transactions.
+
 ## Native BTC Deposits
 
 You can deposit BTC directly from a Bitcoin wallet to the Mezo App. Assets are automatically bridged to tBTC and to Mezo Mainnet.
@@ -31,9 +33,9 @@ For BTC wallets, you can sign in with UniSat, OKX, and Xverse. Use the following
 
 ## Moving Your Assets from Mezo to Ethereum or Bitcoin
 
-*Last updated: November 4, 2025*
+*Last updated: November 14, 2025*
 
-This guide explains how to bridge your assets out of Mezo back to the Ethereum or Bitcoin networks. We'll cover what you can bridge, how to do it, the bridges used, fees involved, and what to expect during the process. Currently, the minimum required amount to bridge is .01 for BTC assets (whether EVM or Bitcoin), 1,000 for USD tokens (USDC, USDT), and 75,000 for T tokens. See more details [here.](#bridging-to-ethereum)
+This guide explains how to bridge your assets out of Mezo back to the Ethereum or Bitcoin networks. We'll cover what you can bridge, how to do it, the bridges used, fees involved, and what to expect during the process. Currently, the minimum required amount to bridge is 0.01 BTC for BTC assets on native Bitcoin, 0.0002 BTC for BTC assets on EVM, 20 for USD tokens (USDC, USDT), and 1,500 for T tokens. See more details [here.](#bridging-to-ethereum)
 
 ### From Mezo to Other Networks
 
@@ -94,30 +96,26 @@ When bridging out, you pay fees for the bridging service and network operations.
 
 ### Fee Structure (v2)
 
-Withdrawals from Mezo include two fees:
+Withdrawals from Mezo include a simple fee:
 
-- Percentage fee — a small percent of the withdrawal amount.
-- Flat fee — a fixed amount equal to about $3 USD in that token’s value.
-
-Both apply together.
+- Flat fee — a fixed amount equal to about $3 USD in that token's value.
 
 #### Bridging to Ethereum
 
 Minimum Withdrawal Amounts
 
-- BTC-based tokens (tBTC): 0.01
-- USD-based tokens (mUSDC, mUSDT): 1,000
-- mT tokens: 75,000
+- BTC-based tokens (tBTC): 0.0002
+- USD-based tokens (mUSDC, mUSDT): 20
+- mT tokens: 1,500
 
 Fees
 
-- Percentage Fee: 0.10%
 - Flat Fee: ≈ $3 USD (per token equivalent)
 - Gas Fee: Paid in BTC, varies with network conditions
 
 Example:
 
-Withdrawing 1,000 USDC → 0.10% = 1 USDC + $3 flat ≈ 4 USDC total → receive ~996 USDC.
+Withdrawing 1,000 USDC → $3 flat fee → receive ~997 USDC.
 
 #### Bridging to Bitcoin
 
@@ -126,13 +124,13 @@ Minimum Withdrawal Amount: 0.01 BTC
 Fees
 
 - Gas Fee: Paid in BTC, varies
-- Withdrawal Fee: 0.10% + ≈ $3 flat
+- Withdrawal Fee: ≈ $3 flat
 - tBTC Treasury Fee: 0.2%
 - tBTC Redemption Fee: up to 0.001 BTC (usually < $1)
 
 Example:
 
-Withdrawing 1 BTC → 0.001 BTC (0.10%) + 0.000025 BTC (~$3) + 0.001998 BTC (Treasury) → receive ~0.997 BTC.
+Withdrawing 1 BTC → 0.000025 BTC (~$3 flat) + 0.001998 BTC (Treasury) → receive ~0.998 BTC.
 
 ## What Happens After You Submit
 

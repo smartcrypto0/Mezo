@@ -34,7 +34,7 @@ The mint-and-redeem model helps maintain the \$1 peg in volatile environments. F
 * If MUSD is trading at a discount of \$0.99, arbitragers can buy MUSD on the market and redeem it for \$1 in underlying BTC. Users with a loan position can do this for no additional cost. Those without a loan position must pay a 0.75% redemption fee, which remains profitable until MUSD reaches a price of \$0.995.
 * If MUSD is trading at a premium of \$1.05, arbitragers can mint MUSD by supplying BTC to the protocol and sell the minted MUSD on the market for a profit; selling into another dollar-equivalent stablecoin like USDT or USDC. This scenario remains profitable until MUSD returns to a price of \$1.005.
 
-![](/docs/images/musd/musd-redemption-and-peg-process.avif)
+![](/docs/images/musd/musd-redemption-and-peg-process.png)
 
 To ensure the peg is maintained during market volatility, sufficient BTC collateral must always back the outstanding MUSD. Outstanding loan positions must maintain a collateral ratio of above 110%, and the system has built-in liquidation mechanisms and stability pools to enforce this. These risk mitigations ensure that even with high LTVs, the system remains secure and resilient against market volatility.
 

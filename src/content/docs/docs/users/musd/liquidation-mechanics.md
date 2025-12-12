@@ -113,6 +113,14 @@ During Recovery Mode:
 ### To Reduce the Likelihood of Redemption:
 - Keep a high collateral ratio. The higher your ratio is compared to others, the less likely you are to be chosen first for redemptions. A ratio above 150% is a good target.
 
+### Keep Tabs on your Loan with MUSD Monitor
+For advanced monitoring, you can use [mezotools.cc](https://mezotools.cc).
+
+This tool allows you to:
+- Check real-time Trove health and Collateral Ratios.
+- View recent system-wide redemptions and liquidations.
+- Track BTC and MUSD prices directly from Mezo's on-chain oracles.
+
 ---
 
 ## Key Definitions

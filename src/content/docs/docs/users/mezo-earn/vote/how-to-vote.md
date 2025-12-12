@@ -1,0 +1,38 @@
+---
+title: How to Vote
+description: Step-by-step guide to voting on gauges with your veBTC
+topic: users
+---
+
+Voting allows you to direct the flow of emissions and, in return, earn a proportional share of the trading fees and incentives from the gauges you allocate to. This guide walks you through the complete process.
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A compatible wallet connected to Mezo (MetaMask, Rabby, or WalletConnect-supported wallets)
+- An active veBTC position
+- Sufficient BTC for gas fees
+
+See [How to Lock BTC](/docs/users/mezo-earn/lock/vebtc/how-to-lock-btc) if you don't have a lock already.
+
+---
+
+## Cast Your Vote
+
+To earn rewards, you must actively allocate your voting power to specific gauges every epoch (7 days).
+
+1. Visit the **Vote** tab to view your active veBTC positions. Click **Allocate** next to the veBTC position you want to vote with.
+
+2. For the gauges you want to support, enter the percentage of your voting power you want to allocate to each. For example, you might allocate 50% to the BTC/MUSD pool, 30% to the MUSD/mUSDC pool, and 20% to the mcbBTC/BTC pool.
+
+3. Review your allocation, and when you're ready, click **Submit Votes** in the right sidebar. Sign the transaction, and once complete, your vote is registered for the current epoch.
+
+> **Remember:** Votes don't carry over between epochs. You must vote each week to continue earning fees and incentives.
+
+---
+
+## Next Steps
+
+- [Managing Locks and Collecting Rewards](/docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards) — Claim your earnings and extend your lock
+- [Voting Overview](/docs/users/mezo-earn/vote) — Learn more about how voting works and what you earn

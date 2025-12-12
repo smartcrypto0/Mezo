@@ -188,3 +188,4 @@ For production deployments, use the following Mainnet details. It is recommended
 | Boar | `https://rpc-http.mezo.boar.network` | `wss://rpc-ws.mezo.boar.network` |
 | Imperator | `https://rpc_evm-mezo.imperator.co` | `wss://ws_evm-mezo.imperator.co` |
 | Validation Cloud | `https://mainnet.mezo.public.validationcloud.io` | `wss://mainnet.mezo.public.validationcloud.io` |
+| dRPC NodeCloud | `https://mezo.drpc.org` | `wss://mezo.drpc.org` |
