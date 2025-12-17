@@ -4,7 +4,7 @@ description: List of available pools for liquidity provision
 topic: users
 ---
 
-## Active Pools on Mezo Tigris
+## Active Pools on Mezo Earn
 
 | Asset Pair                      | Address                                      |
 | ------------------------------- | -------------------------------------------- |
