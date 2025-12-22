@@ -28,7 +28,10 @@ To earn rewards, you must actively allocate your voting power to specific gauges
 
 3. Review your allocation, and when you're ready, click **Submit Votes** in the right sidebar. Sign the transaction, and once complete, your vote is registered for the current epoch.
 
-> **Remember:** Votes don't carry over between epochs. You must vote each week to continue earning fees and incentives.
+:::note[Remember]
+Votes don't carry over between epochs. You must vote each week to continue earning fees and incentives.
+:::
+
 
 ---
 

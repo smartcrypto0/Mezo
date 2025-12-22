@@ -34,7 +34,10 @@ Find the BTC asset card showing your available balance and click **Lock**. A loc
 
 **Duration:** Select your lock duration from 1 to 28 days. Longer locks maintain higher voting power for longer periods. The interface shows your estimated initial veBTC voting power, which represents your weight at the start of the lock.
 
-> **Note:** Lock durations are aligned to epoch boundaries and rounded down to the nearest full week. A max lock created mid-epoch will result in an effective duration of 21–28 days. See [Epochs](/docs/users/mezo-earn/lock/vebtc#epochs) for details.
+:::note[Note]
+Lock durations are aligned to epoch boundaries and rounded down to the nearest full week. A max lock created mid-epoch will result in an effective duration of 21–28 days. See [Epochs](/docs/users/mezo-earn/lock/vebtc#epochs) for details.
+:::
+
 
 ---
 

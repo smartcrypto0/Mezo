@@ -38,10 +38,11 @@ The Rewards Hub displays:
 4. Click **Claim** for the section with pending rewards
 5. Your mats balance updates after the transaction confirms
 
-**Important**:
-* Pool rewards expire after 7 days and cannot be recovered
-* Vault rewards never expire
-* Rewards within each section are batched into a single claim transaction
+:::note[Important]
+- Pool rewards expire after 7 days and cannot be recovered
+- Vault rewards never expire
+- Rewards within each section are batched into a single claim transaction
+:::
 
 ## Leaderboard
 
@@ -79,4 +80,7 @@ Total mats earned across all activities on Mezo.
 
 ---
 
-***Disclaimer:** mats have no monetary value and cannot be sold or redeemed for money. Mezo reserves the right to update mats reward calculations and usage within the Mezo ecosystem at any time.*
+:::caution[Disclaimer]
+mats have no monetary value and cannot be sold or redeemed for money. Mezo reserves the right to update mats reward calculations and usage within the Mezo ecosystem at any time.
+:::
+

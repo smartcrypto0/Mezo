@@ -13,7 +13,10 @@ You can deposit and withdraw assets to and from Mezo using the Mezo Native Bridg
 
 The Mezo app includes a native bridge where you can deposit several assets to Mezo Mainnet. See the [Deposit Assets](/docs/users/getting-started/deposit-assets) guide to learn how the process works, or go directly to [mezo.org/overview](https://mezo.org/overview), sign in, and click **Deposit Bitcoin** to get started.
 
-**Note:** All transactions on Mezo Mainnet are paid using native BTC or tBTC deposits. Before using the network, it's recommended to fund your account with BTC or tBTC to ensure you have gas to pay for transactions.
+:::note[Note]
+All transactions on Mezo Mainnet are paid using native BTC or tBTC deposits. Before using the network, it's recommended to fund your account with BTC or tBTC to ensure you have gas to pay for transactions.
+:::
+
 
 ## Native BTC Deposits
 
@@ -47,12 +50,13 @@ This guide explains how to bridge your assets out of Mezo back to the Ethereum o
 | **MUSD** | Ethereum | MUSD | Bridge as little as 1 MUSD from Mezo to Ethereum. Bridge powered by Wormhole. |
 | **mERC-20 tokens** | Bitcoin | Not available | ERC-20 tokens can't be sent to Bitcoin |
 
-**Key Points:**
+:::note[Key Points]
 - You can only bridge to Ethereum or Bitcoin mainnet.
 - BTC can go to Ethereum (as tBTC) or to Bitcoin (as native BTC).
 - Tokens like USDC or T (represented as m-tokens on Mezo) can only go back to Ethereum.
 - Bitcoin Taproot addresses (starting with `bc1p`) aren't supported yet.
 - Layer 2 networks and other chains aren't available as destinations.
+:::
 
 ## How to Bridge Out
 
@@ -177,7 +181,10 @@ Before confirming any bridge transaction:
 -   ✅ **Remember that bridge-outs cannot be cancelled** once submitted.
 -   ✅ **Ensure your destination address format is supported.**
 
-⚠️ **Warning:** If you send funds to an incorrect but validly formatted address, your funds will be permanently lost. Always copy-paste addresses and verify them carefully.
+:::danger[Warning]
+If you send funds to an incorrect but validly formatted address, your funds will be permanently lost. Always copy-paste addresses and verify them carefully.
+:::
+
 
 ### Troubleshooting Common Issues
 

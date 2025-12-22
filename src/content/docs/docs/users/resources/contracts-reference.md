@@ -27,7 +27,10 @@ Some of the token contracts are `TransparentUpgradableProxy` contracts. Add the 
 | BTC | tBTC | [0x7b7C000000000000000000000000000000000000](https://explorer.mezo.org/address/0x7b7C000000000000000000000000000000000000) | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88) |
 | aMUSD | aMUSD | Not yet available on Mezo* | [0x52317a47585A6ACDfbD7a29B494c3E2baAE96aBc](https://etherscan.io/address/0x52317a47585A6ACDfbD7a29B494c3E2baAE96aBc) |
 
-_*aMUSD is the receipt token users get for depositing in the Morpho Alpha MUSD Core Vault. It is currently only available on Ethereum._
+:::note
+aMUSD is the receipt token users get for depositing in the Morpho Alpha MUSD Core Vault. It is currently only available on Ethereum.
+:::
+
 
 
 ### MUSD tokens

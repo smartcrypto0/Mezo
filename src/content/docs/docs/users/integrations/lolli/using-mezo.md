@@ -14,13 +14,13 @@ Your sats sit in your wallet under your complete control.
 
 Access dollars without selling your BTC. Keep your Bitcoin exposure while getting liquidity.
 
-**Key details:**
-
-* Fixed interest rates starting at 1% APR
-* No repayment deadline—close when you want
-* No credit checks, everything onchain
-* Minimum $2,000 MUSD borrow amount
-* You must maintain at least 110% collateralization (to borrow $1,000 MUSD, you need $1,100 worth of BTC)
+:::note[Key details]
+- Fixed interest rates starting at 1% APR
+- No repayment deadline—close when you want
+- No credit checks, everything onchain
+- Minimum $2,000 MUSD borrow amount
+- You must maintain at least 110% collateralization (to borrow $1,000 MUSD, you need $1,100 worth of BTC)
+:::
 
 ### How to Borrow:
 
@@ -91,4 +91,7 @@ Deposit your MUSD to earn yield. This is the easiest way to make your stablecoin
 5. Confirm the transaction
 6. You're now earning automatically
 
-**Important:** Check if your chosen vault has a lock period. Make sure you won't need those funds during that time.
+:::note[Important]
+Check if your chosen vault has a lock period. Make sure you won't need those funds during that time.
+:::
+

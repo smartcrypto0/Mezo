@@ -11,7 +11,10 @@ Minimum withdrawal: 0.0003 BTC (30,000 sats)
 ### From Mezo to Bitcoin Layer 1:
 Minimum withdrawal: 0.01 BTC (1,000,000 sats)
 
-Important: Until you accumulate 1M sats in your Mezo wallet, you cannot withdraw to Bitcoin Layer 1. Your funds remain accessible within the Mezo ecosystem for spending, earning yield, or borrowing.
+:::note[Important]
+Until you accumulate 1M sats in your Mezo wallet, you cannot withdraw to Bitcoin Layer 1. Your funds remain accessible within the Mezo ecosystem for spending, earning yield, or borrowing.
+:::
+
 
 ## Step 1: Start Your Withdrawal
 
@@ -26,10 +29,12 @@ Important: Until you accumulate 1M sats in your Mezo wallet, you cannot withdraw
 
 1. Click "Create new wallet" and you'll be directed to a wallet provider (we recommend Taho for beginners)
 2. Follow the setup instructions
-3. **CRITICAL:** You'll receive a recovery phrase (12-24 words)
-  * Write these words down in order
-  * Store this paper somewhere safe (not on your computer)
-  * Never take a screenshot or share it with anyone
+:::danger[CRITICAL: Protect Your Recovery Phrase]
+You'll receive a recovery phrase (12-24 words).
+- Write these words down in order
+- Store this paper somewhere safe (not on your computer)
+- Never take a screenshot or share it with anyone
+:::
 4. Complete wallet setup
 
 **If you already have a wallet:**
