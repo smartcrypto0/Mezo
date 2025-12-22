@@ -53,6 +53,11 @@ topic: developers
       <td><a href="https://chorus.one/">https://chorus.one/</a></td>
     </tr>
     <tr>
+      <td>ChainDAQ</td>
+      <td><span data-option="kho2A8rahGbq">Running</span></td>
+      <td><a href="https://www.chaindaq.com/">https://www.chaindaq.com/</a></td>
+    </tr>
+    <tr>
       <td>Encode</td>
       <td><span data-option="kho2A8rahGbq">Running</span></td>
       <td><a href="https://www.encode.club/">https://www.encode.club/</a></td>
@@ -65,11 +70,6 @@ topic: developers
           >https://enigma-validator.com/</a
         >
       </td>
-    </tr>
-    <tr>
-      <td>Everstake</td>
-      <td><span data-option="kho2A8rahGbq">Running</span></td>
-      <td><a href="https://everstake.one/">https://everstake.one/</a></td>
     </tr>
     <tr>
       <td>Flowdesk</td>

@@ -1,22 +1,24 @@
 ---
-title: Tigris DEX Development Guide
+title: Mezo Earn Development Guide
 description: >-
-  Comprehensive guide for building on Tigris, the Mezo gauge system and DEX
+  Comprehensive guide for building on Mezo Earn, the Mezo gauge system and DEX
   inspired by Solidly.
 topic: developers
 ---
-Tigris is the smart contract system powering the Mezo gauge system and decentralized exchange (DEX), inspired by Solidly. This guide will help you understand how to build and interact with Tigris contracts.
+Mezo Earn is the smart contract system powering the Mezo gauge system and decentralized exchange (DEX). This guide will help you understand how to build and interact with Mezo Earn contracts.
+
+📄 **[Download the Mezo Earn Whitepaper (PDF)](/docs/Mezo_Earn_Whitepaper.pdf)** — For a comprehensive overview of the economic incentive framework, dual-token model, and tokenomics.
 
 ## Overview
 
-Tigris provides:
+Mezo Earn provides:
 - **Decentralized Exchange (DEX)**: Automated market maker for token swaps
 - **Gauge System**: Voting and reward distribution mechanism
 - **Solidly-inspired Architecture**: Efficient ve-tokenomics and liquidity management
 
 ## Repository Structure
 
-The [Tigris repository](https://github.com/mezo-org/tigris.git) contains:
+The [Mezo Earn repository](https://github.com/mezo-org/tigris.git) contains:
 
 - **[solidity/](https://github.com/mezo-org/tigris/tree/main/solidity)**: Smart contracts written in Solidity
 - **[dapp/](https://github.com/mezo-org/tigris/tree/main/dapp)**: Frontend application for interacting with contracts
@@ -68,7 +70,7 @@ pre-commit run --files <path-to-file>
 
 ### Contract Architecture
 
-Tigris contracts are organized in the [`solidity/`](https://github.com/mezo-org/tigris/tree/main/solidity) directory. Key components include:
+Mezo Earn contracts are organized in the [`solidity/`](https://github.com/mezo-org/tigris/tree/main/solidity) directory. Key components include:
 
 - **Core DEX Contracts**: Automated market maker functionality
 - **Gauge Contracts**: Voting and reward distribution
@@ -108,7 +110,7 @@ pnpm test:gas
 
 ## Frontend Development
 
-The [`dapp/`](https://github.com/mezo-org/tigris/tree/main/dapp) directory contains the frontend application for interacting with Tigris contracts.
+The [`dapp/`](https://github.com/mezo-org/tigris/tree/main/dapp) directory contains the frontend application for interacting with Mezo Earn contracts.
 
 ### Key Features
 
@@ -135,7 +137,7 @@ pnpm preview
 
 ## Integration Guide
 
-### Connecting to Tigris Contracts
+### Connecting to Mezo Earn Contracts
 
 1. **Get Contract Addresses**: Deployed contract addresses for Mezo testnet/mainnet
 2. **ABI Integration**: Import contract ABIs for interaction
@@ -260,13 +262,13 @@ pnpm deploy:testnet
 
 ## Additional Resources
 
-- **[Tigris Repository](https://github.com/mezo-org/tigris.git)** - Main repository
+- **[Mezo Earn Repository](https://github.com/mezo-org/tigris.git)** - Main repository
 - **[Solidly Documentation](https://docs.solidly.com/)** - Solidly protocol documentation
 - **[Mezo Network Documentation](/docs/developers/getting-started/configure-environment)** - Network configuration
 - **[Contract Verification Guide](/docs/developers/contracts-reference)** - Contract verification
 
 :::note
-For detailed architecture, tokenomics, and protocol mechanics, refer to the Tigris repository README and documentation.
+For detailed architecture, tokenomics, and protocol mechanics, refer to the Mezo Earn repository README and documentation.
 :::
 
 ## Support
@@ -275,3 +277,4 @@ For development support:
 - Join the [Mezo Discord](https://discord.com/invite/mezo)
 - Check the [GitHub Issues](https://github.com/mezo-org/tigris/issues)
 - Review the [FAQ](/docs/developers/getting-started/FAQs)
+
