@@ -22,4 +22,4 @@ Track Mezo network activity, MUSD metrics, and token data through these official
 
 Dashboards created and/or maintained by the Mezo community. Reach out in the Discord if you have a dashboard you would like to have added to this page, or create a PR with the addition.
 
-- [MezoTools](https://mezotools.cc/) - Community analytics and tools
+- [MezoTools](https://mezotools.cc/) - Detailed MUSD analytics, system collateralization, individual trove details, MUSD price, redemptions page, and more.
