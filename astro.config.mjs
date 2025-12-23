@@ -248,6 +248,7 @@ export default defineConfig({
 									'docs/users/resources/brand-kit',
 									'docs/users/resources/contracts-reference',
 									'docs/users/resources/faqs',
+									'docs/users/resources/network-stats',
 									'docs/users/resources/release-notes',
 									'docs/users/resources/support'
 								]
@@ -301,8 +302,15 @@ export default defineConfig({
 								label: 'Features',
 								collapsed: true,
 								items: [
-									'docs/developers/features/mezo-pools',
-									'docs/developers/features/mezo-earn/mezo-earn'
+									'docs/developers/features/mezo-pools'
+								]
+							},
+							{
+								label: 'Mezo Earn',
+								collapsed: true,
+								items: [
+									'docs/developers/features/mezo-earn/mezo-earn',
+									'docs/developers/mezo-earn/mezo-earn-for-validators'
 								]
 							},
 							{
@@ -327,6 +335,7 @@ export default defineConfig({
 					}
 				]),
 			],
+
 		}),
 		sitemap(),
 	],
