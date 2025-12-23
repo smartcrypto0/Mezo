@@ -5,6 +5,9 @@ description: >-
   for Mezo chain.
 topic: developers
 ---
+
+import { Steps } from '@astrojs/starlight/components';
+
 Mezod is the reference client implementation for the Mezo chain, a Bitcoin-first blockchain designed for user ownership, reliable bridging with tBTC, BTC for gas, dual staking model, and EVM compatibility.
 
 ## Overview
@@ -39,44 +42,48 @@ The [Mezod repository](https://github.com/mezo-org/mezod.git) contains:
 
 ### Installation
 
+<Steps>
 1. Clone the repository:
-```bash
-git clone https://github.com/mezo-org/mezod.git
-cd mezod
-```
+   ```bash
+   git clone https://github.com/mezo-org/mezod.git
+   cd mezod
+   ```
 
 2. Install Go dependencies:
-```bash
-go mod download
-```
+   ```bash
+   go mod download
+   ```
 
 3. Build the client:
-```bash
-make build
-```
+   ```bash
+   make build
+   ```
+</Steps>
 
 ### Development Environment
 
+<Steps>
 1. **Local Development**:
-```bash
-# Start local development node
-make dev
+   ```bash
+   # Start local development node
+   make dev
 
-# Run tests
-make test
+   # Run tests
+   make test
 
-# Lint code
-make lint
-```
+   # Lint code
+   make lint
+   ```
 
 2. **Docker Development**:
-```bash
-# Build Docker image
-docker build -t mezod .
+   ```bash
+   # Build Docker image
+   docker build -t mezod .
 
-# Run containerized node
-docker run -p 26657:26657 -p 8545:8545 mezod
-```
+   # Run containerized node
+   docker run -p 26657:26657 -p 8545:8545 mezod
+   ```
+</Steps>
 
 ## Chain Configuration
 
@@ -206,10 +213,15 @@ curl -X POST -H "Content-Type: application/json" \
 
 ### Building Contracts
 
+<Steps>
 1. **Write Solidity Contracts**: Use standard Ethereum tooling
+
 2. **Compile**: Use Hardhat, Truffle, or solc directly
+
 3. **Deploy**: Deploy to Mezo testnet/mainnet
+
 4. **Interact**: Use Web3 libraries or direct RPC calls
+</Steps>
 
 ### Testing
 
@@ -281,10 +293,16 @@ curl http://localhost:26660/metrics
 - Recommended: 16GB RAM, 500GB NVMe SSD
 
 **Steps**:
+
+<Steps>
 1. Configure firewall and network ports
+
 2. Set up proper access controls
+
 3. Deploy monitoring stack
+
 4. Start node with production config
+</Steps>
 
 ### Docker Deployment
 

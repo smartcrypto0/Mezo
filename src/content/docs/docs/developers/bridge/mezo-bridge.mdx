@@ -3,39 +3,61 @@ title: Mezo Bridge Overview
 topic: developers
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 Mezo Bridge enables native asset movement between Bitcoin, Ethereum, and Mezo. Below are the primary flows with references to the design RFCs.
 
 ### Bridge In to Mezo
 
 From Bitcoin → Mezo
 
+<Steps>
 1. Lock BTC to the bridge-controlled address with metadata identifying the Mezo recipient.
+
 2. Submit proof and attestation to Mezo Bridge contract.
+
 3. Contract verifies proof.
+
 4. Mint corresponding asset on Mezo to recipient.
+</Steps>
 
 From Ethereum → Mezo
 
+<Steps>
 1. Lock the ERC-20 on Ethereum via the Mezo Bridge contract, emitting an `AssetLocked` event with Mezo recipient.
+
 2. Bridge validators listen for such events.
+
 3. Bridge validators validate events inclusion and validator quorum.
+
 4. Mint corresponding asset on Mezo to recipient.
+</Steps>
 
 ### Bridge Out of Mezo
 
 From Mezo → Bitcoin
 
+<Steps>
 1. Burn the asset on Mezo specifying the Bitcoin recipient address.
+
 2. Submit proof and attestation to Mezo Bridge contract.
+
 3. Contract verifies proof.
+
 4. Upon verification, BTC is released to the recipient address.
+</Steps>
 
 From Mezo → Ethereum
 
+<Steps>
 1. Burn the asset on Mezo specifying the Ethereum recipient.
+
 2. Bridge validators listen for `AssetsUnlocked` events.
+
 3. Bridge validators validate events inclusion and validator quorum.
+
 4. Upon verification, the ERC-20 is released to the recipient.
+</Steps>
 
 ### Architecture
 
@@ -45,13 +67,19 @@ From Mezo → Ethereum
 
 ### Core Flow
 
+<Steps>
 1. User initiates a bridge transfer specifying destination address and amount.
+
 2. Source-chain contract/event is emitted after lock/burn; event includes unique sequence ID and parameters.
+
 3. Offchain client collects confirmations/finality per RFC thresholds and submit proof+attestation to destination contract.
+
 4. Destination verifies:
    - event authenticity
    - validator quorum/signatures
+
 5. On success, destination executes mint/release and records completion.
+</Steps>
 
 ### Contracts
 

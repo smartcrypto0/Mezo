@@ -251,6 +251,13 @@ export default defineConfig({
                               'docs/users/resources/release-notes',
                               'docs/users/resources/support'
                         ]
+                  },
+                  {
+                        label: 'stBTC Staked Bitcoin',
+                        collapsed: true,
+                        items: [
+                              'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
+                        ]
                   }
             ]
       },
@@ -302,7 +309,7 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                               'docs/developers/features/mezo-pools',
-                              'docs/developers/features/tigris/tigris'
+                              'docs/developers/features/mezo-earn/mezo-earn'
                         ]
                   },
                   {
