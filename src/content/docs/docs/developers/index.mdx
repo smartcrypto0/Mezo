@@ -3,18 +3,28 @@ title: Developer Documentation
 topic: developers
 ---
 
-import { LinkButton } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 ## Get Started
 
 Start building on Mezo: environment setup, network details, and your first transaction.
 
-<LinkButton href="/docs/developers/getting-started/">Developer Getting Started Guide</LinkButton>
+<CardGrid>
+  <LinkCard
+    title="Developer Getting Started Guide"
+    href="/docs/developers/getting-started/"
+    description="Start building on Mezo: environment setup, network details, and your first transaction."
+  />
+</CardGrid>
 
 ## Users
 
 If you want to learn how to mint MUSD, or [borrow in the Mezo App](https://mezo.org/feature/borrow), see the user documentation.
 
-<LinkButton href="/docs/users">
-  User Documentation
-</LinkButton>
+<CardGrid>
+  <LinkCard
+    title="User Documentation"
+    href="/docs/users"
+    description="Learn how to mint MUSD, borrow in the Mezo App, and more."
+  />
+</CardGrid>
