@@ -10,15 +10,15 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	markdown: {
 		remarkPlugins: [
-		  remarkMath, // <- new plugin
+			remarkMath, // <- new plugin
 		],
 		rehypePlugins: [rehypeKatex], // <- new plugin
 		shikiConfig: {
-		  // For more themes, visit https://shiki.style/themes
-		  themes: { light: "min-light", dark: "night-owl" },
-		  wrap: true,
+			// For more themes, visit https://shiki.style/themes
+			themes: { light: "min-light", dark: "night-owl" },
+			wrap: true,
 		},
-	  },
+	},
 	site: 'https://mezo.org/docs',
 	integrations: [
 		starlight({
@@ -35,81 +35,81 @@ export default defineConfig({
 			],
 			head: [
 				{
-				  tag: 'script',
-				  content: `window.addEventListener('load', () => document.querySelector('.site-title').href = 'https://mezo.org/docs')`,
+					tag: 'script',
+					content: `window.addEventListener('load', () => document.querySelector('.site-title').href = 'https://mezo.org/docs')`,
 				},
 				// Favicon & icon fallbacks
 				{
-				  tag: 'link',
-				  attrs: { rel: 'icon', type: 'image/png', href: '/docs/images/mainnet/Mezo%20Logo%20Square.png' },
+					tag: 'link',
+					attrs: { rel: 'icon', type: 'image/png', href: '/docs/images/mainnet/Mezo%20Logo%20Square.png' },
 				},
 				{
-				  tag: 'link',
-				  attrs: { rel: 'apple-touch-icon', href: '/docs/images/mainnet/Mezo%20Logo%20Square.png' },
+					tag: 'link',
+					attrs: { rel: 'apple-touch-icon', href: '/docs/images/mainnet/Mezo%20Logo%20Square.png' },
 				},
 				{
-				  tag: 'link',
-				  attrs: { rel: 'mask-icon', href: '/favicon.svg', color: '#FF004D' },
+					tag: 'link',
+					attrs: { rel: 'mask-icon', href: '/favicon.svg', color: '#FF004D' },
 				},
-                // Ensure Open Graph/Twitter preview image across all pages
-                {
-                  tag: 'meta',
-                  attrs: { property: 'og:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
-                },
-                {
-                  tag: 'meta',
-                  attrs: { property: 'og:image:alt', content: 'Mezo' },
-                },
-                {
-                  tag: 'meta',
-                  attrs: { name: 'twitter:card', content: 'summary_large_image' },
-                },
-                {
-                  tag: 'meta',
-                  attrs: { name: 'twitter:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
-                },
-                {
-                  tag: 'meta',
-                  attrs: { name: 'twitter:site', content: '@MezoNetwork' },
-                },
-                {
-                  tag: 'meta',
-                  attrs: { name: 'twitter:creator', content: '@MezoNetwork' },
-                },
+				// Ensure Open Graph/Twitter preview image across all pages
 				{
-				  tag: 'script',
-				  attrs: { type: 'application/ld+json' },
-				  content: JSON.stringify({
-				    '@context': 'https://schema.org',
-				    '@type': 'Organization',
-				    name: 'Mezo',
-				    url: 'https://mezo.org',
-				    logo: 'https://raw.githubusercontent.com/mezo-org/documentation/main/src/assets/Mezo-Mark-Red.svg',
-				    sameAs: [
-				      'https://github.com/mezo-org',
-				      'https://x.com/MezoNetwork',
-				      'https://discord.mezo.org',
-				    ],
-				  }),
+					tag: 'meta',
+					attrs: { property: 'og:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
 				},
 				{
-				  tag: 'script',
-				  attrs: { type: 'application/ld+json' },
-				  content: JSON.stringify({
-				    '@context': 'https://schema.org',
-				    '@type': 'WebSite',
-				    name: 'Mezo Documentation',
-				    url: 'https://mezo.org/docs',
-				    potentialAction: {
-				      '@type': 'SearchAction',
-				      target: 'https://mezo.org/docs/search?q={search_term_string}',
-				      'query-input': 'required name=search_term_string',
-				    },
-				  }),
+					tag: 'meta',
+					attrs: { property: 'og:image:alt', content: 'Mezo' },
 				},
 				{
-				  tag: 'script',
-				  content: '(function(){try{var t=document.title||"Mezo Documentation";var m=document.querySelector("meta[name=\"description\"]");var d=m?m.content:"";var url=location.origin+location.pathname;var web={"@context":"https://schema.org","@type":["WebPage","TechArticle"],"headline":t,"name":t,"description":d,"url":url,"mainEntityOfPage":url};var s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(web);document.head.appendChild(s);var parts=location.pathname.replace(/\/$/,"").split("/").filter(Boolean);if(parts.length){var map={"docs":"Documentation","users":"User Documentation","developers":"Developer Documentation","mainnet":"Mainnet","musd":"MUSD","features":"Features","resources":"Resources","getting-started":"Getting Started","introduction":"Introduction","bridge":"Bridge","stbtc-staked-bitcoin":"stBTC","architecture":"Architecture","oracles":"Oracles"};var items=[];var acc="";for(var i=0;i<parts.length;i++){acc+="/"+parts[i];var isLast=i===parts.length-1;var name=isLast?t:(map[parts[i]]||parts[i].replace(/-/g," "));items.push({"@type":"ListItem","position":i+1,"name":name,"item":location.origin+acc+"/"});}var crumb={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":items};var s2=document.createElement("script");s2.type="application/ld+json";s2.textContent=JSON.stringify(crumb);document.head.appendChild(s2);}var p=location.pathname.replace(/\/$/,"");if(p==="/docs/users/getting-started/deposit-assets"){var howTo={"@context":"https://schema.org","@type":"HowTo","name":"How to Deposit Assets to Mezo","mainEntityOfPage":url,"url":url,"step":[{"@type":"HowToStep","position":1,"name":"Open Mezo App and sign in","text":"Go to mezo.org/overview and sign in with a supported wallet."},{"@type":"HowToStep","position":2,"name":"Add funds","text":"Click Add funds and select the asset you want to bridge and the amount."},{"@type":"HowToStep","position":3,"name":"Review and confirm","text":"Review transfer details and confirm the transaction in your wallet."}]};var s3=document.createElement("script");s3.type="application/ld+json";s3.textContent=JSON.stringify(howTo);document.head.appendChild(s3);}if(p==="/docs/users/resources/faqs"){var faq={"@context":"https://schema.org","@type":"FAQPage","mainEntityOfPage":url,"url":url,"mainEntity":[{"@type":"Question","name":"What is Mezo?","acceptedAnswer":{"@type":"Answer","text":"Mezo is a Bitcoin-centric platform enabling borrowing, spending, and building on Bitcoin."}},{"@type":"Question","name":"What is MUSD?","acceptedAnswer":{"@type":"Answer","text":"MUSD is Mezo’s Bitcoin-backed stablecoin used for borrowing and payments."}}]};var s4=document.createElement("script");s4.type="application/ld+json";s4.textContent=JSON.stringify(faq);document.head.appendChild(s4);} }catch(e){}})();'
+					tag: 'meta',
+					attrs: { name: 'twitter:card', content: 'summary_large_image' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:image', content: 'https://mezo.org/docs/images/mainnet/gitbookbanner.png' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:site', content: '@MezoNetwork' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:creator', content: '@MezoNetwork' },
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'application/ld+json' },
+					content: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'Organization',
+						name: 'Mezo',
+						url: 'https://mezo.org',
+						logo: 'https://raw.githubusercontent.com/mezo-org/documentation/main/src/assets/Mezo-Mark-Red.svg',
+						sameAs: [
+							'https://github.com/mezo-org',
+							'https://x.com/MezoNetwork',
+							'https://discord.mezo.org',
+						],
+					}),
+				},
+				{
+					tag: 'script',
+					attrs: { type: 'application/ld+json' },
+					content: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'WebSite',
+						name: 'Mezo Documentation',
+						url: 'https://mezo.org/docs',
+						potentialAction: {
+							'@type': 'SearchAction',
+							target: 'https://mezo.org/docs/search?q={search_term_string}',
+							'query-input': 'required name=search_term_string',
+						},
+					}),
+				},
+				{
+					tag: 'script',
+					content: '(function(){try{var t=document.title||"Mezo Documentation";var m=document.querySelector("meta[name=\"description\"]");var d=m?m.content:"";var url=location.origin+location.pathname;var web={"@context":"https://schema.org","@type":["WebPage","TechArticle"],"headline":t,"name":t,"description":d,"url":url,"mainEntityOfPage":url};var s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(web);document.head.appendChild(s);var parts=location.pathname.replace(/\/$/,"").split("/").filter(Boolean);if(parts.length){var map={"docs":"Documentation","users":"User Documentation","developers":"Developer Documentation","mainnet":"Mainnet","musd":"MUSD","features":"Features","resources":"Resources","getting-started":"Getting Started","introduction":"Introduction","bridge":"Bridge","stbtc-staked-bitcoin":"stBTC","architecture":"Architecture","oracles":"Oracles"};var items=[];var acc="";for(var i=0;i<parts.length;i++){acc+="/"+parts[i];var isLast=i===parts.length-1;var name=isLast?t:(map[parts[i]]||parts[i].replace(/-/g," "));items.push({"@type":"ListItem","position":i+1,"name":name,"item":location.origin+acc+"/"});}var crumb={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":items};var s2=document.createElement("script");s2.type="application/ld+json";s2.textContent=JSON.stringify(crumb);document.head.appendChild(s2);}var p=location.pathname.replace(/\/$/,"");if(p==="/docs/users/getting-started/deposit-assets"){var howTo={"@context":"https://schema.org","@type":"HowTo","name":"How to Deposit Assets to Mezo","mainEntityOfPage":url,"url":url,"step":[{"@type":"HowToStep","position":1,"name":"Open Mezo App and sign in","text":"Go to mezo.org/overview and sign in with a supported wallet."},{"@type":"HowToStep","position":2,"name":"Add funds","text":"Click Add funds and select the asset you want to bridge and the amount."},{"@type":"HowToStep","position":3,"name":"Review and confirm","text":"Review transfer details and confirm the transaction in your wallet."}]};var s3=document.createElement("script");s3.type="application/ld+json";s3.textContent=JSON.stringify(howTo);document.head.appendChild(s3);}if(p==="/docs/users/resources/faqs"){var faq={"@context":"https://schema.org","@type":"FAQPage","mainEntityOfPage":url,"url":url,"mainEntity":[{"@type":"Question","name":"What is Mezo?","acceptedAnswer":{"@type":"Answer","text":"Mezo is a Bitcoin-centric platform enabling borrowing, spending, and building on Bitcoin."}},{"@type":"Question","name":"What is MUSD?","acceptedAnswer":{"@type":"Answer","text":"MUSD is Mezo’s Bitcoin-backed stablecoin used for borrowing and payments."}}]};var s4=document.createElement("script");s4.type="application/ld+json";s4.textContent=JSON.stringify(faq);document.head.appendChild(s4);} }catch(e){}})();'
 				}
 			],
 			favicon: '/favicon.svg',
@@ -126,214 +126,222 @@ export default defineConfig({
 			},
 			plugins: [
 				starlightSidebarTopics([
-      {
-            label: 'User Documentation',
-            id: 'users',
-            link: '/docs/users/',
-            icon: 'star',
-            items: [
-                  {
-                        label: 'Getting Started',
-                        collapsed: true,
-                        items: [
-                              'docs/users/getting-started/deposit-assets',
-                              'docs/users/getting-started/connect',
-                              'docs/users/getting-started/creating-an-account'
-                        ]
-                  },
-                  {
-                        label: 'Introduction',
-                        collapsed: true,
-                        items: [
-                              'docs/users/introduction/why-bitcoin-needs-banking',
-                              'docs/users/introduction/mezo-self-service-banking'
-                        ]
-                  },
-                  {
-                        label: 'Mainnet',
-                        collapsed: true,
-                        items: [
-                              'docs/users/mainnet/bridges'
-                        ]
-                  },
-                  {
-                        label: 'mats',
-                        collapsed: true,
-                        items: [
-                              'docs/users/mats/mats-overview',
-                              'docs/users/mats/rewards-hub'
-                        ]
-                  },
-                  {
-                        label: 'MUSD',
-                        collapsed: true,
-                        items: [
-                              'docs/users/musd',
-                              'docs/users/musd/mint-musd',
-                              'docs/users/musd/fees',
-                              'docs/users/musd/architecture-and-terminology',
-                              'docs/users/musd/liquidation-mechanics',
-                              'docs/users/musd/musd-bridge',
-                              'docs/users/musd/risks',
-                              'docs/users/musd/concepts'
-                        ]
-                  },
-                  {
-                        label: 'Mezo Earn',
-                        collapsed: true,
-                        items: [
-                              {
-                                    label: 'Overview',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/users/mezo-earn/overview',
-                                          'docs/users/mezo-earn/overview/glossary'
-                                    ]
-                              },
-                              {
-                                    label: 'Lock',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/users/mezo-earn/lock/vebtc',
-                                          'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
-                                          'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
-                                          'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
-                                    ]
-                              },
-                              {
-                                    label: 'Vote',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/users/mezo-earn/vote',
-                                          'docs/users/mezo-earn/vote/how-to-vote',
-                                          'docs/users/mezo-earn/vote/earning-and-managing-your-position',
-                                          'docs/users/mezo-earn/vote/claiming-fees-emissions'
-                                    ]
-                              },
-                              {
-                                    label: 'Pools',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/users/mezo-earn/pools',
-                                          'docs/users/mezo-earn/pools/using-mezo-pools-guide',
-                                          'docs/users/mezo-earn/pools/pools-fees',
-                                          'docs/users/mezo-earn/pools/pools-links-and-resources',
-                                          'docs/users/mezo-earn/pools/mezo-swap'
-                                    ]
-                              },
-                              'docs/users/mezo-earn/vaults'
-                        ]
-                  },
-                  {
-                        label: 'Integrations',
-                        collapsed: true,
-                        items: [
-                              {
-                                    label: 'Lolli',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/users/integrations/lolli',
-                                          'docs/users/integrations/lolli/withdraw',
-                                          'docs/users/integrations/lolli/using-mezo',
-                                          'docs/users/integrations/lolli/faqs'
-                                    ]
-                              }
-                        ]
-                  },
-                  {
-                        label: 'Resources',
-                        collapsed: true,
-                        items: [
-                              'docs/users/resources/audits',
-                              'docs/users/resources/brand-kit',
-                              'docs/users/resources/contracts-reference',
-                              'docs/users/resources/faqs',
-                              'docs/users/resources/release-notes',
-                              'docs/users/resources/support'
-                        ]
-                  },
-                  {
-                        label: 'stBTC Staked Bitcoin',
-                        collapsed: true,
-                        items: [
-                              'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
-                        ]
-                  }
-            ]
-      },
-      {
-            label: 'Developer Documentation',
-            id: 'developers',
-            link: '/docs/developers/',
-            icon: 'seti:powershell',
-            items: [
-                  {
-                        label: 'Getting Started',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/getting-started',
-                              'docs/developers/getting-started/mezod',
-                              'docs/developers/getting-started/dapp-requirements',
-                              'docs/developers/getting-started/configure-environment',
-                              'docs/developers/getting-started/configure-mezo-passport',
-                              'docs/developers/getting-started/integrations-and-partners',
-                              'docs/developers/getting-started/faqs'
-                        ]
-                  },
-                  {
-                        label: 'Mezo Nodes',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/mezo-nodes',
-                              'docs/developers/mezo-nodes/validator-kit',
-                              'docs/developers/mezo-nodes/fireblocks-connect',
-                              'docs/developers/mezo-nodes/validators'
-                        ]
-                  },
-                  {
-                        label: 'Architecture',
-                        collapsed: true,
-                        items: [
-                              {
-                                    label: 'Oracles',
-                                    collapsed: true,
-                                    items: [
-                                          'docs/developers/architecture/oracles',
-                                          'docs/developers/architecture/oracles/read-oracle'
-                                    ]
-                              }
-                        ]
-                  },
-                  {
-                        label: 'Features',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/features/mezo-pools',
-                              'docs/developers/features/mezo-earn/mezo-earn'
-                        ]
-                  },
-                  {
-                        label: 'Bridge',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/bridge/mezo-bridge',
-                              'docs/developers/bridge/wormhole-musd-bridge'
-                        ]
-                  },
-                  {
-                        label: 'MUSD',
-                        collapsed: true,
-                        items: [
-                              'docs/developers/musd',
-                              'docs/developers/musd/musd-redemptions'
-                        ]
-                  },
-                  'docs/developers/chains',
-                  'docs/developers/subgraphs'
-            ]
-      }
-]),
-			  ],
+					{
+						label: 'User Documentation',
+						id: 'users',
+						link: '/docs/users/',
+						icon: 'star',
+						items: [
+							{
+								label: 'Getting Started',
+								collapsed: true,
+								items: [
+									'docs/users/getting-started/deposit-assets',
+									'docs/users/getting-started/connect',
+									'docs/users/getting-started/creating-an-account'
+								]
+							},
+							{
+								label: 'Introduction',
+								collapsed: true,
+								items: [
+									'docs/users/introduction/why-bitcoin-needs-banking',
+									'docs/users/introduction/mezo-self-service-banking'
+								]
+							},
+							{
+								label: 'Mainnet',
+								collapsed: true,
+								items: [
+									'docs/users/mainnet/bridges'
+								]
+							},
+							{
+								label: 'mats',
+								collapsed: true,
+								items: [
+									'docs/users/mats/mats-overview',
+									'docs/users/mats/rewards-hub'
+								]
+							},
+							{
+								label: 'MUSD',
+								collapsed: true,
+								items: [
+									'docs/users/musd',
+									'docs/users/musd/mint-musd',
+									'docs/users/musd/fees',
+									'docs/users/musd/architecture-and-terminology',
+									'docs/users/musd/liquidation-mechanics',
+									'docs/users/musd/musd-bridge',
+									'docs/users/musd/risks',
+									'docs/users/musd/concepts'
+								]
+							},
+							{
+								label: 'Mezo Earn',
+								collapsed: true,
+								items: [
+									{
+										label: 'Overview',
+										collapsed: true,
+										items: [
+											'docs/users/mezo-earn/overview',
+											'docs/users/mezo-earn/overview/glossary'
+										]
+									},
+									{
+										label: 'Lock',
+										collapsed: true,
+										items: [
+											'docs/users/mezo-earn/lock/vebtc',
+											'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
+											'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
+											'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
+										]
+									},
+									{
+										label: 'Vote',
+										collapsed: true,
+										items: [
+											'docs/users/mezo-earn/vote',
+											'docs/users/mezo-earn/vote/how-to-vote',
+											'docs/users/mezo-earn/vote/earning-and-managing-your-position',
+											'docs/users/mezo-earn/vote/claiming-fees-emissions'
+										]
+									},
+									{
+										label: 'Pools',
+										collapsed: true,
+										items: [
+											'docs/users/mezo-earn/pools',
+											'docs/users/mezo-earn/pools/using-mezo-pools-guide',
+											'docs/users/mezo-earn/pools/pools-fees',
+											'docs/users/mezo-earn/pools/pools-links-and-resources',
+											'docs/users/mezo-earn/pools/mezo-swap'
+										]
+									},
+									'docs/users/mezo-earn/vaults'
+								]
+							},
+							{
+								label: 'Integrations',
+								collapsed: true,
+								items: [
+									{
+										label: 'Lolli',
+										collapsed: true,
+										items: [
+											'docs/users/integrations/lolli',
+											'docs/users/integrations/lolli/withdraw',
+											'docs/users/integrations/lolli/using-mezo',
+											'docs/users/integrations/lolli/faqs'
+										]
+									}
+								]
+							},
+							{
+								label: 'Resources',
+								collapsed: true,
+								items: [
+									'docs/users/resources/audits',
+									'docs/users/resources/brand-kit',
+									'docs/users/resources/contracts-reference',
+									'docs/users/resources/faqs',
+									'docs/users/resources/network-stats',
+									'docs/users/resources/release-notes',
+									'docs/users/resources/support'
+								]
+							},
+							{
+								label: 'stBTC Staked Bitcoin',
+								collapsed: true,
+								items: [
+									'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
+								]
+							}
+						]
+					},
+					{
+						label: 'Developer Documentation',
+						id: 'developers',
+						link: '/docs/developers/',
+						icon: 'seti:powershell',
+						items: [
+							{
+								label: 'Getting Started',
+								collapsed: true,
+								items: [
+									'docs/developers/getting-started',
+									'docs/developers/getting-started/mezod',
+									'docs/developers/getting-started/dapp-requirements',
+									'docs/developers/getting-started/configure-environment',
+									'docs/developers/getting-started/configure-mezo-passport',
+									'docs/developers/getting-started/integrations-and-partners',
+									'docs/developers/getting-started/faqs'
+								]
+							},
+							{
+								label: 'Mezo Nodes',
+								collapsed: true,
+								items: [
+									'docs/developers/mezo-nodes',
+									'docs/developers/mezo-nodes/validator-kit',
+									'docs/developers/mezo-nodes/fireblocks-connect',
+									'docs/developers/mezo-nodes/validators'
+								]
+							},
+							{
+								label: 'Architecture',
+								collapsed: true,
+								items: [
+									{
+										label: 'Oracles',
+										collapsed: true,
+										items: [
+											'docs/developers/architecture/oracles',
+											'docs/developers/architecture/oracles/read-oracle'
+										]
+									}
+								]
+							},
+							{
+								label: 'Features',
+								collapsed: true,
+								items: [
+									'docs/developers/features/mezo-pools'
+								]
+							},
+							{
+								label: 'Mezo Earn',
+								collapsed: true,
+								items: [
+									'docs/developers/features/mezo-earn/mezo-earn',
+									'docs/developers/mezo-earn/mezo-earn-for-validators'
+								]
+							},
+							{
+								label: 'Bridge',
+								collapsed: true,
+								items: [
+									'docs/developers/bridge/mezo-bridge',
+									'docs/developers/bridge/wormhole-musd-bridge'
+								]
+							},
+							{
+								label: 'MUSD',
+								collapsed: true,
+								items: [
+									'docs/developers/musd',
+									'docs/developers/musd/musd-redemptions'
+								]
+							},
+							'docs/developers/chains',
+							'docs/developers/subgraphs'
+						]
+					}
+				]),
+			],
 		}),
 		sitemap(),
 	],
@@ -365,7 +373,7 @@ export default defineConfig({
 		'/': {
 			status: 302,
 			destination: '/docs/'
-	    },
+		},
 		'/docs/users/home/what-is-mezo': {
 			status: 302,
 			destination: '/docs/users/introduction/why-bitcoin-needs-banking'
@@ -530,5 +538,5 @@ export default defineConfig({
 			status: 302,
 			destination: '/docs/users/resources/contracts-reference'
 		},
-	  }
+	}
 });
