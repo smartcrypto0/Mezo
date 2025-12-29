@@ -6,6 +6,8 @@ description: >-
 topic: developers
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 ## 1. Introduction to Mezo
 
 Mezo is engineered to transform Bitcoin from a passive store of value into a productive, dynamic financial asset. By combining the security of Bitcoin with the flexibility of a modern blockchain, Mezo provides a robust platform for decentralized applications (dApps) that serve the massive, underserved Bitcoin community.
@@ -41,9 +43,12 @@ To configure your wallet (e.g., MetaMask, RainbowKit) or development environment
 
 To pay for gas fees on the Testnet, you will need Testnet BTC.
 
+<Steps>
 1. Mezo Faucet: Obtain Testnet BTC from the official [Mezo Faucet](https://faucet.test.mezo.org/).
    - Note: The faucet is protected by a CAPTCHA to prevent abuse.
+
 2. Wallet Setup: Ensure you have a browser wallet installed that supports Ethereum (EVM).
+</Steps>
 
 ### 2.3 Environment Setup (Hardhat Example)
 
@@ -154,10 +159,15 @@ The following are the minimum recommended hardware specifications for running di
 
 The Validator Kit supports multiple deployment methods, catering to different levels of operational complexity:
 
+<Steps>
 1. Docker: Recommended for the easiest setup using Docker Compose.
+
 2. Native: Running the `mezod` binary directly.
+
 3. Helm: For deployment on Kubernetes clusters.
+
 4. Manual: Step-by-step guide for complete manual control.
+</Steps>
 
 ### 4.3 Validator Onboarding (Proof of Authority)
 

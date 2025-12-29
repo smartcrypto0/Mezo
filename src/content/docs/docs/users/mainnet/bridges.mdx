@@ -6,6 +6,8 @@ description: >-
 topic: users
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 You can deposit and withdraw assets to and from Mezo using the Mezo Native Bridge.
 # Deposits
 
@@ -58,27 +60,42 @@ This guide explains how to bridge your assets out of Mezo back to the Ethereum o
 
 ### Bridging to Ethereum (for tBTC or ERC-20 tokens)
 
-1.  **Click the 'Withdraw' button** in the top right of the Mezo App.
-2.  **Choose your asset:**
-    - Select BTC to receive tBTC on Ethereum.
-    - Select any mERC-20 token to receive the original token on Ethereum.
-3.  **Enter the amount** you want to bridge.
-4.  **Review the fees** displayed on screen.
-5.  **Confirm and submit** the transaction.
-6.  **If bridging mERC-20 tokens**, you may need to approve the transaction first.
+<Steps>
+1. **Click the 'Withdraw' button** in the top right of the Mezo App.
+
+2. **Choose your asset:**
+   - Select BTC to receive tBTC on Ethereum.
+   - Select any mERC-20 token to receive the original token on Ethereum.
+
+3. **Enter the amount** you want to bridge.
+
+4. **Review the fees** displayed on screen.
+
+5. **Confirm and submit** the transaction.
+
+6. **If bridging mERC-20 tokens**, you may need to approve the transaction first.
+</Steps>
 
 ### Bridging to Bitcoin (for native BTC only)
 
-1.  **Click the 'Withdraw' button** in the top right of the Mezo App.
-2.  **Choose BTC** as your asset.
-3.  **Select Bitcoin** as your destination network.
-4.  **Enter the amount** to bridge.
-5.  **Paste your Bitcoin address** - supported formats:
-    - Legacy addresses (starting with `1`)
-    - SegWit addresses (starting with `3` or `bc1q`)
-    - **Not supported:** Taproot addresses (starting with `bc1p`)
-6.  **Review the fees** and confirm.
-7.  **Submit** the transaction.
+<Steps>
+1. **Click the 'Withdraw' button** in the top right of the Mezo App.
+
+2. **Choose BTC** as your asset.
+
+3. **Select Bitcoin** as your destination network.
+
+4. **Enter the amount** to bridge.
+
+5. **Paste your Bitcoin address** - supported formats:
+   - Legacy addresses (starting with `1`)
+   - SegWit addresses (starting with `3` or `bc1q`)
+   - **Not supported:** Taproot addresses (starting with `bc1p`)
+
+6. **Review the fees** and confirm.
+
+7. **Submit** the transaction.
+</Steps>
 
 ## Understanding Bridge Routes
 
@@ -136,10 +153,15 @@ Withdrawing 1 BTC → 0.000025 BTC (~$3 flat) + 0.001998 BTC (Treasury) → rece
 
 Once you initiate a bridge-out transaction, here's the process:
 
-1.  **Validation:** The system verifies your request meets all requirements.
-2.  **Token Burn:** Your tokens on Mezo are burned (permanently removed from circulation).
-3.  **Attestation:** Mezo validators confirm your withdrawal request.
-4.  **Delivery:** Your assets are sent to your destination address.
+<Steps>
+1. **Validation:** The system verifies your request meets all requirements.
+
+2. **Token Burn:** Your tokens on Mezo are burned (permanently removed from circulation).
+
+3. **Attestation:** Mezo validators confirm your withdrawal request.
+
+4. **Delivery:** Your assets are sent to your destination address.
+</Steps>
 
 ### Timeline and Status Updates
 
@@ -231,9 +253,14 @@ Your bridge transaction requires approval from at least two-thirds of Mezo's bri
 ## Need Help?
 
 If you experience issues not covered in this guide:
-1.  Note your transaction ID or unlock sequence number.
-2.  Take a screenshot of any error messages.
-3.  Contact Mezo support with these details.
+
+<Steps>
+1. Note your transaction ID or unlock sequence number.
+
+2. Take a screenshot of any error messages.
+
+3. Contact Mezo support with these details.
+</Steps>
 
 Remember: Always verify addresses carefully and understand the fees before confirming any bridge transaction.
 
