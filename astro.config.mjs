@@ -248,8 +248,16 @@ export default defineConfig({
 									'docs/users/resources/brand-kit',
 									'docs/users/resources/contracts-reference',
 									'docs/users/resources/faqs',
+									'docs/users/resources/network-stats',
 									'docs/users/resources/release-notes',
 									'docs/users/resources/support'
+								]
+							},
+							{
+								label: 'stBTC Staked Bitcoin',
+								collapsed: true,
+								items: [
+									'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
 								]
 							}
 						]
@@ -279,6 +287,7 @@ export default defineConfig({
 								items: [
 									'docs/developers/mezo-nodes',
 									'docs/developers/mezo-nodes/validator-kit',
+
 									'docs/developers/mezo-nodes/validators'
 								]
 							},
@@ -300,8 +309,20 @@ export default defineConfig({
 								label: 'Features',
 								collapsed: true,
 								items: [
+<<<<<<< HEAD
 									'docs/developers/features/mezo-pools',
 									'docs/developers/features/tigris/tigris'
+=======
+									'docs/developers/features/mezo-pools'
+								]
+							},
+							{
+								label: 'Mezo Earn',
+								collapsed: true,
+								items: [
+									'docs/developers/features/mezo-earn/mezo-earn',
+									'docs/developers/mezo-earn/mezo-earn-for-validators'
+>>>>>>> upstream/main
 								]
 							},
 							{

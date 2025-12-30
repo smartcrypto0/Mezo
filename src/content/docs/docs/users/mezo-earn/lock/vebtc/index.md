@@ -59,7 +59,7 @@ Mezo Earn operates in **7-day cycles called epochs**. Each epoch begins on Thurs
 ### Why Epochs Matter
 
 - **Votes do not persist.** You must vote every epoch to earn fees and mats emissions. If you don't vote in an epoch, you forfeit active earnings for that period.
-- **Votes cast in epoch N** determine mats emission allocation for epoch N+1
+- **Votes cast in epoch N** determine emission allocation for epoch N+1
 - **Fees generated in epoch N** are distributed based on votes cast in epoch N
 
 ### Lock Duration and Epoch Alignment
@@ -80,4 +80,3 @@ This normalization ensures all locks expire cleanly at epoch boundaries and simp
 | Duration | 7 days |
 | Start time | Thursday 00:00 UTC |
 | Lock alignment | Rounded down to full weeks |
-
