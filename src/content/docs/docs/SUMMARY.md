@@ -76,7 +76,6 @@ topic: users
   * [mezo-nodes](developers/mezo-nodes/README.md)
     * [Overview](developers/mezo-nodes/index.md)
     * [Validator Kit Development Guide](developers/mezo-nodes/validator-kit.md)
-    * [Connect Fireblocks to Mezo](developers/mezo-nodes/fireblocks-connect.md)
     * [Mezo Validators](developers/mezo-nodes/validators.md)
   * [architecture](developers/architecture/README.md)
     * [oracles](developers/architecture/oracles/README.md)
