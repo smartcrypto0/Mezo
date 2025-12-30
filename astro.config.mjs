@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightSidebarTopics from 'starlight-sidebar-topics';
+import lunaria from '@lunariajs/starlight';
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import sitemap from '@astrojs/sitemap';
@@ -125,6 +126,9 @@ export default defineConfig({
 				twitter: 'https://x.com/MezoNetwork',
 			},
 			plugins: [
+				lunaria({
+					sync: true, // Sync locales with Starlight's i18n config
+				}),
 				starlightSidebarTopics([
 					{
 						label: 'User Documentation',

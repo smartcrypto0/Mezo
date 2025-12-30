@@ -1,6 +1,6 @@
 ---
 title: Network Stats and Data
-description: Official dashboards, analytics, and data sources for the Mezo network
+description: 'Official dashboards, analytics, and data sources for the Mezo network'
 topic: users
 ---
 
