@@ -47,7 +47,10 @@ Mezo operates in 7-day epochs starting Thursday at 00:00 UTC. Each epoch is a fr
 5. Fees and incentives become claimable
 6. Repeat
 
-> **Critical:** Votes don't carry over. If you don't vote in a given epoch, you forfeit your share of fees and incentives for that week.
+:::danger[Critical]
+Votes don't carry over. If you don't vote in a given epoch, you forfeit your share of fees and incentives for that week.
+:::
+
 
 ### Epoch Alignment
 

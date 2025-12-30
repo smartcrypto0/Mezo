@@ -48,7 +48,10 @@ By [voting for gauges](/docs/users/mezo-earn/vote), you earn additional rewards 
 
 The more voting weight you allocate to a gauge, the larger your share of that gauge's fees and incentives.
 
-> **Important:** You must vote each epoch to earn active rewards. See [Epochs](#epochs) below.
+:::note[Important]
+You must vote each epoch to earn active rewards. See [Epochs](#epochs) below.
+:::
+
 
 ---
 

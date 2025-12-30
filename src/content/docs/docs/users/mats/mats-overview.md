@@ -43,5 +43,8 @@ Learn more about the rewards hub [here](/docs/users/mats/rewards-hub)
 
 ---
 
-*Disclaimer: mats have no monetary value and cannot be sold or redeemed for money. Mezo reserves the right to update mats reward calculations and usage within the Mezo ecosystem at any time.*
+:::caution[Disclaimer]
+mats have no monetary value and cannot be sold or redeemed for money. Mezo reserves the right to update mats reward calculations and usage within the Mezo ecosystem at any time.
+:::
+
 
