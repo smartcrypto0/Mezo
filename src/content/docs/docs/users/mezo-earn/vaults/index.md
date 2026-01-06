@@ -36,7 +36,7 @@ Visit [mezo.org/earn/vaults](https://mezo.org/earn/vaults) to explore available 
 
 ### Mezo Vaults
 
-Vaults built and managed by Mezo, such as the MUSD Savings Rate Vault.
+Vaults built and managed by Mezo, such as the MUSD Savings Vault.
 
 ### External Vaults
 
@@ -44,9 +44,9 @@ Vaults built by partner protocols (e.g., August, UWI, Upshift) that deploy asset
 
 ---
 
-## MUSD Savings Rate Vault
+## MUSD Savings Vault
 
-The MUSD Savings Rate Vault is Mezo's native savings product for MUSD holders.
+The MUSD Savings Vault is Mezo's native savings product for MUSD holders.
 
 **How it works:**
 
@@ -66,7 +66,7 @@ The MUSD Savings Rate Vault is Mezo's native savings product for MUSD holders.
 
 ### Staking sMUSD in the Gauge
 
-You can optionally stake your sMUSD receipt token in the MUSD Savings Rate gauge to earn emissions.
+You can optionally stake your sMUSD receipt token in the MUSD Savings gauge to earn emissions.
 
 **The tradeoff:**
 
