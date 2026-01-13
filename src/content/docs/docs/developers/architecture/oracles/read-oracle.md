@@ -12,18 +12,20 @@ Mezo provides market data through two oracle systems: [Skip Connect](https://doc
 
 The Skip oracle provides native BTC/USD price feeds on Mezo through a Chainlink-compatible aggregator interface.
 
-- **Contract address:** `0x7b7c000000000000000000000000000000000015` (mainnet and testnet)
 - **Supported pair:** BTC/USD only
+- **Update frequency:** Every block
 - **Interface:** [Chainlink Aggregator](https://github.com/smartcontractkit/libocr/blob/9e4afd8896f365b964bdf769ca28f373a3fb0300/contract/AccessControlledOffchainAggregator.sol)
 
 ### Pyth Oracle
 
 The Pyth oracle provides multiple price feeds beyond BTC/USD.
 
-- **Contract address:** `0x2880aB155794e7179c9eE2e38200202908C17B43` (mainnet and testnet)
-- **Interface:** Pyth EVM contract
-- **Update frequency:** Every 1 hour or 1% price deviation
-- **Recommended method:** `getPriceNoOlderThan()`
+**Update frequency:** Depends on the tokens pair.
+
+- On Mezo see [configuration file](https://github.com/mezo-org/mezod/blob/main/infrastructure/kubernetes/common/pyth-scheduler/configmap.yaml) for details.
+- On Ethereum see [configuration file](https://github.com/mezo-org/mezod/blob/main/infrastructure/kubernetes/common/pyth-scheduler-ethereum/configmap.yaml) for details.
+
+Price is being updated when `price_deviation` deviates more than a set threshold (in percentage points) or every `time_difference` seconds, whichever is first.
 
 ## Best Practices
 
@@ -51,13 +53,17 @@ The Skip oracle implements a Chainlink-compatible interface. Call `latestRoundDa
 
 ### Using Pyth Oracle (Multiple Feeds)
 
-Pyth provides multiple price feeds through its EVM contract. Use `getPriceNoOlderThan()` to fetch prices with built-in staleness checks.
+Pyth provides multiple price feeds through its EVM contracts. Use `getPriceNoOlderThan(pair_id, maxAgeSeconds)` to fetch prices with built-in staleness checks.
 
 **Contract Mezo Mainnet:** [0x2880aB155794e7179c9eE2e38200202908C17B43](https://explorer.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43)
 
 **Contract Mezo Testnet:** [0x2880aB155794e7179c9eE2e38200202908C17B43](https://explorer.test.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43)
 
-**Example (Solidity):**
+**Contract Ethereum Mainnet:** [0x4305FB66699C3B2702D4d05CF36551390A4c69C6](https://etherscan.io/address/0x4305FB66699C3B2702D4d05CF36551390A4c69C6)
+
+**Contract Ethereum Sepolia:** [0xDd24F84d36BF92C65F92307595335bdFab5Bbd21](https://sepolia.etherscan.io/address/0xDd24F84d36BF92C65F92307595335bdFab5Bbd21)
+
+**Example to fetch the price for a given price id:**
 
 ```solidity
 import "@pythnetwork/pyth-sdk-solidity/IPyth.sol";
@@ -101,7 +107,7 @@ You can query price feeds and metadata directly from the Pyth Network without in
 
 ### Skip Oracle Feeds
 
-Available on both mainnet and testnet:
+Available on both Mezo mainnet and testnet:
 
 | Pair | Contract Address | Network |
 |------|-----------------|---------|
@@ -112,9 +118,14 @@ Available on both mainnet and testnet:
 
 ### Pyth Oracle Feeds
 
-Available on both [mainnet](https://explorer.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) and [testnet](https://explorer.test.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) at `0x2880aB155794e7179c9eE2e38200202908C17B43`.
+Available on:
 
-**Currently supported price feed IDs:**
+- Mezo [Mainnet](https://explorer.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) at `0x2880aB155794e7179c9eE2e38200202908C17B43`
+- Mezo [Testnet](https://explorer.test.mezo.org/address/0x2880aB155794e7179c9eE2e38200202908C17B43) at `0x2880aB155794e7179c9eE2e38200202908C17B43`.
+- Ethereum [Mainnet](https://etherscan.io/address/0x4305FB66699C3B2702D4d05CF36551390A4c69C6) at `0x4305FB66699C3B2702D4d05CF36551390A4c69C6`
+- Ethereum [Sepolia](https://sepolia.etherscan.io/address/0xDd24F84d36BF92C65F92307595335bdFab5Bbd21) at `0xDd24F84d36BF92C65F92307595335bdFab5Bbd21`.
+
+**Supported price feed IDs Mezo:**
 
 | Pair | Price Feed ID |
 |------|---------------|
@@ -126,4 +137,10 @@ Available on both [mainnet](https://explorer.mezo.org/address/0x2880aB155794e717
 | USDT/USD | `0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b` |
 | T/USD | `0x7a072b799215196b0ecb6a58636ec312bce8461dcc33c28c3a046b1e636d121d` |
 
-**Need more price feeds?** Browse all available Pyth [price feed IDs](https://docs.pyth.network/price-feeds/price-feeds#feed-ids) and contact the Mezo team to request additional feeds be enabled onchain.
+**Supported price feed IDs Ethereum:**
+
+| Pair | Price Feed ID |
+|------|---------------|
+| MUSD/USD | `0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de` |
+
+**Requesting additional price feeds:** To enable additional Pyth price feeds, browse the complete list of available [price feed IDs](https://docs.pyth.network/price-feeds/price-feeds#feed-ids) and contact the Mezo team to request onchain activation.
