@@ -130,226 +130,213 @@ export default defineConfig({
 					sync: true, // Sync locales with Starlight's i18n config
 				}),
 				starlightSidebarTopics([
-					{
-						label: 'User Documentation',
-						id: 'users',
-						link: '/docs/users/',
-						icon: 'star',
-						items: [
-							{
-								label: 'Getting Started',
-								collapsed: true,
-								items: [
-									'docs/users/getting-started/deposit-assets',
-									'docs/users/getting-started/connect',
-									'docs/users/getting-started/creating-an-account'
-								]
-							},
-							{
-								label: 'Introduction',
-								collapsed: true,
-								items: [
-									'docs/users/introduction/why-bitcoin-needs-banking',
-									'docs/users/introduction/mezo-self-service-banking'
-								]
-							},
-							{
-								label: 'Mainnet',
-								collapsed: true,
-								items: [
-									'docs/users/mainnet/bridges'
-								]
-							},
-							{
-								label: 'mats',
-								collapsed: true,
-								items: [
-									'docs/users/mats/mats-overview',
-									'docs/users/mats/rewards-hub'
-								]
-							},
-							{
-								label: 'MUSD',
-								collapsed: true,
-								items: [
-									'docs/users/musd',
-									'docs/users/musd/mint-musd',
-									'docs/users/musd/fees',
-									'docs/users/musd/architecture-and-terminology',
-									'docs/users/musd/liquidation-mechanics',
-									'docs/users/musd/musd-bridge',
-									'docs/users/musd/risks',
-									'docs/users/musd/concepts'
-								]
-							},
-							{
-								label: 'Mezo Earn',
-								collapsed: true,
-								items: [
-									{
-										label: 'Overview',
-										collapsed: true,
-										items: [
-											'docs/users/mezo-earn/overview',
-											'docs/users/mezo-earn/overview/glossary'
-										]
-									},
-									{
-										label: 'Lock',
-										collapsed: true,
-										items: [
-											'docs/users/mezo-earn/lock/vebtc',
-											'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
-											'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
-											'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
-										]
-									},
-									{
-										label: 'Vote',
-										collapsed: true,
-										items: [
-											'docs/users/mezo-earn/vote',
-											'docs/users/mezo-earn/vote/how-to-vote',
-											'docs/users/mezo-earn/vote/earning-and-managing-your-position',
-											'docs/users/mezo-earn/vote/claiming-fees-emissions'
-										]
-									},
-									{
-										label: 'Pools',
-										collapsed: true,
-										items: [
-											'docs/users/mezo-earn/pools',
-											'docs/users/mezo-earn/pools/using-mezo-pools-guide',
-											'docs/users/mezo-earn/pools/pools-fees',
-											'docs/users/mezo-earn/pools/pools-links-and-resources',
-											'docs/users/mezo-earn/pools/mezo-swap'
-										]
-									},
-									'docs/users/mezo-earn/vaults'
-								]
-							},
-							{
-								label: 'Integrations',
-								collapsed: true,
-								items: [
-									{
-										label: 'Lolli',
-										collapsed: true,
-										items: [
-											'docs/users/integrations/lolli',
-											'docs/users/integrations/lolli/withdraw',
-											'docs/users/integrations/lolli/using-mezo',
-											'docs/users/integrations/lolli/faqs'
-										]
-									}
-								]
-							},
-							{
-								label: 'Resources',
-								collapsed: true,
-								items: [
-									'docs/users/resources/audits',
-									'docs/users/resources/brand-kit',
-									'docs/users/resources/contracts-reference',
-									'docs/users/resources/faqs',
-									'docs/users/resources/network-stats',
-									'docs/users/resources/release-notes',
-									'docs/users/resources/support'
-								]
-							},
-							{
-								label: 'stBTC Staked Bitcoin',
-								collapsed: true,
-								items: [
-									'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
-								]
-							}
-						]
-					},
-					{
-						label: 'Developer Documentation',
-						id: 'developers',
-						link: '/docs/developers/',
-						icon: 'seti:powershell',
-						items: [
-							{
-								label: 'Getting Started',
-								collapsed: true,
-								items: [
-									'docs/developers/getting-started',
-									'docs/developers/getting-started/mezod',
-									'docs/developers/getting-started/dapp-requirements',
-									'docs/developers/getting-started/configure-environment',
-									'docs/developers/getting-started/configure-mezo-passport',
-									'docs/developers/getting-started/integrations-and-partners',
-									'docs/developers/getting-started/faqs'
-								]
-							},
-							{
-								label: 'Mezo Nodes',
-								collapsed: true,
-								items: [
-									'docs/developers/mezo-nodes',
-									'docs/developers/mezo-nodes/validator-kit',
-
-									'docs/developers/mezo-nodes/validators'
-								]
-							},
-							{
-								label: 'Architecture',
-								collapsed: true,
-								items: [
-									{
-										label: 'Oracles',
-										collapsed: true,
-										items: [
-											'docs/developers/architecture/oracles',
-											'docs/developers/architecture/oracles/read-oracle'
-										]
-									}
-								]
-							},
-							{
-								label: 'Features',
-								collapsed: true,
-								items: [
-<<<<<<< HEAD
-									'docs/developers/features/mezo-pools',
-									'docs/developers/features/tigris/tigris'
-=======
-									'docs/developers/features/mezo-pools'
-								]
-							},
-							{
-								label: 'Mezo Earn',
-								collapsed: true,
-								items: [
-									'docs/developers/features/mezo-earn/mezo-earn',
-									'docs/developers/mezo-earn/mezo-earn-for-validators'
->>>>>>> upstream/main
-								]
-							},
-							{
-								label: 'Bridge',
-								collapsed: true,
-								items: [
-									'docs/developers/bridge/mezo-bridge',
-									'docs/developers/bridge/wormhole-musd-bridge'
-								]
-							},
-							{
-								label: 'MUSD',
-								collapsed: true,
-								items: [
-									'docs/developers/musd',
-									'docs/developers/musd/musd-redemptions'
-								]
-							},
-							'docs/developers/chains',
-							'docs/developers/subgraphs'
-						]
-					}
-				]),
+      {
+            label: 'User Documentation',
+            id: 'users',
+            link: '/docs/users/',
+            icon: 'star',
+            items: [
+                  {
+                        label: 'Getting Started',
+                        collapsed: true,
+                        items: [
+                              'docs/users/getting-started/deposit-assets',
+                              'docs/users/getting-started/connect',
+                              'docs/users/getting-started/creating-an-account'
+                        ]
+                  },
+                  {
+                        label: 'Introduction',
+                        collapsed: true,
+                        items: [
+                              'docs/users/introduction/why-bitcoin-needs-banking',
+                              'docs/users/introduction/mezo-self-service-banking'
+                        ]
+                  },
+                  {
+                        label: 'Mainnet',
+                        collapsed: true,
+                        items: [
+                              'docs/users/mainnet/bridges'
+                        ]
+                  },
+                  {
+                        label: 'mats',
+                        collapsed: true,
+                        items: [
+                              'docs/users/mats/mats-overview',
+                              'docs/users/mats/rewards-hub'
+                        ]
+                  },
+                  {
+                        label: 'MUSD',
+                        collapsed: true,
+                        items: [
+                              'docs/users/musd',
+                              'docs/users/musd/mint-musd',
+                              'docs/users/musd/fees',
+                              'docs/users/musd/architecture-and-terminology',
+                              'docs/users/musd/liquidation-mechanics',
+                              'docs/users/musd/musd-bridge',
+                              'docs/users/musd/risks',
+                              'docs/users/musd/concepts'
+                        ]
+                  },
+                  {
+                        label: 'Mezo Earn',
+                        collapsed: true,
+                        items: [
+                              {
+                                    label: 'Overview',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/overview',
+                                          'docs/users/mezo-earn/overview/glossary'
+                                    ]
+                              },
+                              {
+                                    label: 'Lock',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/lock/vebtc',
+                                          'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
+                                          'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
+                                          'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
+                                    ]
+                              },
+                              {
+                                    label: 'Vote',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/vote',
+                                          'docs/users/mezo-earn/vote/how-to-vote',
+                                          'docs/users/mezo-earn/vote/earning-and-managing-your-position',
+                                          'docs/users/mezo-earn/vote/claiming-fees-emissions'
+                                    ]
+                              },
+                              {
+                                    label: 'Pools',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/mezo-earn/pools',
+                                          'docs/users/mezo-earn/pools/using-mezo-pools-guide',
+                                          'docs/users/mezo-earn/pools/pools-fees',
+                                          'docs/users/mezo-earn/pools/pools-links-and-resources',
+                                          'docs/users/mezo-earn/pools/mezo-swap'
+                                    ]
+                              },
+                              'docs/users/mezo-earn/vaults'
+                        ]
+                  },
+                  {
+                        label: 'Integrations',
+                        collapsed: true,
+                        items: [
+                              {
+                                    label: 'Lolli',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/users/integrations/lolli',
+                                          'docs/users/integrations/lolli/withdraw',
+                                          'docs/users/integrations/lolli/using-mezo',
+                                          'docs/users/integrations/lolli/faqs'
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        label: 'Resources',
+                        collapsed: true,
+                        items: [
+                              'docs/users/resources/audits',
+                              'docs/users/resources/brand-kit',
+                              'docs/users/resources/contracts-reference',
+                              'docs/users/resources/faqs',
+                              'docs/users/resources/network-stats',
+                              'docs/users/resources/release-notes',
+                              'docs/users/resources/support'
+                        ]
+                  },
+                  {
+                        label: 'stBTC Staked Bitcoin',
+                        collapsed: true,
+                        items: [
+                              'docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits'
+                        ]
+                  }
+            ]
+      },
+      {
+            label: 'Developer Documentation',
+            id: 'developers',
+            link: '/docs/developers/',
+            icon: 'seti:powershell',
+            items: [
+                  {
+                        label: 'Getting Started',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/getting-started',
+                              'docs/developers/getting-started/mezod',
+                              'docs/developers/getting-started/dapp-requirements',
+                              'docs/developers/getting-started/configure-environment',
+                              'docs/developers/getting-started/configure-mezo-passport',
+                              'docs/developers/getting-started/integrations-and-partners',
+                              'docs/developers/getting-started/faqs'
+                        ]
+                  },
+                  {
+                        label: 'Mezo Nodes',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/mezo-nodes',
+                              'docs/developers/mezo-nodes/validator-kit',
+                              'docs/developers/mezo-nodes/validators'
+                        ]
+                  },
+                  {
+                        label: 'Architecture',
+                        collapsed: true,
+                        items: [
+                              {
+                                    label: 'Oracles',
+                                    collapsed: true,
+                                    items: [
+                                          'docs/developers/architecture/oracles',
+                                          'docs/developers/architecture/oracles/read-oracle'
+                                    ]
+                              }
+                        ]
+                  },
+                  {
+                        label: 'Features',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/features/mezo-pools',
+                              'docs/developers/features/mezo-earn/mezo-earn'
+                        ]
+                  },
+                  {
+                        label: 'Bridge',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/bridge/mezo-bridge',
+                              'docs/developers/bridge/wormhole-musd-bridge'
+                        ]
+                  },
+                  {
+                        label: 'MUSD',
+                        collapsed: true,
+                        items: [
+                              'docs/developers/musd',
+                              'docs/developers/musd/musd-redemptions'
+                        ]
+                  },
+                  'docs/developers/chains',
+                  'docs/developers/subgraphs'
+            ]
+      }
+]),
 			],
 		}),
 		sitemap(),
