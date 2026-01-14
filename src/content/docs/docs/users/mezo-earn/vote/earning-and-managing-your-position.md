@@ -54,3 +54,21 @@ Fees and incentives accrue to your veBTC position as the epoch progresses. Howev
 To maintain your influence on rewards distribution, monitor your lock duration. As your lock decays, your voting power diminishes.
 
 Select **Extend Lock** on your NFT to restore full weight. See [Managing Locks and Collecting Rewards](/docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards) for more information.
+
+### Poke Vote
+
+**Poke** refreshes your lock's voting power to reflect its current state. If you've already voted in the current epoch, your votes won't automatically update when your voting power changes. Poking ensures your votes are counted with your latest voting power.
+
+**When does voting power change?**
+
+- Adding more BTC to your lock
+- Extending your lock duration
+- Claiming veMEZO rebase distributions (updates your veBTC boost)
+- Receiving more veMEZO votes pointed at your veBTC position
+- Natural decay as your lock approaches expiration
+
+**When should you poke?**
+
+As a user, you typically only need to poke after increasing your BTC lock amount, extending your lock duration, or when your veMEZO situation changes. Permanently locked positions maintain stable voting power and don't require poking unless veMEZO-related changes occur.
+
+**Note:** Poke is permissionless — anyone can poke any lock. Others may poke your lock if your voting power has decayed to reduce its impact on vote outcomes.
