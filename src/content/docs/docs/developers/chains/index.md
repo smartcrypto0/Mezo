@@ -419,7 +419,7 @@ mezod tendermint unsafe-reset-all
 
 - **[Chains Repository](https://github.com/mezo-org/chains.git)** - Configuration repository
 - **[Mezod Documentation](/docs/developers/mezod/)** - Chain client documentation
-- **[Validator Kit](/docs/developers/validator-kit/)** - Validator setup guide
+- **[Validator Kit](/docs/developers/mezo-nodes/validator-kit/)** - Validator setup guide
 - **[Cosmos SDK Configuration](https://docs.cosmos.network/)** - Cosmos SDK docs
 
 :::note
