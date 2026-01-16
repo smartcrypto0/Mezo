@@ -62,8 +62,6 @@ topic: users
     * [Network Stats and Data](users/resources/network-stats.md)
     * [Release Notes](users/resources/release-notes.md)
     * [Support](users/resources/support.md)
-  * [stbtc-staked-bitcoin](users/stbtc-staked-bitcoin/README.md)
-    * [Redeeming Your stBTC Deposits](users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits.md)
 * [developers](developers/README.md)
   * [getting-started](developers/getting-started/README.md)
     * [Overview](developers/getting-started/index.md)
