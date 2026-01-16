@@ -28,6 +28,7 @@ export default defineConfig({
 				Header: './src/overrides/Header.astro',
 				Footer: './src/overrides/Footer.astro',
 				SocialIcons: './src/overrides/SocialIcons.astro',
+				Pagination: './src/overrides/Pagination.astro',
 			},
 			customCss: [
 				'./src/styles/custom.css',
@@ -256,7 +257,7 @@ export default defineConfig({
                               'docs/users/resources/release-notes',
                               'docs/users/resources/support'
                         ]
-                  },
+                  }
             ]
       },
       {

@@ -186,3 +186,23 @@ body {
   height: 100%;
   border: none;
 }
+
+/* Pagination - prev on left, next on right */
+.pagination-links {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.pagination-links a {
+  flex: 0 1 auto;
+  max-width: 45%;
+}
+
+.pagination-links a[rel="next"] {
+  margin-left: auto;
+}
+
+.pagination-links .link-title {
+  font-size: var(--sl-text-lg);
+}

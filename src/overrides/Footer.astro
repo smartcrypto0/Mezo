@@ -1,3 +1,12 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Pagination from 'virtual:starlight/components/Pagination';
+---
+
+<footer class="sl-flex starlight-footer">
+  <Pagination {...Astro.props} />
+</footer>
+
 <footer class="mezo-footer">
   <div class="mezo-footer__bottom">
     <div>© 2025 Mezo</div>
@@ -9,6 +18,12 @@
 </footer>
 
 <style>
+  .starlight-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
   .mezo-footer {
     position: fixed;
     bottom: 0;
