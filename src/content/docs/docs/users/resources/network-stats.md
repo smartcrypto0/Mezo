@@ -14,7 +14,7 @@ Track Mezo network activity, MUSD metrics, and token data through these official
 
 ## Aggregators
 
-- **DefiLlama:** Coming soon
+- [DefiLlama](https://defillama.com/chain/mezo) - Total Value Locked (TVL), stablecoin market cap, and volume
 - **CoinGecko:** Coming soon
 - **CoinMarketCap:** Coming soon
 
