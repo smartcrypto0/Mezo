@@ -142,5 +142,6 @@ Available on:
 | Pair | Price Feed ID |
 |------|---------------|
 | MUSD/USD | `0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de` |
+| USDT/USD | `0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b` |
 
 **Requesting additional price feeds:** To enable additional Pyth price feeds, browse the complete list of available [price feed IDs](https://docs.pyth.network/price-feeds/price-feeds#feed-ids) and contact the Mezo team to request onchain activation.
