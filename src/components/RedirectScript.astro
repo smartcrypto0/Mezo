@@ -11,6 +11,12 @@ const code = `
     return;
   }
 
+  if (path.startsWith("/docs/developers/validator-kit")) {
+    var subpath = path.replace("/docs/developers/validator-kit", "");
+    location.replace("/docs/developers/mezo-nodes/validator-kit" + subpath);
+    return;
+  }
+
   if (path.startsWith("/docs/developers/")) {
     location.replace("/docs/developers/");
     return;

@@ -336,201 +336,352 @@ export default defineConfig({
 		sitemap(),
 	],
 	redirects: {
+		// Existing redirects (updated to 301 for SEO)
 		'/docs/users/stbtc-staked-bitcoin/redeeming-your-stbtc-deposits': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/'
 		},
 		'/docs/developers/getting-started/hello@boar.network': {
-			status: 302,
-			destination: '/docs/users'
+			status: 301,
+			destination: '/docs/users/'
 		},
 		'/docs/developers/hello@boar.network': {
-			status: 302,
-			destination: '/docs/users'
+			status: 301,
+			destination: '/docs/users/'
 		},
 		'/docs/images/musd/musd-economy.webp': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/musd/fees'
 		},
 		'/docs/users/musd/mezo.org': {
-			status: 302,
-			destination: '/docs/users'
+			status: 301,
+			destination: '/docs/users/'
 		},
 		'/docs/users/musd/mint-musd.md': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/musd/mint-musd'
 		},
 		'/docs/users/resources/IR@thesis.co': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/resources/faqs'
 		},
 		'/': {
-			status: 302,
+			status: 301,
 			destination: '/docs/'
 		},
 		'/docs/users/home/what-is-mezo': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/introduction/why-bitcoin-needs-banking'
 		},
 		'/docs/users/home/what-is-mezo/bitcoins-economic-layer': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/introduction/mezo-self-service-banking'
 		},
 		'/docs/users/home/mezo-alpha-builders': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/'
 		},
-		'docs/users/resources/mezo-alpha-builders': {
-			status: 302,
+		'/docs/users/resources/mezo-alpha-builders': {
+			status: 301,
 			destination: '/docs/users/'
 		},
 		'/docs/users/user-guides/bitcoin-on-mezo': {
-			status: 302,
-			destination: '/docs/users/concepts/bitcoin-on-mezo'
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/bitcoin-on-mezo/btc-deposit-guide': {
-			status: 302,
-			destination: '/docs/users/concepts/bitcoin-on-mezo/btc-deposit-guide'
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/user-guides/bitcoin-on-mezo/tbtc': {
-			status: 302,
-			destination: '/docs/users/concepts/bitcoin-on-mezo/tbtc'
+		'/docs/users/user-guides/bitcoin-on-mezo/tbtc': {
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/bitcoin-on-mezo/tbtc/minting-process': {
-			status: 302,
-			destination: '/docs/users/concepts/bitcoin-on-mezo/tbtc/minting-process'
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/bitcoin-on-mezo/tbtc/guide': {
-			status: 302,
-			destination: '/docs/users/concepts/bitcoin-on-mezo/tbtc/guide'
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
+		},
+		'/docs/users/user-guides/bitcoin-on-mezo/tbtc-and-wbtc-deposit-guide': {
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/stablecoins-and-erc-20': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/stablecoins-and-erc-20/deposit-guide': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/fees': {
-			status: 302,
-			destination: '/docs/users/mainnet/'
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/fees/tbtc-unmint-and-redemption': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/user-guides/mats': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/mats-for-btc': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/mats-for-stablecoins': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/user-guides/mats/leaderboard-and-my-mats': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/rewards-hub'
 		},
 		'/docs/users/user-guides/mats/invite-bonus': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/official-links/mezo-community': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/'
 		},
 		'/docs/users/musd/architecture': {
-			status: 302,
-			destination: '/docs/users/musd/concepts-and-terminology'
+			status: 301,
+			destination: '/docs/users/musd/concepts'
+		},
+		'/docs/users/musd/concepts-and-terminology': {
+			status: 301,
+			destination: '/docs/users/musd/concepts'
 		},
 		'/docs/users/getting-started/mezo-matsnet-alpha-testnet/deploy-and-verify-contracts': {
-			status: 302,
+			status: 301,
 			destination: '/docs/developers/getting-started'
 		},
 		'/docs/users/resources/mezo-community': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/'
 		},
 		'/docs/users/concepts/mats': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/mats-for-btc': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/mats-for-stablecoins': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/mats/leaderboard-and-my-mats': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/rewards-hub'
 		},
 		'/docs/users/concepts/mats/invite-bonus': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mats/mats-overview'
 		},
 		'/docs/users/concepts/stablecoins-and-erc-20': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/concepts/stablecoins-and-erc-20/deposit-guide': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/tbtc': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo/tbtc': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/tbtc/minting-process': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo/tbtc/minting-process': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/tbtc/guide': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo/tbtc/guide': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/btc-deposit-guide': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo/btc-deposit-guide': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/bitcoin-on-mezo/tbtc-and-wbtc-deposit-guide': {
-			status: 302,
+		'/docs/users/concepts/bitcoin-on-mezo/tbtc-and-wbtc-deposit-guide': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/fees': {
-			status: 302,
+		'/docs/users/concepts/fees': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
-		'docs/users/concepts/fees/tbtc-unmint-and-redemption': {
-			status: 302,
+		'/docs/users/concepts/fees/tbtc-unmint-and-redemption': {
+			status: 301,
 			destination: '/docs/users/mainnet/bridges'
 		},
 		'/docs/users/resources/media-kit': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/resources/brand-kit'
 		},
 		'/docs/users/matsnet/stack-matsnet-btc': {
-			status: 302,
+			status: 301,
 			destination: '/docs/users/'
 		},
-		'docs/users/getting-started/depositing': {
-			status: 302,
-			destination: '/docs/users/getting-started/bridging'
+		'/docs/users/getting-started/depositing': {
+			status: 301,
+			destination: '/docs/users/getting-started/deposit-assets'
 		},
-		'docs/users/resources/contracts-and-btc-custody': {
-			status: 302,
+		'/docs/users/resources/contracts-and-btc-custody': {
+			status: 301,
 			destination: '/docs/users/resources/contracts-reference'
+		},
+
+		// New redirects for broken URLs
+		'/docs/users/resources/validators': {
+			status: 301,
+			destination: '/docs/developers/mezo-nodes/validators'
+		},
+		'/docs/users/resources/testnet-validators': {
+			status: 301,
+			destination: '/docs/developers/mezo-nodes/validators'
+		},
+		'/docs/users/resources/integrations-and-partners': {
+			status: 301,
+			destination: '/docs/developers/getting-started/integrations-and-partners'
+		},
+		'/docs/users/mainnet/mats': {
+			status: 301,
+			destination: '/docs/users/mats/mats-overview'
+		},
+		'/docs/users/introduction/what-is-mezo': {
+			status: 301,
+			destination: '/docs/users/introduction/why-bitcoin-needs-banking'
+		},
+		'/docs/users/introduction/bitcoins-economic-layer': {
+			status: 301,
+			destination: '/docs/users/introduction/mezo-self-service-banking'
+		},
+		'/docs/users/getting-started/mezo-portal': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/users/getting-started/mezo-portal/supported-wallets': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/users/getting-started/mezo-portal/creating-an-account': {
+			status: 301,
+			destination: '/docs/users/getting-started/creating-an-account'
+		},
+		'/docs/users/getting-started/mezo-matsnet-alpha-testnet': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/users/getting-started/mezo-matsnet-alpha-testnet/stack-matsnet-btc': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/users/getting-started/mezo-matsnet-alpha-testnet/connect-to-mezo-matsnet': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/users/getting-started/bridging': {
+			status: 301,
+			destination: '/docs/users/getting-started/deposit-assets'
+		},
+		'/docs/users/developers/getting-started': {
+			status: 301,
+			destination: '/docs/developers/getting-started'
+		},
+		'/docs/users/bridge/musd-bridge': {
+			status: 301,
+			destination: '/docs/users/musd/musd-bridge'
+		},
+		'/docs/developers/infrastructure/oracles': {
+			status: 301,
+			destination: '/docs/developers/architecture/oracles'
+		},
+		'/docs/developers/getting-started/deploy-your-dapp-to-mezo': {
+			status: 301,
+			destination: '/docs/developers/getting-started'
+		},
+		'/docs/developers/architecture': {
+			status: 301,
+			destination: '/docs/developers/architecture/oracles'
+		},
+
+		// Fix double /docs/docs/ paths
+		'/docs/docs/users/resources/faqs': {
+			status: 301,
+			destination: '/docs/users/resources/faqs'
+		},
+		'/docs/docs/users/resources/brand-kit': {
+			status: 301,
+			destination: '/docs/users/resources/brand-kit'
+		},
+		'/docs/docs/users/readme': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/docs/users/musd/risks': {
+			status: 301,
+			destination: '/docs/users/musd/risks'
+		},
+		'/docs/docs/users/musd': {
+			status: 301,
+			destination: '/docs/users/musd'
+		},
+		'/docs/docs/users/mats/rewards-hub': {
+			status: 301,
+			destination: '/docs/users/mats/rewards-hub'
+		},
+		'/docs/docs/users/mainnet/bridges': {
+			status: 301,
+			destination: '/docs/users/mainnet/bridges'
+		},
+		'/docs/docs/users/introduction/bitcoins-economic-layer': {
+			status: 301,
+			destination: '/docs/users/introduction/mezo-self-service-banking'
+		},
+		'/docs/docs/users/getting-started/creating-an-account': {
+			status: 301,
+			destination: '/docs/users/getting-started/creating-an-account'
+		},
+		'/docs/docs/users/getting-started': {
+			status: 301,
+			destination: '/docs/users/getting-started/deposit-assets'
+		},
+		'/docs/docs/users': {
+			status: 301,
+			destination: '/docs/users/'
+		},
+		'/docs/docs/developers/bridge': {
+			status: 301,
+			destination: '/docs/developers/bridge/mezo-bridge'
+		},
+		'/docs/docs/developers': {
+			status: 301,
+			destination: '/docs/developers/'
+		},
+
+		// Fix /docs/summary/ paths
+		'/docs/summary/users/resources/release-notes.md': {
+			status: 301,
+			destination: '/docs/users/resources/release-notes'
+		},
+		'/docs/summary/users/musd/mint-musd.md': {
+			status: 301,
+			destination: '/docs/users/musd/mint-musd'
+		},
+		'/docs/summary/users/musd/architecture-and-terminology.md': {
+			status: 301,
+			destination: '/docs/users/musd/architecture-and-terminology'
 		},
 	}
 });
