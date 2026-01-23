@@ -1,8 +1,6 @@
 ---
 title: MEZO Overview
-description: >-
-  Understanding MEZO, Mezo's native token for governance, voting power, and
-  value capture
+description: 'The native token for governance, voting power, and value capture'
 topic: users
 ---
 
