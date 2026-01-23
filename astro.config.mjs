@@ -184,6 +184,17 @@ export default defineConfig({
                         ]
                   },
                   {
+                        label: 'MEZO',
+                        collapsed: true,
+                        items: [
+                              'docs/users/mezo',
+                              'docs/users/mezo/token-distribution',
+                              'docs/users/mezo/emissions',
+                              'docs/users/mezo/governance',
+                              'docs/users/mezo/mezo-bridge'
+                        ]
+                  },
+                  {
                         label: 'Mezo Earn',
                         collapsed: true,
                         items: [
@@ -199,10 +210,27 @@ export default defineConfig({
                                     label: 'Lock',
                                     collapsed: true,
                                     items: [
-                                          'docs/users/mezo-earn/lock/vebtc',
-                                          'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
-                                          'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
-                                          'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
+                                          {
+                                                label: 'veBTC',
+                                                collapsed: true,
+                                                items: [
+                                                      'docs/users/mezo-earn/lock/vebtc',
+                                                      'docs/users/mezo-earn/lock/vebtc/how-to-lock-btc',
+                                                      'docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards',
+                                                      'docs/users/mezo-earn/lock/vebtc/faqs-and-resources'
+                                                ]
+                                          },
+                                          {
+                                                label: 'veMEZO',
+                                                collapsed: true,
+                                                items: [
+                                                      'docs/users/mezo-earn/lock/vemezo',
+                                                      'docs/users/mezo-earn/lock/vemezo/how-to-lock-mezo',
+                                                      'docs/users/mezo-earn/lock/vemezo/boost-mechanism',
+                                                      'docs/users/mezo-earn/lock/vemezo/matching-market',
+                                                      'docs/users/mezo-earn/lock/vemezo/faqs-and-resources'
+                                                ]
+                                          }
                                     ]
                               },
                               {

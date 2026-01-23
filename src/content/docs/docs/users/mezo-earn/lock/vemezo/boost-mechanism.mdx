@@ -1,0 +1,95 @@
+---
+title: Boost Mechanism
+description: How veMEZO boosts veBTC voting power up to 5x through the matching market
+topic: users
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+veMEZO boosts your veBTC voting power by up to 5x. This page explains how the boost formula works and how the matching market pairs veBTC and veMEZO holders.
+
+## How Boost Works
+
+Your boosted voting weight combines your veBTC with any veMEZO allocated to your position:
+
+**Boosted Weight = |veBTC| × min(5, 1 + Boost)**
+
+Where the Boost term is:
+
+**Boost = 4 × (|veBTC|_total / |veBTC|) × (|veMEZO| / |veMEZO|_total)**
+
+### Key Properties
+
+- **Minimum multiplier: 1x** — A veBTC position with no veMEZO votes operates at base weight
+- **Maximum multiplier: 5x** — No combination of holdings can exceed 5x
+- **Relative, not absolute** — Your boost depends on your share of total veBTC and total veMEZO, not raw amounts
+
+---
+
+## Understanding the Formula
+
+The boost formula has important implications:
+
+**Larger veBTC positions need more veMEZO.** The formula contains |veBTC|_total / |veBTC| in the numerator. As your veBTC share grows, this ratio shrinks, requiring proportionally more veMEZO to maintain the same boost level.
+
+**You reach max boost when your shares match.** A participant hits the 5x cap when their share of veMEZO equals or exceeds their share of veBTC:
+
+**|veMEZO| / |veMEZO|_total ≥ |veBTC| / |veBTC|_total**
+
+:::note[Example]
+If you hold 1% of all veBTC, you need at least 1% of all veMEZO to reach the maximum 5x multiplier.
+:::
+
+---
+
+## The Matching Market
+
+Every veBTC NFT has its own veBTC boost gauge. veMEZO holders vote on these gauges to allocate boost.
+
+### How It Works
+
+1. **veBTC holder creates a position** — A veBTC NFT is minted with an associated boost gauge
+2. **veMEZO holders vote** — They allocate veMEZO weight to veBTC gauges
+3. **Boost is calculated** — The veBTC position's boost depends on total veMEZO votes it receives
+4. **Position is "poked"** — The veBTC holder triggers a transaction to apply the new boost
+
+### Why This Creates a Market
+
+**BTC-heavy users** can attract boost by posting incentives on their veBTC gauge. If the incentive yield per unit of veMEZO is attractive, veMEZO holders will vote for that gauge.
+
+**MEZO-heavy users** earn by voting on well-incentivized veBTC gauges, even if they hold little BTC themselves.
+
+The matching market prices boost as a permissionless, tradable service.
+
+---
+
+## Boost Without Holding MEZO
+
+You don't need to hold MEZO yourself to benefit from boost. If you post attractive incentives on your veBTC gauge, other veMEZO holders may vote for it—giving your position a multiplier without you locking any MEZO.
+
+Conversely, a veBTC position with no veMEZO votes still:
+
+- Retains full base voting weight (1x multiplier)
+- Earns passive bridging fees
+- Can vote on gauges to earn fees and emissions
+
+Boost enhances returns but isn't required to participate.
+
+---
+
+## Summary
+
+| Scenario | Multiplier | Notes |
+|---|---|---|
+| veBTC only, no veMEZO votes | 1x | Base weight, still earns fees |
+| veBTC + some veMEZO votes | 1x–5x | Multiplier scales with veMEZO share |
+| veBTC + proportional veMEZO share | 5x | Maximum boost achieved |
+| veMEZO only, no veBTC | — | Cannot vote on gauges; earns rebases only |
+
+---
+
+## Next Steps
+
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/matching-market">Matching Market Overview</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/vote">Vote on Gauges</LinkButton>
+<LinkButton href="/docs/users/mezo/emissions">MEZO Emissions</LinkButton>

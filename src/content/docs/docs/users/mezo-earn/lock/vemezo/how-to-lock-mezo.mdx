@@ -1,0 +1,80 @@
+---
+title: How to Lock MEZO
+description: Step-by-step guide to locking MEZO and receiving a veMEZO NFT
+topic: users
+---
+
+import { Steps, LinkButton } from '@astrojs/starlight/components';
+
+Locking MEZO gives you a veMEZO NFT, which boosts your veBTC voting power by up to 5x. See the [veMEZO Overview](/docs/users/mezo-earn/lock/vemezo) for details on what you earn.
+
+## Prerequisites
+
+Before locking MEZO, ensure you have:
+
+- MEZO tokens in your wallet
+- A connected wallet
+- Sufficient BTC for gas fees
+
+See the [Getting Started](/docs/users/getting-started/deposit-assets) section for guidance.
+
+:::note[Note]
+veMEZO does not grant independent voting power. It multiplies the voting power of your veBTC position. Without veBTC, your veMEZO will not participate in gauge voting—though you can still earn rebase rewards.
+:::
+
+---
+
+## Navigate to Lock
+
+<Steps>
+1. Open the Mezo app
+
+2. Click **Lock** in the left sidebar (under "Earn")
+
+3. You'll see your eligible assets
+</Steps>
+
+---
+
+## Initiate Lock
+
+Find the MEZO asset card showing your available balance and click **Lock**. A lock configuration modal appears where you'll configure your position.
+
+**Amount:** Enter the amount of MEZO you want to lock. You can lock any amount up to your available balance.
+
+**Duration:** Select your lock duration from 1 week to 4 years. Longer locks provide higher veMEZO weight, which translates to greater boost potential. The interface shows your estimated initial veMEZO weight.
+
+:::note[Note]
+Lock durations are aligned to epoch boundaries and rounded down to the nearest full week. See [Epochs](/docs/users/mezo-earn/lock/vebtc#epochs) for details.
+:::
+
+---
+
+## Confirm Transaction
+
+Review your lock details:
+
+- MEZO amount
+- Lock duration
+- Initial veMEZO weight
+- Lock expiration date
+
+Click **Confirm Lock**, approve the transaction in your wallet, and wait for blockchain confirmation.
+
+---
+
+## View Your Position
+
+After confirmation, view your lock details under the Lock page, including:
+
+- Current veMEZO weight (decays over time)
+- Lock expiration date
+- Options to extend your lock
+
+---
+
+## Next Steps
+
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Boost Mechanism</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/vote">Vote on Gauges</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/matching-market">Matching Market</LinkButton>

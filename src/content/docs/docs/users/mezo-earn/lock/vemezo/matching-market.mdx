@@ -1,0 +1,113 @@
+---
+title: Matching Market Overview
+description: How the matching market connects veBTC and veMEZO holders for mutual benefit
+topic: users
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+:::caution[Community Tool Disclaimer]
+The current implementation of the Matching Market (Matchbox) is a community-built tool. It is not officially built, maintained, or endorsed by Mezo. Users should conduct their own research and exercise caution when interacting with third-party applications.
+:::
+
+The Matching Market is how veBTC and veMEZO get paired together. It allows BTC holders to access boost without holding MEZO, and MEZO holders to earn yield without holding significant BTC.
+
+## The Problem It Solves
+
+Mezo's dual-token system requires both veBTC and veMEZO to maximize voting power. But not everyone holds both:
+
+- **BTC-heavy users** want the 5x boost but may not have MEZO
+- **MEZO-heavy users** have veMEZO but limited BTC to vote with
+
+The Matching Market connects these two sides.
+
+---
+
+## How It Works
+
+Every veBTC position has its own boost gauge. This gauge doesn't distribute emissions—it determines how much veMEZO boost that veBTC position receives.
+
+### The Flow
+
+1. **veBTC holder locks BTC** → Receives a veBTC NFT with an associated boost gauge
+2. **veBTC holder posts incentives** → Deposits tokens (any ERC-20) to their boost gauge to attract veMEZO votes
+3. **veMEZO holders vote** → Allocate veMEZO weight to attractive boost gauges
+4. **Boost is applied** → The veBTC position's multiplier increases based on veMEZO votes received
+5. **Incentives are claimed** → veMEZO voters claim their share of incentives at epoch end
+
+---
+
+## Two Sides of the Market
+
+### If You're BTC-Heavy
+
+You want boost but don't have enough MEZO. Your options:
+
+- Post incentives on your veBTC gauge to attract veMEZO votes
+- Pay for boost rather than locking MEZO yourself
+- The market determines the going rate for boost
+
+### If You're MEZO-Heavy
+
+You have veMEZO but limited BTC. Your options:
+
+- Vote on well-incentivized veBTC gauges to earn yield
+- Provide boost as a service to BTC holders willing to pay
+- Earn returns on your MEZO without needing significant BTC exposure
+
+---
+
+## Why This Matters
+
+The Matching Market turns boost into a priced, tradable service:
+
+- **Boost has a market rate** determined by supply and demand
+- **Users don't need to hold both tokens** to benefit from the system
+- **Capital efficiency improves** — BTC holders focus on BTC, MEZO holders focus on MEZO
+
+Without the Matching Market, users would need to hold proportional amounts of both tokens to participate effectively. The market removes that friction.
+
+---
+
+## Key Concepts
+
+| Term | Definition |
+|---|---|
+| Boost Gauge | A gauge attached to each veBTC NFT that receives veMEZO votes |
+| Incentives | Tokens posted by veBTC holders to attract veMEZO votes |
+| Boost Provider | A veMEZO holder who votes on others' boost gauges for incentives |
+| Boost Seeker | A veBTC holder who posts incentives to attract veMEZO votes |
+
+---
+
+## What the Matching Market Is Not
+
+- **Not an official Mezo product** — The Matching Market is built and operated by the community, not by Mezo
+- **Not for emissions** — Boost gauges don't receive MEZO emissions; they only determine boost multipliers
+- **Not required** — A veBTC position without boost still operates at 1x and earns passive fees
+- **Not the same as gauge voting** — Gauge voting directs emissions; the Matching Market pairs veBTC with veMEZO
+
+---
+
+## Risks
+
+As a community-built tool, the Matching Market carries additional risks:
+
+- **Smart contract risk** — Contracts may not have been audited to the same standard as core Mezo protocol
+- **No official support** — Mezo cannot provide support or assistance for issues with the Matching Market
+- **Operational risk** — The tool may be modified, discontinued, or experience downtime without notice
+
+:::danger[Warning]
+Users should only deposit funds they can afford to lose and verify contract addresses independently.
+:::
+
+---
+
+## Learn More
+
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Boost Mechanism</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/faqs-and-resources">FAQs</LinkButton>
+
+:::note[Note]
+For questions or support related to the Matching Market, please contact the community developers directly. Mezo support cannot assist with third-party tools.
+:::
