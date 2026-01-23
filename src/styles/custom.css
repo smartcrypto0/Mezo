@@ -206,3 +206,13 @@ body {
 .pagination-links .link-title {
   font-size: var(--sl-text-lg);
 }
+
+/* Preserve case in sidebar labels (prevent auto-capitalize) */
+.sidebar-content summary,
+.sidebar-content a,
+nav[aria-label="Main"] summary,
+nav[aria-label="Main"] a,
+.sl-sidebar summary,
+.sl-sidebar a {
+  text-transform: none !important;
+}
