@@ -1,6 +1,6 @@
 ---
 title: Emissions Schedule
-description: 'MEZO emissions model with Bitcoin-inspired halving and distribution flow'
+description: MEZO emissions model with Bitcoin-inspired halving and distribution flow
 topic: users
 ---
 
