@@ -6,8 +6,6 @@ description: >-
 topic: users
 ---
 
-import { LinkButton } from '@astrojs/starlight/components';
-
 ## FAQs
 
 ### Can I unlock my MEZO early?
@@ -54,6 +52,6 @@ The boost formula depends on your relative share of total veBTC and total veMEZO
 
 ## Next Steps
 
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Understand Boost Mechanism</LinkButton>
-<LinkButton href="/docs/users/mezo-earn/vote">Start Voting</LinkButton>
-<LinkButton href="/docs/users/mezo/emissions">MEZO Emissions</LinkButton>
+- [Understand Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism)
+- [Start Voting](/docs/users/mezo-earn/vote)
+- [MEZO Emissions](/docs/users/mezo/emissions)
