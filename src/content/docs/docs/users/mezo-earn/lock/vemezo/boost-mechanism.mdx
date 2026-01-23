@@ -12,11 +12,15 @@ veMEZO boosts your veBTC voting power by up to 5x. This page explains how the bo
 
 Your boosted voting weight combines your veBTC with any veMEZO allocated to your position:
 
-**Boosted Weight = |veBTC| × min(5, 1 + Boost)**
+$$
+\text{Boosted Weight} = |\text{veBTC}| \times \min(5, \; 1 + \text{Boost})
+$$
 
 Where the Boost term is:
 
-**Boost = 4 × (|veBTC|_total / |veBTC|) × (|veMEZO| / |veMEZO|_total)**
+$$
+\text{Boost} = 4 \times \frac{|\text{veBTC}|_{\text{total}}}{|\text{veBTC}|} \times \frac{|\text{veMEZO}|}{|\text{veMEZO}|_{\text{total}}}
+$$
 
 ### Key Properties
 
@@ -34,7 +38,9 @@ The boost formula has important implications:
 
 **You reach max boost when your shares match.** A participant hits the 5x cap when their share of veMEZO equals or exceeds their share of veBTC:
 
-**|veMEZO| / |veMEZO|_total ≥ |veBTC| / |veBTC|_total**
+$$
+\frac{|\text{veMEZO}|}{|\text{veMEZO}|_{\text{total}}} \geq \frac{|\text{veBTC}|}{|\text{veBTC}|_{\text{total}}}
+$$
 
 :::note[Example]
 If you hold 1% of all veBTC, you need at least 1% of all veMEZO to reach the maximum 5x multiplier.

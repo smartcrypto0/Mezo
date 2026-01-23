@@ -4,7 +4,7 @@ description: 'MEZO genesis supply, allocation breakdown, and vesting schedule'
 topic: users
 ---
 
-MEZO is Mezo's native token—used to vote and influence where protocol fees and incentives go, as well as govern protocol parameters.
+MEZO is Mezo's native token—used to boost voting power and influence where protocol fees and incentives go.
 
 ## Token Distribution
 
