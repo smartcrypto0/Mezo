@@ -27,7 +27,7 @@ topic: users
     * [MUSD Bridge](users/musd/musd-bridge.md)
     * [Risks and Mitigations](users/musd/risks.md)
     * [Concepts](users/musd/concepts.md)
-  * [mezo](users/mezo/index.md)
+  * [MEZO](users/mezo/index.md)
     * [MEZO Overview](users/mezo/index.md)
     * [Token Distribution](users/mezo/token-distribution.md)
     * [Emissions Schedule](users/mezo/emissions.md)
