@@ -50,7 +50,7 @@ If you need to add the network to your wallet manually, use the following instru
 
 * MetaMask: [How to add a custom network RPC](https://support.metamask.io/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/)
 * Brave Wallet: [Adding a Custom Network](https://support.brave.com/hc/en-us/articles/15614704959757-Adding-a-New-Chain)
-* TrustWallet: [Add a Custom Network (Mobile)](https://community.trustwallet.com/t/how-to-add-a-custom-network-on-the-trust-wallet-mobile-app/626781)
+* TrustWallet: [Add a Custom Network (Mobile)](https://trustwallet.com/blog/guides/how-to-add-a-custom-network-on-the-trust-wallet-app)
 
 ## BTC Wallets
 
