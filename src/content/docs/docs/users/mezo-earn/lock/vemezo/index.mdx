@@ -1,0 +1,75 @@
+---
+title: veMEZO Overview
+description: 'Understanding veMEZO, the tokenized representation of locked MEZO for boosting voting power and earning rebases'
+topic: users
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+veMEZO is the tokenized (NFT) representation of MEZO locked on Mezo Network. Locking MEZO lets you boost your veBTC voting power by up to 5x, amplifying your earnings, and earn anti-dilution rebases via MEZO emissions.
+
+## What is veMEZO?
+
+When you lock MEZO on Mezo, you receive a veMEZO NFT that represents your locked position. This NFT gives you:
+
+- Boost multiplier on your veBTC voting power (up to 5x)
+- Rebase rewards from weekly MEZO emissions to offset dilution
+- Participation in the matching market to earn incentives from veBTC holders
+
+:::note[Important]
+veMEZO does not grant independent voting power. It only multiplies the voting power of veBTC positions. Without veBTC, your veMEZO cannot participate in gauge voting.
+:::
+
+---
+
+## How veMEZO Weight Works
+
+Your veMEZO weight depends on two factors: the amount of MEZO locked (more MEZO = more weight) and your lock duration (longer locks = higher sustained weight).
+
+Your weight decays linearly over time. A user who locks 1,000 MEZO for 4 years starts with 1,000 veMEZO weight, which decays to 500 after 2 years, and reaches 0 at expiration. You can extend your lock at any time to maintain full weight.
+
+You can also auto-max lock your veMEZO, which will let you sustain the maximum 4-year voting weight every epoch without needing to relock your tokens continuously.
+
+### Lock Parameters
+
+| Parameter | Value |
+|---|---|
+| Minimum lock | 1 week |
+| Maximum lock | 4 years (1,456 days) |
+| Lock decay | Linear — weight decreases continuously until reaching zero |
+
+---
+
+## What You Earn
+
+### Rebase Rewards (All veMEZO Holders)
+
+veMEZO holders receive a share of weekly MEZO emissions as rebases. This protects against dilution from new emissions. The rebase share is dynamic—higher when fewer tokens are locked, lower as more MEZO locks.
+
+### Incentives (Via the Matching Market)
+
+veMEZO holders can vote on veBTC gauges to earn incentives. When a veBTC holder wants to boost their position but lacks sufficient veMEZO, they may post incentives on their veBTC gauge. By voting for that gauge, you earn those incentives in exchange for providing boost.
+
+See [Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism) for details on how the matching market works.
+
+---
+
+## veMEZO vs veBTC
+
+|  | veBTC | veMEZO |
+|---|---|---|
+| Underlying asset | BTC | MEZO |
+| Max lock | 28 days | 4 years |
+| Voting power | Base voting power | Multiplies veBTC power (up to 5x) |
+| Earns fees | Yes (bridging, swap, MUSD) | No |
+| Earns rebases | No | Yes |
+| Earns incentives | Yes (from gauges you vote for) | Yes (from veBTC boost gauges) |
+
+---
+
+## Next Steps
+
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/how-to-lock-mezo">How to Lock MEZO</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Boost Mechanism</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/matching-market">Matching Market</LinkButton>
+<LinkButton href="/docs/users/mezo-earn/lock/vemezo/faqs-and-resources">FAQs</LinkButton>
