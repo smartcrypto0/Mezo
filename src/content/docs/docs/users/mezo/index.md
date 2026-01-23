@@ -23,7 +23,7 @@ MEZO is used to:
 |  | MEZO | veMEZO |
 |---|---|---|
 | What it is | Liquid, transferable token | NFT representing locked MEZO |
-| How you get it | Purchase, earn, or receive via airdrop | Lock MEZO for 1 week to 4 years |
+| How you get it | Purchase, earn, or receive via airdrop | Lock MEZO for 1 year to 4 years |
 | What it does | Hold or trade | Boosts veBTC voting power, earns rebases |
 
 ## Key Properties
@@ -31,13 +31,3 @@ MEZO is used to:
 - **No independent voting power** — veMEZO cannot vote on gauges alone. It only multiplies veBTC weight.
 - **Time-weighted** — Longer locks = higher veMEZO weight
 - **Transferable as NFT** — veMEZO positions are ERC-721 NFTs that can be transferred or merged
-
----
-
-## Learn More
-
-- [Token Distribution](/docs/users/mezo/token-distribution) — Genesis supply and allocation
-- [Emissions Schedule](/docs/users/mezo/emissions) — How new MEZO enters circulation
-- [Governance](/docs/users/mezo/governance) — Governable parameters and voting
-- [veMEZO Overview](/docs/users/mezo-earn/lock/vemezo) — How to lock MEZO and boost your earnings
-- [Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism) — How veBTC and veMEZO combine

@@ -47,11 +47,3 @@ You still earn rebase rewards. However, you won't earn any incentives from veBTC
 ### Why is my boost lower than expected?
 
 The boost formula depends on your relative share of total veBTC and total veMEZO. If total locked amounts increase (across all users of Mezo), your share decreases, and so does your boost—even if your absolute holdings haven't changed.
-
----
-
-## Next Steps
-
-- [Understand Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism)
-- [Start Voting](/docs/users/mezo-earn/vote)
-- [MEZO Emissions](/docs/users/mezo/emissions)
