@@ -4,17 +4,23 @@ description: 'MEZO governance parameters, constraints, and future development'
 topic: users
 ---
 
+import { LinkButton } from '@astrojs/starlight/components';
+
 MEZO governance allows veBTC holders to shape protocol parameters and emission flows. Governance is anchored in BTC—veMEZO amplifies voting power but cannot vote independently.
 
 ## Governable Parameters
 
-Through on-chain governance, veBTC holders can adjust:
+veBTC holders can adjust where MEZO emissions land, allowing them to modify the weekly emissions distribution with chain splitters. Governable parameters are:
 
 | Parameter | Description | Constraint |
 |---|---|---|
 | Chain Splitter ratio | Share of emissions to validators vs ecosystem | ±1% per epoch max |
 | Ecosystem Splitter ratio | Share of emissions to staking vs ecosystem gauges | ±1% per epoch max |
 | Max boost multiplier | Maximum veMEZO boost on veBTC | Currently 5x |
+
+![Mezo Emissions Schedule](/docs/images/mezo-token/mezo-emissions.png)
+
+<LinkButton href="/docs/users/mezo/emissions">Learn more about MEZO token Emissions</LinkButton>
 
 ## Governance Constraints
 
