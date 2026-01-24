@@ -388,6 +388,8 @@ class GitbookProcessor {
       .replace(/\bbtc\b/gi, 'BTC')              // Special case for BTC
       .replace(/\bstbtc\b/gi, 'stBTC')          // Special case for stBTC
       .replace(/\btbtc\b/gi, 'tBTC')            // Special case for tBTC
+      .replace(/\bvebtc\b/gi, 'veBTC')          // Special case for veBTC
+      .replace(/\bvemezo\b/gi, 'veMEZO')        // Special case for veMEZO
       .replace(/\berc\b/gi, 'ERC')              // Special case for ERC
       .replace(/\bapi\b/gi, 'API')              // Special case for API
       .replace(/\bfaq\b/gi, 'FAQ');             // Special case for FAQ
