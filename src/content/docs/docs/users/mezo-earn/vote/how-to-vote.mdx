@@ -16,14 +16,21 @@ Voting allows you to direct the flow of emissions and, in return, earn a proport
 Before you begin, ensure you have:
 
 - A compatible wallet connected to Mezo (MetaMask, Rabby, or WalletConnect-supported wallets)
-- An active veBTC position
+- An active veBTC position (to vote on staking/validator/ecosystem gauges)
+- OR an active veMEZO position (to vote on veBTC boost gauges)
 - Sufficient BTC for gas fees
 
-See [How to Lock BTC](/docs/users/mezo-earn/lock/vebtc/how-to-lock-btc) if you don't have a lock already.
+See [How to Lock BTC](/docs/users/mezo-earn/lock/vebtc/how-to-lock-btc) if you don't have a veBTC lock already.
+
+See [How to Lock MEZO](/docs/users/mezo-earn/lock/vemezo/how-to-lock-mezo) if you want to create a veMEZO position.
 
 ---
 
-## Cast Your Vote
+## Voting with veBTC
+
+veBTC holders vote on staking gauges, validator gauges, and ecosystem gauges to direct emissions and earn fees.
+
+### Cast Your Vote
 
 To earn rewards, you must actively allocate your voting power to specific gauges every epoch (7 days).
 
@@ -39,6 +46,83 @@ To earn rewards, you must actively allocate your voting power to specific gauges
 Votes don't carry over between epochs. You must vote each week to continue earning fees and incentives.
 :::
 
+---
+
+## Voting with veMEZO
+
+veMEZO holders vote on veBTC boost gauges to provide boost to BTC positions in exchange for incentives.
+
+### Vote on Boost Gauges
+
+<Steps>
+1. Navigate to the **Boost Gauges** section to see all available veBTC positions seeking boost.
+
+2. Review each gauge to see:
+   - Current incentives posted
+   - Amount of veMEZO already directed to that gauge
+   - Estimated yield based on your veMEZO allocation
+
+3. Enter the percentage of your veMEZO voting power you want to direct to each boost gauge.
+
+4. Click **Submit Votes** and sign the transaction.
+</Steps>
+
+### What You Earn
+
+When you direct veMEZO votes to a boost gauge:
+
+- You earn a share of any incentives posted on that gauge, proportional to your share of veMEZO votes
+- The veBTC holder receives boost, increasing their effective voting power
+
+Note: veMEZO voters do **not** receive trading fees, MUSD revenue, or bridging fees from the veBTC positions they boost. Those rewards go to the veBTC holder. veMEZO voters only earn the incentives explicitly posted on boost gauges.
+
+---
+
+## Maximizing Your Boost (For veBTC Holders)
+
+If you hold both veBTC and veMEZO, you can maximize your voting power:
+
+### Option 1: Self-Boost
+
+Direct your veMEZO votes to your own veBTC position's boost gauge.
+
+<Steps>
+1. Go to your veBTC position's boost gauge
+2. Allocate your veMEZO voting power to it
+3. Click **Submit Votes**
+4. **Poke** your veBTC position to activate the new boost
+</Steps>
+
+### Option 2: Attract External Boost
+
+Post incentives on your veBTC boost gauge to attract veMEZO votes from other users.
+
+<Steps>
+1. Navigate to your veBTC position's boost gauge
+2. Click **Add Incentives**
+3. Deposit tokens (any ERC-20) as incentives
+4. veMEZO holders will see your incentives and may direct votes your way
+5. **Poke** your position after receiving new veMEZO votes
+</Steps>
+
+---
+
+## Important: Poke After Changes
+
+When your veMEZO situation changes, the boost doesn't automatically update. You need to **poke** your veBTC position to refresh its boosted weight.
+
+**Poke when:**
+- You receive new veMEZO votes on your boost gauge
+- You direct your own veMEZO to your position
+- You claim veMEZO rebase distributions
+- You extend your veMEZO lock
+
+**How to poke:**
+1. Go to your veBTC position
+2. Click **Poke**
+3. Sign the transaction
+
+Your new boosted weight will apply immediately.
 
 ---
 
@@ -46,3 +130,5 @@ Votes don't carry over between epochs. You must vote each week to continue earni
 
 - [Managing Locks and Collecting Rewards](/docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards) — Claim your earnings and extend your lock
 - [Voting Overview](/docs/users/mezo-earn/vote) — Learn more about how voting works and what you earn
+- [Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism) — Understand how veMEZO boost is calculated
+- [Matching Market](/docs/users/mezo-earn/lock/vemezo/matching-market) — Learn how the boost marketplace works

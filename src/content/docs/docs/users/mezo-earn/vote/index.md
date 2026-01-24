@@ -4,7 +4,7 @@ description: How voting works on Mezo and what you earn as a veBTC holder
 topic: users
 ---
 
-Mezo's governance model is simple: lock your commitment, earn the right to direct the protocol's future. Through voting, veBTC holders capture the economic value of emissions and determine where the chain's value is allocated.
+Mezo's governance model is simple: lock your commitment, earn the right to direct the protocol's future. Through voting, veBTC holders capture the economic value of fees and determine where the chain's value is allocated.
 
 ---
 
@@ -22,13 +22,31 @@ More emissions attract more liquidity providers. More liquidity can increase tra
 
 **Incentives:** External protocols deposit incentives to attract votes toward their preferred gauges. These are split among all voters on that gauge, creating a secondary revenue stream.
 
+**Passive Bridging Fees:** All veBTC holders receive bridging and chain fees proportional to their boosted weight—no voting required.
+
 This creates a market for votes. Protocols compete to attract your voting power, and you capture the value of that competition.
 
 ---
 
-## Voting Power and Decay
+## Voting Power and Boost
 
-Your voting power decays linearly as your lock approaches expiration. Lock 1 BTC for 28 days, and your initial power is 1.0, decaying continuously until it reaches zero at expiration. This ensures active participation and prevents stale votes from dominating governance.
+Your effective voting power depends on two factors: your base veBTC weight and any boost from veMEZO.
+
+### Base Weight (veBTC Only)
+
+Without any veMEZO, your voting power equals your veBTC weight, which decays linearly as your lock approaches expiration. Lock 1 BTC for 28 days, and your initial power is 1.0, decaying continuously until it reaches zero at expiration.
+
+### Boosted Weight (veBTC + veMEZO)
+
+When veMEZO votes are directed to your veBTC position, your voting power is multiplied by a boost factor between 1x and 5x. The boost depends on:
+
+- Your share of total veBTC in the system
+- The share of total veMEZO directed to your position
+
+**Key points:**
+- Larger BTC positions require proportionally more veMEZO to reach max boost
+- You can receive boost by holding veMEZO yourself, or by attracting veMEZO votes through incentives
+- Boost must be "poked" to take effect after changes
 
 To maintain your voting power, extend your lock periodically. See [Managing Locks](/docs/users/mezo-earn/lock/vebtc/managing-locks-and-collecting-rewards) for details.
 
@@ -47,10 +65,7 @@ Mezo operates in 7-day epochs starting Thursday at 00:00 UTC. Each epoch is a fr
 5. Fees and incentives become claimable
 6. Repeat
 
-:::danger[Critical]
-Votes don't carry over. If you don't vote in a given epoch, you forfeit your share of fees and incentives for that week.
-:::
-
+> **Critical:** Votes don't carry over. If you don't vote in a given epoch, you forfeit your share of fees and incentives for that week.
 
 ### Epoch Alignment
 
@@ -63,6 +78,29 @@ This ensures voting weight calculations remain consistent across the system.
 
 ---
 
+## Two Ways to Participate with veMEZO
+
+### As a veBTC Holder Seeking Boost
+
+If you hold veBTC and want to maximize your voting power:
+
+1. **Self-boost:** Lock MEZO into veMEZO and direct it to your own veBTC position
+2. **Attract boost:** Post incentives on your veBTC's boost gauge to attract veMEZO votes from others
+
+Either approach can increase your effective voting power up to 5x.
+
+### As a veMEZO Holder Seeking Yield
+
+If you hold veMEZO and want to earn yield:
+
+1. Browse veBTC boost gauges to find those with attractive incentives
+2. Vote on those gauges to earn the posted incentives
+3. Claim incentives at epoch end
+
+Note: veMEZO holders do not receive a share of the trading fees, MUSD revenues, or bridging fees that veBTC positions earn. They only receive incentives posted on boost gauges.
+
+---
+
 ## Choosing Where to Vote
 
 Different gauges offer different opportunities. Some factors you may consider when allocating votes:
@@ -72,6 +110,11 @@ Different gauges offer different opportunities. Some factors you may consider wh
 - Total votes already allocated to a gauge
 - Your own priorities for the Mezo ecosystem
 
+For veMEZO holders voting on boost gauges:
+- Incentive amounts posted by veBTC holders
+- Duration and reliability of incentive postings
+- Alignment with your own veBTC positions (if any)
+
 Monitor gauge weights, fee generation, and incentive markets each epoch to inform your decisions.
 
 ---
@@ -79,3 +122,5 @@ Monitor gauge weights, fee generation, and incentive markets each epoch to infor
 ## Next Steps
 
 Ready to start voting? See [How to Vote](/docs/users/mezo-earn/vote/how-to-vote) for the complete walkthrough.
+
+Want to boost your position? See [Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism) and [Matching Market](/docs/users/mezo-earn/lock/vemezo/matching-market) for details.
