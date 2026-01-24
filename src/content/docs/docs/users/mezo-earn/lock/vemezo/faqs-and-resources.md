@@ -6,8 +6,6 @@ description: >-
 topic: users
 ---
 
-import { LinkButton } from '@astrojs/starlight/components';
-
 ## FAQs
 
 ### Can I unlock my MEZO early?
@@ -49,11 +47,3 @@ You still earn rebase rewards. However, you won't earn any incentives from veBTC
 ### Why is my boost lower than expected?
 
 The boost formula depends on your relative share of total veBTC and total veMEZO. If total locked amounts increase (across all users of Mezo), your share decreases, and so does your boost—even if your absolute holdings haven't changed.
-
----
-
-## Next Steps
-
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Understand Boost Mechanism</LinkButton>
-<LinkButton href="/docs/users/mezo-earn/vote">Start Voting</LinkButton>
-<LinkButton href="/docs/users/mezo/emissions">MEZO Emissions</LinkButton>

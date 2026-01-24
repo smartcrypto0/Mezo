@@ -1,12 +1,8 @@
 ---
 title: veMEZO Overview
-description: >-
-  Understanding veMEZO, the tokenized representation of locked MEZO for boosting
-  voting power and earning rebases
+description: Locking MEZO to boost voting power and earn rebases
 topic: users
 ---
-
-import { LinkButton } from '@astrojs/starlight/components';
 
 veMEZO is the tokenized (NFT) representation of MEZO locked on Mezo Network. Locking MEZO lets you boost your veBTC voting power by up to 5x, amplifying your earnings, and earn anti-dilution rebases via MEZO emissions.
 
@@ -36,7 +32,7 @@ You can also auto-max lock your veMEZO, which will let you sustain the maximum 4
 
 | Parameter | Value |
 |---|---|
-| Minimum lock | 1 week |
+| Minimum lock | 1 year |
 | Maximum lock | 4 years (1,456 days) |
 | Lock decay | Linear — weight decreases continuously until reaching zero |
 
@@ -66,12 +62,3 @@ See [Boost Mechanism](/docs/users/mezo-earn/lock/vemezo/boost-mechanism) for det
 | Earns fees | Yes (bridging, swap, MUSD) | No |
 | Earns rebases | No | Yes |
 | Earns incentives | Yes (from gauges you vote for) | Yes (from veBTC boost gauges) |
-
----
-
-## Next Steps
-
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/how-to-lock-mezo">How to Lock MEZO</LinkButton>
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/boost-mechanism">Boost Mechanism</LinkButton>
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/matching-market">Matching Market</LinkButton>
-<LinkButton href="/docs/users/mezo-earn/lock/vemezo/faqs-and-resources">FAQs</LinkButton>
