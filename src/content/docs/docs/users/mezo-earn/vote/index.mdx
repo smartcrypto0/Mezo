@@ -4,6 +4,8 @@ description: How voting works on Mezo and what you earn as a veBTC holder
 topic: users
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 Mezo's governance model is simple: lock your commitment, earn the right to direct the protocol's future. Through voting, veBTC holders capture the economic value of fees and determine where the chain's value is allocated.
 
 ---
@@ -58,12 +60,14 @@ Mezo operates in 7-day epochs starting Thursday at 00:00 UTC. Each epoch is a fr
 
 **The cycle:**
 
+<Steps>
 1. Epoch begins
 2. You cast votes throughout the week
 3. Epoch ends and votes are tallied
 4. Mats emissions distributed to gauges based on votes
 5. Fees and incentives become claimable
 6. Repeat
+</Steps>
 
 > **Critical:** Votes don't carry over. If you don't vote in a given epoch, you forfeit your share of fees and incentives for that week.
 
@@ -84,8 +88,10 @@ This ensures voting weight calculations remain consistent across the system.
 
 If you hold veBTC and want to maximize your voting power:
 
+<Steps>
 1. **Self-boost:** Lock MEZO into veMEZO and direct it to your own veBTC position
 2. **Attract boost:** Post incentives on your veBTC's boost gauge to attract veMEZO votes from others
+</Steps>
 
 Either approach can increase your effective voting power up to 5x.
 
@@ -93,9 +99,11 @@ Either approach can increase your effective voting power up to 5x.
 
 If you hold veMEZO and want to earn yield:
 
+<Steps>
 1. Browse veBTC boost gauges to find those with attractive incentives
 2. Vote on those gauges to earn the posted incentives
 3. Claim incentives at epoch end
+</Steps>
 
 Note: veMEZO holders do not receive a share of the trading fees, MUSD revenues, or bridging fees that veBTC positions earn. They only receive incentives posted on boost gauges.
 
