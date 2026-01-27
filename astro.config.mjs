@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightSidebarTopics from 'starlight-sidebar-topics';
+import starlightImageZoom from 'starlight-image-zoom';
 import lunaria from '@lunariajs/starlight';
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -121,12 +122,13 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			pagination: true,
-			social: {
-				github: 'https://github.com/mezo-org',
-				discord: 'https://discord.mezo.org',
-				twitter: 'https://x.com/MezoNetwork',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/mezo-org' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.mezo.org' },
+				{ icon: 'x.com', label: 'X', href: 'https://x.com/MezoNetwork' },
+			],
 			plugins: [
+				starlightImageZoom(),
 				lunaria({
 					sync: true, // Sync locales with Starlight's i18n config
 				}),
