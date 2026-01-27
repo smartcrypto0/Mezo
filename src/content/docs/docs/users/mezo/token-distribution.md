@@ -36,6 +36,7 @@ All vesting completes within 36 months of TGE. Investors and the team have a 1-y
 | Allocation | Cliff | Vesting |
 |---|---|---|
 | Community | None | Immediate |
+| Foundation | None | Immediate |
 | Team | 1 year | 3-year linear |
 | Investors | 1 year | 3-year linear |
 

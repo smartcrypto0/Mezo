@@ -1,6 +1,6 @@
 ---
 title: MEZO Overview
-description: 'The native token for boosting voting power and value capture'
+description: The native token for boosting voting power and value capture
 topic: users
 ---
 
