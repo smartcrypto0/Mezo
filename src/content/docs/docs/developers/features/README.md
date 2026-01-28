@@ -1,6 +1,6 @@
 ---
-title: features
+title: Mezo Earn
 topic: developers
 ---
-# features
+# Mezo Earn
 
