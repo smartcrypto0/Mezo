@@ -213,7 +213,7 @@ export default defineConfig({
                                     collapsed: true,
                                     items: [
                                           {
-                                                label: 'VeBTC',
+                                                label: 'veBTC',
                                                 collapsed: true,
                                                 items: [
                                                       'docs/users/mezo-earn/lock/vebtc',
@@ -223,7 +223,7 @@ export default defineConfig({
                                                 ]
                                           },
                                           {
-                                                label: 'VeMEZO',
+                                                label: 'veMEZO',
                                                 collapsed: true,
                                                 items: [
                                                       'docs/users/mezo-earn/lock/vemezo',
