@@ -213,7 +213,7 @@ export default defineConfig({
                                     collapsed: true,
                                     items: [
                                           {
-                                                label: 'veBTC',
+                                                label: 'VeBTC',
                                                 collapsed: true,
                                                 items: [
                                                       'docs/users/mezo-earn/lock/vebtc',
@@ -223,7 +223,7 @@ export default defineConfig({
                                                 ]
                                           },
                                           {
-                                                label: 'veMEZO',
+                                                label: 'VeMEZO',
                                                 collapsed: true,
                                                 items: [
                                                       'docs/users/mezo-earn/lock/vemezo',
@@ -712,6 +712,10 @@ export default defineConfig({
 		'/docs/summary/users/musd/architecture-and-terminology.md': {
 			status: 301,
 			destination: '/docs/users/musd/architecture-and-terminology'
+		},
+		'/docs/users/mezo-earn': {
+			status: 301,
+			destination: '/docs/users/mezo-earn/overview'
 		},
 	}
 });
