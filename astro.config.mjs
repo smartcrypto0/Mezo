@@ -333,11 +333,12 @@ export default defineConfig({
                         ]
                   },
                   {
-                        label: 'Features',
+                        label: 'Mezo Earn',
                         collapsed: true,
                         items: [
                               'docs/developers/features/mezo-pools',
-                              'docs/developers/features/mezo-earn/mezo-earn'
+                              'docs/developers/features/mezo-earn/mezo-earn',
+                              'docs/developers/features/mezo-earn/deploying-incentives'
                         ]
                   },
                   {
