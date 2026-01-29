@@ -82,7 +82,7 @@ The central hub for all community and developer interaction within the Mezo ecos
 
 #### How do I provide feedback or report an issue? <a href="#how-do-i-provide-feedback-or-report-an-issue" id="how-do-i-provide-feedback-or-report-an-issue"></a>
 
-Developers may leave feedback [here](https://2d0lnha7ee6.typeform.com/to/bP810Y2I).
+Developers may leave feedback [here](https://form.typeform.com/to/bP810Y2I?typeform-source=2d0lnha7ee6.typeform.com).
 
 #### Who Are Your Partners and How Do I Integrate Them? <a href="#who-are-your-partners-and-how-do-i-integrate-them" id="who-are-your-partners-and-how-do-i-integrate-them"></a>
 
